@@ -72,7 +72,6 @@ body {
 
 // ---------------------------------utils-------------------------------//
 
-
 .btn:hover {
   background-color: transparent;
 }
@@ -309,7 +308,9 @@ header {
       justify-content: center;
       align-items: center;
       transition: transform 0.3s ease;
-
+      &:hover{
+        transform: scale(1.1);
+      }
       &::after {
         content: "";
         position: absolute;
@@ -827,6 +828,10 @@ header {
       background-color: #ffffff1f;
       color: $white-color;
       border: 1px solid #ffffff28;
+
+      &:focus{
+        box-shadow: none;
+      }
     }
     ::placeholder {
       color: $white-color;
@@ -838,8 +843,6 @@ header {
       border: 1px solid #fff !important;
     }
   }
-
-  
 }
 
 .footer-section {
@@ -851,61 +854,45 @@ header {
     position: relative;
     z-index: 2;
 
-    .footer-logo {
-      font-size: 100px;
-    }
-
-    // FIX: typo .brand-sectio → .brand-section
     .brand-section {
-      a {
-        text-decoration: none;
-        h2{
-          font-size: 50px;
+      h2 {
+        font-size: 40px;
+        font-family: $font-marcellus;
+        line-height: 30px;
+        color: $white-color;
+        span {
+          font-size: 25px;
         }
       }
-
       p {
-        font-size: 0.95rem;
-        line-height: 1.4;
-        color: #b0b0b0;
-        max-width: 400px;
-        margin-bottom: 30px;
-      }
-
-      .social-icons {
-        display: flex;
-        gap: 15px;
-        margin-top: 25px;
-
-        .social-icon {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          background: rgba(255, 255, 255, 0.08);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #ffffff;
-          font-size: 1.1rem;
-          transition: all 0.3s ease;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          text-decoration: none;
-
-          i {
-            font-size: 20px;
-          }
-
-          &:hover {
-            transform: translateY(-3px) scale(1.1);
-            color: #ffffff;
-            border-color: rgba(255, 255, 255, 0.3);
-            background: $beige-color;
-          }
-        }
+        color: #ffffffb2;
+        line-height: 16px;
+        font-size: 14px;
+        margin-block: 30px;
       }
     }
   }
 
+  .social-icons{
+    display: flex;
+      gap: 10px;
+
+    .social-icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #FFFFFF26;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border: 1px solid #ffffff33;
+     i{
+      font-size: 25px;
+      color: #fff;
+     }
+    }
+  }
   .footer-heading {
     font-size: 1.1rem;
     font-weight: 500;

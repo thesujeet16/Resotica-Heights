@@ -295,6 +295,10 @@ header .navbar-nav .nav-link.show {
   transition: transform 0.3s ease;
 }
 
+.hero-section .paginationImg .circle-div:hover {
+  transform: scale(1.1);
+}
+
 .hero-section .paginationImg .circle-div::after {
   content: "";
   position: absolute;
@@ -826,6 +830,10 @@ header .navbar-nav .nav-link.show {
   border: 1px solid #ffffff28;
 }
 
+.footer #contactForm .form-control:focus {
+  box-shadow: none;
+}
+
 .footer #contactForm ::placeholder {
   color: #fff;
 }
@@ -849,56 +857,44 @@ header .navbar-nav .nav-link.show {
   z-index: 2;
 }
 
-.footer-section .footer-content .footer-logo {
-  font-size: 100px;
+.footer-section .footer-content .brand-section h2 {
+  font-size: 40px;
+  font-family: "Marcellus", serif;
+  line-height: 30px;
+  color: #fff;
 }
 
-.footer-section .footer-content .brand-section a {
-  text-decoration: none;
-}
-
-.footer-section .footer-content .brand-section a h2 {
-  font-size: 50px;
+.footer-section .footer-content .brand-section h2 span {
+  font-size: 25px;
 }
 
 .footer-section .footer-content .brand-section p {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: #b0b0b0;
-  max-width: 400px;
-  margin-bottom: 30px;
+  color: #ffffffb2;
+  line-height: 16px;
+  font-size: 14px;
+  margin-block: 30px;
 }
 
-.footer-section .footer-content .brand-section .social-icons {
+.footer-section .social-icons {
   display: flex;
-  gap: 15px;
-  margin-top: 25px;
+  gap: 10px;
 }
 
-.footer-section .footer-content .brand-section .social-icons .social-icon {
-  width: 40px;
-  height: 40px;
+.footer-section .social-icons .social-icon {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  background-color: #FFFFFF26;
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
   text-decoration: none;
+  border: 1px solid #ffffff33;
 }
 
-.footer-section .footer-content .brand-section .social-icons .social-icon i {
-  font-size: 20px;
-}
-
-.footer-section .footer-content .brand-section .social-icons .social-icon:hover {
-  transform: translateY(-3px) scale(1.1);
-  color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.3);
-  background: #ac813c;
+.footer-section .social-icons .social-icon i {
+  font-size: 25px;
+  color: #fff;
 }
 
 .footer-section .footer-heading {
