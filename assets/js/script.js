@@ -77,3 +77,26 @@ const swiper1 = new Swiper(".projectSwiper", {
     1024: { slidesPerView: 2, spaceBetween: 40 },
   },
 });
+
+
+// -----------------------underline-animation-----------------//
+document.addEventListener("DOMContentLoaded", () => {
+  const paths = document.querySelectorAll(".underline-path");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = "running";
+          observer.unobserve(entry.target); // unobserve only that path
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  // Observe each path individually
+  paths.forEach((path) => {
+    observer.observe(path);
+  });
+});

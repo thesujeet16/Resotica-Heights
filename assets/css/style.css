@@ -100,7 +100,8 @@ body {
   background-color: transparent;
   z-index: 111;
   transition: color 0.4s ease;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
+  font-family: "HelveticaNormal", sans-serif;
 }
 
 .btn-outline-secondary::before {
@@ -123,9 +124,33 @@ body {
   left: 0;
 }
 
+.btn-outline-secondary svg path {
+  fill: #ac813c;
+  transition: fill 0.3s ease;
+}
+
+.btn-outline-secondary:hover svg path {
+  fill: white;
+}
+
 @media (max-width: 1024px) {
   .btn-outline-secondary {
     font-size: 13px;
+  }
+}
+
+/* Animation setup */
+.underline-path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawLine 6s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+    /* reveals the stroke */
   }
 }
 
@@ -141,6 +166,15 @@ header .line {
 header .hcontact span {
   cursor: pointer;
   align-items: center;
+}
+
+header .hcontact span i {
+  font-size: 20px;
+}
+
+header .hcontact span:hover {
+  color: #ac813c;
+  transition: all 0.4s;
 }
 
 header .hsocial ul li {
@@ -169,7 +203,7 @@ header .hsocial ul li a i {
 }
 
 header .hsocial ul li:hover {
-  background-color: #181a1e;
+  background-color: #fff;
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
@@ -192,6 +226,7 @@ header .navbar .navbar-brand div {
 header .navbar-nav .nav-link {
   color: #fff;
   font-size: 14px;
+  font-family: "HelveticaNormal", sans-serif;
 }
 
 header .navbar-nav .nav-link:hover {
@@ -250,6 +285,7 @@ header .navbar-nav .nav-link.show {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: #fefff3 !important;
 }
 
 .hero-section .swiper-slide {
@@ -343,6 +379,7 @@ header .navbar-nav .nav-link.show {
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .hero-section .paginationImg .circle-div:hover {
@@ -632,6 +669,11 @@ header .navbar-nav .nav-link.show {
   padding-right: 20px;
 }
 
+.section-1 .leftContent .bgbtn {
+  font-family: "Alexandria", sans-serif !important;
+  font-weight: 400;
+}
+
 .section-1 .rightContent {
   padding-left: 20px;
   display: flex;
@@ -639,9 +681,18 @@ header .navbar-nav .nav-link.show {
   justify-content: space-between;
 }
 
+.section-1 .rightContent h2 {
+  font-family: "Marcellus", serif;
+}
+
 .section-1 .rightContent p {
   padding-right: 30px;
   margin-bottom: 30px;
+}
+
+.section-1 .rightContent .btn-outline-secondary {
+  font-family: "Alexandria", sans-serif !important;
+  font-weight: 300;
 }
 
 .section-1 .aboutimg img {
@@ -660,6 +711,9 @@ header .navbar-nav .nav-link.show {
 
 .section-1 .counter .count p {
   font-weight: 500;
+  font-family: Arial;
+  text-transform: capitalize;
+  color: #0b0b0c;
 }
 
 .section-1 .getintouchimg .overlay {
@@ -682,6 +736,16 @@ header .navbar-nav .nav-link.show {
 .section-1 .bottom-shape img {
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .section-1 .rightContent p {
+    padding-right: 30px;
+    margin-bottom: 0px;
+  }
+  .section-1 .bottom-shape {
+    transform: translateY(43px) !important;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -885,6 +949,10 @@ header .navbar-nav .nav-link.show {
   flex-direction: column;
 }
 
+.section-4 .blog-card .vrline {
+  color: #dbdbdb;
+}
+
 .section-4 .blog-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
@@ -1002,6 +1070,11 @@ header .navbar-nav .nav-link.show {
   top: -10px;
   right: -30px;
   border-radius: 50%;
+}
+
+.section-5 .swiper-slide .testimonial-Card .inner .user-img .rating i {
+  color: orange;
+  font-size: 20px;
 }
 
 .section-5 .swiper-slide .testimonial-Card .inner .quotion {
@@ -1169,9 +1242,9 @@ header .navbar-nav .nav-link.show {
 
 .footer-section .info-item {
   display: flex;
-  align-items: flex-start;
   margin-bottom: 20px;
   gap: 15px;
+  align-items: center;
 }
 
 .footer-section .info-item .info-icon {
@@ -1194,7 +1267,7 @@ header .navbar-nav .nav-link.show {
 
 .footer-section .info-item .info-icon i {
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 20px;
 }
 
 .footer-section .info-item .info-text {
@@ -1222,18 +1295,18 @@ header .navbar-nav .nav-link.show {
 
 .footer-section .footer-bottom .copyright {
   color: #808080;
-  font-size: 0.9rem;
+  font-size: 12px;
 }
 
 .footer-section .footer-bottom .powered-by {
   color: #605f5f;
-  font-size: 0.9rem;
+  font-size: 12px;
 }
 
 .footer-section .footer-bottom .powered-by span {
   color: #f9b309;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .footer-section .footer-bottom .powered-by span:nth-child(2) {

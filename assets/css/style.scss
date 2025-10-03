@@ -11,7 +11,8 @@
 $font-marcellus: "Marcellus", serif;
 $font-primary: "HelveticaNormal", sans-serif;
 $font-secondary: "HelveticaBold", sans-serif;
-$font-form: "Alexandria", sans-serif;
+$font-Alexandria: "Alexandria", sans-serif;
+$font-arial: "Arial", sans-serif;
 
 // Background gradient
 $bg-radial-dark: radial-gradient(
@@ -119,7 +120,8 @@ body {
   background-color: transparent;
   z-index: 111;
   transition: color 0.4s ease;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
+  font-family: $font-primary;
   &::before {
     content: "";
     position: absolute;
@@ -140,8 +142,33 @@ body {
     left: 0;
   }
 
+  svg path {
+    fill: #ac813c;
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    svg path {
+      fill: white;
+    }
+  }
+
   @media (max-width: 1024px) {
     font-size: 13px;
+  }
+}
+
+/* Animation setup */
+.underline-path {
+  stroke-dasharray: 400; 
+  stroke-dashoffset: 400;
+  animation: drawLine 6s ease forwards;
+  animation-play-state: paused;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0; /* reveals the stroke */
   }
 }
 
@@ -156,6 +183,13 @@ header {
     span {
       cursor: pointer;
       align-items: center;
+      i {
+        font-size: 20px;
+      }
+      &:hover {
+        color: $beige-color;
+        transition: all 0.4s;
+      }
     }
   }
   .hsocial {
@@ -186,7 +220,7 @@ header {
         }
 
         &:hover {
-          background-color: $bg-dark-tint;
+          background-color: $white-color;
           transform: translateY(-5px);
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 
@@ -213,6 +247,7 @@ header {
     .nav-link {
       color: $white-color;
       font-size: 14px;
+      font-family: $font-primary;
 
       &:hover {
         color: $beige-color;
@@ -288,6 +323,7 @@ header {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: #fefff3 !important;
   .swiper-slide {
     width: 100%;
     height: 100%;
@@ -372,6 +408,7 @@ header {
       justify-content: center;
       align-items: center;
       transition: transform 0.3s ease;
+      cursor: pointer;
       &:hover {
         transform: scale(1.1);
       }
@@ -418,6 +455,7 @@ header {
       }
     }
   }
+  
   @media (min-width: 1200px) and (max-width: 1400px) {
     height: auto;
     .swiper-slide {
@@ -663,16 +701,26 @@ header {
   }
   .leftContent {
     padding-right: 20px;
+    .bgbtn{
+      font-family: $font-Alexandria !important;
+      font-weight: 400;
+    }
   }
   .rightContent {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    h2{
+      font-family: $font-marcellus;
+    }
     p {
       padding-right: 30px;
       margin-bottom: 30px;
+    }
+    .btn-outline-secondary{
+      font-family: $font-Alexandria !important;
+      font-weight: 300;
     }
   }
   .aboutimg {
@@ -690,6 +738,9 @@ header {
       }
       p {
         font-weight: 500;
+        font-family: Arial;
+        text-transform: capitalize;
+        color: $bg-dark;
       }
     }
   }
@@ -712,6 +763,17 @@ header {
     img {
       width: 100%;
       height: 100%;
+    }
+  }
+   @media (min-width: 1401px) and (max-width: 1600px) {
+    .rightContent {
+      p {
+        padding-right: 30px;
+        margin-bottom: 0px;
+      }
+    }
+    .bottom-shape {
+      transform: translateY(43px) !important;
     }
   }
   @media (min-width: 1200px) and (max-width: 1400px) {
@@ -894,13 +956,13 @@ header {
   }
 
   @media (max-width: 1024px) {
-     .centerBox{
+    .centerBox {
       gap: 30px;
-     }
-    .blackBox { 
+    }
+    .blackBox {
       width: 290px;
       height: 290px;
-      .innerBox{
+      .innerBox {
         width: 270px;
         height: 270px;
         padding-block: 0px !important;
@@ -935,6 +997,9 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
+    .vrline{
+      color: #dbdbdb;
+    }
   }
 
   .blog-card:hover {
@@ -992,8 +1057,8 @@ header {
     background-color: $beige-color;
     color: white;
   }
-  @media (max-width:1024px) {
-    .blog-title{
+  @media (max-width: 1024px) {
+    .blog-title {
       font-size: 16px;
     }
   }
@@ -1048,6 +1113,10 @@ header {
             top: -10px;
             right: -30px;
             border-radius: 50%;
+            i {
+              color: orange;
+              font-size: 20px;
+            }
           }
         }
         .quotion {
@@ -1094,7 +1163,7 @@ header {
     .form-control {
       border-radius: 0px;
       padding-block: 10px;
-      font-family: $font-form;
+      font-family: $font-Alexandria;
       background-color: #ffffff1f;
       color: $white-color;
       border: 1px solid #ffffff28;
@@ -1106,7 +1175,7 @@ header {
     ::placeholder {
       color: #afafaf;
     }
-    
+
     textarea {
       height: 200px;
     }
@@ -1209,9 +1278,9 @@ header {
 
   .info-item {
     display: flex;
-    align-items: flex-start;
     margin-bottom: 20px;
     gap: 15px;
+    align-items: center;
 
     .info-icon {
       width: 40px;
@@ -1232,7 +1301,7 @@ header {
 
       i {
         color: #ffffff;
-        font-size: 0.9rem;
+        font-size: 20px;
       }
     }
 
@@ -1261,17 +1330,17 @@ header {
 
     .copyright {
       color: #808080;
-      font-size: 0.9rem;
+      font-size: 12px;
     }
 
     .powered-by {
       color: #605f5f;
-      font-size: 0.9rem;
+      font-size: 12px;
 
       span {
         color: #f9b309;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 14px;
 
         &:nth-child(2) {
           color: #605f5f;
