@@ -428,6 +428,15 @@ header .navbar-nav .nav-link.show {
   object-fit: cover;
 }
 
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .hero-section {
+    height: auto;
+  }
+  .hero-section .paginationImg {
+    bottom: 12%;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .hero-section {
     height: auto;
