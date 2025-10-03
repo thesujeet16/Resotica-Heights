@@ -139,29 +139,37 @@ header .hcontact span {
 header .hsocial ul li {
   list-style: none;
   width: 35px;
-  border-radius: 50%;
   height: 35px;
-  transition: all 0.6s ease;
+  border-radius: 50%;
+  transition: all 0.4s ease;
 }
 
 header .hsocial ul li a {
   color: #fff !important;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
 }
 
 header .hsocial ul li a i {
   font-size: 20px;
+  transition: transform 0.4s ease, color 0.4s ease;
 }
 
 header .hsocial ul li:hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   background-color: #181a1e;
-  transition: all 0.6s;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+header .hsocial ul li:hover a i {
+  transform: rotate(360deg) scale(1.2);
+  color: #ac813c;
 }
 
 header .navbar .navbar-brand {
@@ -193,6 +201,19 @@ header .navbar-nav .nav-link:active {
 
 header .navbar-nav .nav-link.show {
   color: #ac813c;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  header .hcontact span {
+    font-size: 14px;
+  }
+  header .hcontact span i {
+    font-size: 16px;
+  }
+  header .hsocial ul li a i {
+    font-size: 14px;
+    transition: transform 0.4s ease, color 0.4s ease;
+  }
 }
 
 .hero-section {
@@ -228,7 +249,7 @@ header .navbar-nav .nav-link.show {
 }
 
 .hero-section .swiper-slide .bg .hero-content .layer {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -237,12 +258,12 @@ header .navbar-nav .nav-link.show {
 }
 
 .hero-section .swiper-slide .bg .hero-content .layer h1 {
-  font-size: 80px;
+  font-size: 6rem;
   font-family: "Marcellus", serif;
 }
 
 .hero-section .swiper-slide .bg .hero-content .layer p {
-  width: 60%;
+  width: 40%;
 }
 
 .hero-section .swiper-slide .bg img {
@@ -277,7 +298,7 @@ header .navbar-nav .nav-link.show {
   bottom: 0%;
   width: 100%;
   height: 200px;
-  z-index: 99;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,6 +360,35 @@ header .navbar-nav .nav-link.show {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .hero-section {
+    height: auto;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer {
+    width: 100%;
+    z-index: 11;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer h1 {
+    font-size: 5rem;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer p {
+    width: 60%;
+  }
+  .hero-section .paginationImg {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    bottom: 15%;
+  }
+  .hero-section .paginationImg .circle-div {
+    width: 80px;
+    height: 80px;
+  }
+  .hero-section .paginationImg .circle-div .number {
+    font-size: 16px !important;
+  }
 }
 
 .curve {
@@ -526,6 +576,9 @@ header .navbar-nav .nav-link.show {
 
 .section-1 .rightContent {
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .section-1 .rightContent p {
@@ -573,6 +626,16 @@ header .navbar-nav .nav-link.show {
   height: 100%;
 }
 
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .section-1 .rightContent p {
+    padding-right: 30px;
+    margin-bottom: 0px;
+  }
+  .section-1 .bottom-shape {
+    transform: translateY(38px);
+  }
+}
+
 .section-2 {
   padding-top: 120px;
   background-color: #0c0c0c;
@@ -600,6 +663,8 @@ header .navbar-nav .nav-link.show {
   height: 325px;
   background-color: #85808094;
   border: 0.98px solid #ffffff;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .section-3 .blackBox .innerBox {
@@ -607,6 +672,11 @@ header .navbar-nav .nav-link.show {
   height: 300px;
   background-color: #0c0c0c;
   color: #fff;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section-3 .blackBox .innerBox .icondiv {
@@ -617,15 +687,46 @@ header .navbar-nav .nav-link.show {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease;
+}
+
+.section-3 .blackBox .innerBox .icondiv img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease;
 }
 
 .section-3 .blackBox .innerBox h3 {
   font-family: "Marcellus", serif;
+  transition: color 0.5s ease;
 }
 
 .section-3 .blackBox .innerBox p {
   color: #ffffff9e;
   line-height: 18px;
+  transition: color 0.5s ease;
+}
+
+.section-3 .blackBox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.section-3 .blackBox:hover .icondiv {
+  border-color: #ac813c;
+  background-color: rgba(255, 204, 0, 0.1);
+}
+
+.section-3 .blackBox:hover .icondiv img {
+  transform: rotate(15deg);
+}
+
+.section-3 .blackBox:hover h3 {
+  color: #ac813c;
+}
+
+.section-3 .blackBox:hover p {
+  color: #ffffff;
 }
 
 .section-3 .centerBox {
@@ -881,20 +982,32 @@ header .navbar-nav .nav-link.show {
 }
 
 .footer-section .social-icons .social-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #FFFFFF26;
+  background-color: #ffffff26;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   border: 1px solid #ffffff33;
+  transition: all 0.4s ease;
+  text-decoration: none;
 }
 
 .footer-section .social-icons .social-icon i {
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.footer-section .social-icons .social-icon:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.footer-section .social-icons .social-icon:hover i {
+  color: #ac813c;
+  transform: rotate(360deg) scale(1.2);
 }
 
 .footer-section .footer-heading {
@@ -999,21 +1112,5 @@ header .navbar-nav .nav-link.show {
 
 .footer-section .footer-bottom .powered-by span:nth-child(2) {
   color: #605f5f;
-}
-
-@media (max-width: 768px) {
-  .footer-section {
-    padding: 50px 0 20px;
-  }
-  .footer-section .brand-section h1 {
-    font-size: 2rem;
-  }
-  .footer-section .brand-section h2 {
-    font-size: 1.3rem;
-  }
-  .footer-section .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 /*# sourceMappingURL=style.css.map */
