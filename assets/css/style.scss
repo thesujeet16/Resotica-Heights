@@ -975,6 +975,20 @@ header {
       }
     }
   }
+  @media (max-width: 768px) {
+    .centerBox {
+      gap: 30px;
+    }
+    .blackBox {
+      width: 220px;
+      height: 220px;
+      .innerBox {
+        width: 200px;
+        height: 200px;
+        padding-block: 0px !important;
+      }
+    }
+  }
 }
 
 // -----------------------section-4-----------------------------//

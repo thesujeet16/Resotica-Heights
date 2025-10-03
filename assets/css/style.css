@@ -930,6 +930,21 @@ header .navbar-nav .nav-link.show {
   }
 }
 
+@media (max-width: 768px) {
+  .section-3 .centerBox {
+    gap: 30px;
+  }
+  .section-3 .blackBox {
+    width: 220px;
+    height: 220px;
+  }
+  .section-3 .blackBox .innerBox {
+    width: 200px;
+    height: 200px;
+    padding-block: 0px !important;
+  }
+}
+
 .section-4 .section-title h2 {
   color: #ac813c;
 }
