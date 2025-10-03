@@ -123,6 +123,12 @@ body {
   left: 0;
 }
 
+@media (max-width: 1024px) {
+  .btn-outline-secondary {
+    font-size: 13px;
+  }
+}
+
 header {
   height: 140px;
   z-index: 11;
@@ -134,6 +140,7 @@ header .line {
 
 header .hcontact span {
   cursor: pointer;
+  align-items: center;
 }
 
 header .hsocial ul li {
@@ -213,6 +220,28 @@ header .navbar-nav .nav-link.show {
   header .hsocial ul li a i {
     font-size: 14px;
     transition: transform 0.4s ease, color 0.4s ease;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  header .hcontact {
+    gap: 10px !important;
+  }
+  header .hcontact span {
+    font-size: 13px;
+  }
+  header .hcontact span i {
+    font-size: 16px;
+  }
+  header .hsocial ul {
+    gap: 10px !important;
+  }
+  header .hsocial ul li a i {
+    font-size: 14px;
+    transition: transform 0.4s ease, color 0.4s ease;
+  }
+  header .navbar-nav {
+    gap: 10px !important;
   }
 }
 
@@ -381,6 +410,35 @@ header .navbar-nav .nav-link.show {
     align-items: center;
     justify-content: center;
     bottom: 15%;
+  }
+  .hero-section .paginationImg .circle-div {
+    width: 80px;
+    height: 80px;
+  }
+  .hero-section .paginationImg .circle-div .number {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .hero-section {
+    height: auto;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer {
+    width: 100%;
+    z-index: 11;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer h1 {
+    font-size: 4.5rem;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer p {
+    width: 70%;
+  }
+  .hero-section .paginationImg {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    bottom: 5%;
   }
   .hero-section .paginationImg .circle-div {
     width: 80px;
@@ -636,6 +694,22 @@ header .navbar-nav .nav-link.show {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  .section-1 .rightContent {
+    padding-left: 0px;
+  }
+  .section-1 .rightContent p {
+    padding-right: 0px;
+    margin-bottom: 30px;
+  }
+  .section-1 .bottom-shape {
+    transform: translateY(30px);
+  }
+  .section-1 .counter .count h3 {
+    font-size: 20px;
+  }
+}
+
 .section-2 {
   padding-top: 120px;
   background-color: #0c0c0c;
@@ -643,6 +717,37 @@ header .navbar-nav .nav-link.show {
 
 .section-2 .section-title h2:nth-of-type(2) {
   font-family: "Marcellus", serif;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .section-2 .swiper .swiper-slide .card .card-content h3 {
+    font-size: 22px;
+  }
+  .section-2 .swiper .swiper-slide .card .card-content .subtitle {
+    font-size: 14px;
+  }
+  .section-2 .swiper .swiper-slide .card .card-content p:nth-of-type(2) {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .section-2 .swiper .swiper-slide .card .card-content {
+    padding: 10px;
+  }
+  .section-2 .swiper .swiper-slide .card .card-content h3 {
+    font-size: 20px;
+  }
+  .section-2 .swiper .swiper-slide .card .card-content .subtitle {
+    font-size: 14px;
+  }
+  .section-2 .swiper .swiper-slide .card .card-content p:nth-of-type(2) {
+    font-size: 12px;
+  }
+  .section-2 .swiper .swiper-slide .card .card-content .card-number {
+    top: 8px;
+    right: 10px;
+  }
 }
 
 .section-3 {
@@ -737,6 +842,21 @@ header .navbar-nav .nav-link.show {
   gap: 70px;
 }
 
+@media (max-width: 1024px) {
+  .section-3 .centerBox {
+    gap: 30px;
+  }
+  .section-3 .blackBox {
+    width: 290px;
+    height: 290px;
+  }
+  .section-3 .blackBox .innerBox {
+    width: 270px;
+    height: 270px;
+    padding-block: 0px !important;
+  }
+}
+
 .section-4 .section-title h2 {
   color: #ac813c;
 }
@@ -819,6 +939,12 @@ header .navbar-nav .nav-link.show {
 .section-4 .btn-read-more:hover {
   background-color: #ac813c;
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .section-4 .blog-title {
+    font-size: 16px;
+  }
 }
 
 .section-5 {
@@ -936,7 +1062,7 @@ header .navbar-nav .nav-link.show {
 }
 
 .footer #contactForm ::placeholder {
-  color: #fff;
+  color: #afafaf;
 }
 
 .footer #contactForm textarea {

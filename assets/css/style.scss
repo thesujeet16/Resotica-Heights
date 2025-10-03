@@ -139,6 +139,10 @@ body {
   &:hover::before {
     left: 0;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
 }
 
 // ------------------------Header---------------------------//
@@ -151,6 +155,7 @@ header {
   .hcontact {
     span {
       cursor: pointer;
+      align-items: center;
     }
   }
   .hsocial {
@@ -245,6 +250,33 @@ header {
           }
         }
       }
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    .hcontact {
+      gap: 10px !important;
+      span {
+        font-size: 13px;
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+    .hsocial {
+      ul {
+        gap: 10px !important;
+        li {
+          a {
+            i {
+              font-size: 14px;
+              transition: transform 0.4s ease, color 0.4s ease;
+            }
+          }
+        }
+      }
+    }
+    .navbar-nav {
+      gap: 10px !important;
     }
   }
 }
@@ -411,6 +443,40 @@ header {
       align-items: center;
       justify-content: center;
       bottom: 15%;
+      .circle-div {
+        width: 80px;
+        height: 80px;
+        .number {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    height: auto;
+    .swiper-slide {
+      .bg {
+        .hero-content {
+          .layer {
+            width: 100%;
+            z-index: 11;
+
+            h1 {
+              font-size: 4.5rem;
+            }
+            p {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+
+    .paginationImg {
+      height: 100px;
+      align-items: center;
+      justify-content: center;
+      bottom: 5%;
       .circle-div {
         width: 80px;
         height: 80px;
@@ -659,6 +725,23 @@ header {
       transform: translateY(38px);
     }
   }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    .rightContent {
+      padding-left: 0px;
+      p {
+        padding-right: 0px;
+        margin-bottom: 30px;
+      }
+    }
+    .bottom-shape {
+      transform: translateY(30px);
+    }
+    .counter {
+      .count h3 {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 // --------------------Section-2----------------------//
@@ -669,6 +752,49 @@ header {
   .section-title {
     h2:nth-of-type(2) {
       font-family: $font-marcellus;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .swiper {
+      .swiper-slide {
+        .card {
+          .card-content {
+            h3 {
+              font-size: 22px;
+            }
+            .subtitle {
+              font-size: 14px;
+            }
+            p:nth-of-type(2) {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    .swiper {
+      .swiper-slide {
+        .card {
+          .card-content {
+            padding: 10px;
+            h3 {
+              font-size: 20px;
+            }
+            .subtitle {
+              font-size: 14px;
+            }
+            p:nth-of-type(2) {
+              font-size: 12px;
+            }
+            .card-number {
+              top: 8px;
+              right: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -766,6 +892,21 @@ header {
     align-items: center;
     gap: 70px;
   }
+
+  @media (max-width: 1024px) {
+     .centerBox{
+      gap: 30px;
+     }
+    .blackBox { 
+      width: 290px;
+      height: 290px;
+      .innerBox{
+        width: 270px;
+        height: 270px;
+        padding-block: 0px !important;
+      }
+    }
+  }
 }
 
 // -----------------------section-4-----------------------------//
@@ -850,6 +991,11 @@ header {
   .btn-read-more:hover {
     background-color: $beige-color;
     color: white;
+  }
+  @media (max-width:1024px) {
+    .blog-title{
+      font-size: 16px;
+    }
   }
 }
 
@@ -958,8 +1104,9 @@ header {
       }
     }
     ::placeholder {
-      color: $white-color;
+      color: #afafaf;
     }
+    
     textarea {
       height: 200px;
     }
