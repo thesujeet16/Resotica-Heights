@@ -48,6 +48,7 @@ body {
   font-family: "HelveticaNormal", sans-serif;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .btn:hover {
@@ -360,7 +361,7 @@ header .navbar-nav .nav-link.show {
 
 .hero-section .paginationImg {
   position: absolute;
-  bottom: 0%;
+  bottom: 5%;
   width: 100%;
   height: 200px;
   z-index: 1;
@@ -493,23 +494,6 @@ header .navbar-nav .nav-link.show {
   .hero-section .paginationImg .circle-div .number {
     font-size: 16px !important;
   }
-}
-
-.curve {
-  position: relative;
-  width: 110%;
-  height: auto;
-  left: -60px;
-  top: 20px;
-  background-color: transparent !important;
-  overflow: hidden;
-}
-
-.curve svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: 2px solid red;
 }
 
 .swiper {
@@ -667,6 +651,36 @@ header .navbar-nav .nav-link.show {
   transform: translate(-150%, -50%);
   opacity: 0;
   transition: all 0.6s;
+}
+
+.section-1 {
+  position: relative;
+}
+
+.section-1 .curve {
+  position: absolute;
+  width: 110%;
+  height: 200px;
+  left: 0px;
+  top: -26%;
+  background-color: transparent !important;
+  overflow: hidden;
+  z-index: 1111;
+  padding-top: 8rem !important;
+}
+
+.section-1 .curve svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 45%;
+  top: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.section-1 .curve svg path {
+  border-bottom: none !important;
 }
 
 .section-1 .section-title img {
@@ -942,6 +956,21 @@ header .navbar-nav .nav-link.show {
     width: 200px;
     height: 200px;
     padding-block: 0px !important;
+  }
+  .section-3 .blackBox .innerBox .icondiv {
+    width: 50px;
+    height: 50px;
+  }
+  .section-3 .blackBox .innerBox .icondiv img {
+    width: 30px;
+    height: 30px;
+  }
+  .section-3 .blackBox .innerBox h3 {
+    font-size: 15px;
+  }
+  .section-3 .blackBox .innerBox p {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 

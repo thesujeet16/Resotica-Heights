@@ -67,6 +67,7 @@ body {
   font-family: $font-primary;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 // ---------------------------------utils-------------------------------//
@@ -160,7 +161,7 @@ body {
 
 /* Animation setup */
 .underline-path {
-  stroke-dasharray: 400; 
+  stroke-dasharray: 400;
   stroke-dashoffset: 400;
   animation: drawLine 6s ease forwards;
   animation-play-state: paused;
@@ -391,7 +392,7 @@ header {
   }
   .paginationImg {
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
     width: 100%;
     height: 200px;
     z-index: 1;
@@ -455,14 +456,14 @@ header {
       }
     }
   }
-  
-   @media (min-width: 1401px) and (max-width: 1600px) {
+
+  @media (min-width: 1401px) and (max-width: 1600px) {
     height: auto;
-    .paginationImg{
+    .paginationImg {
       bottom: 12%;
     }
   }
-  
+
   @media (min-width: 1200px) and (max-width: 1400px) {
     height: auto;
     .swiper-slide {
@@ -533,21 +534,6 @@ header {
   }
 }
 
-.curve {
-  position: relative;
-  width: 110%;
-  height: auto;
-  left: -60px;
-  top: 20px;
-  background-color: transparent !important;
-  overflow: hidden;
-  svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border: 2px solid red;
-  }
-}
 // ----------------------swiper common component-----------------//
 .swiper {
   width: 100%;
@@ -700,6 +686,33 @@ header {
 
 // ---------------------------Section One-----------------------//
 .section-1 {
+  position: relative;
+  .curve {
+    position: absolute;
+    width: 110%;
+    height: 200px;
+    left: 0px;
+    top: -26%;
+    background-color: transparent !important;
+    overflow: hidden;
+    // border: 2px solid green;
+    z-index: 1111;
+    padding-top: 8rem !important;
+
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 45%;
+      top: 50%;
+      display: block;
+      // border: 2px solid red;   
+      transform: translate(-50%, -50%);
+      path{
+        border-bottom: none !important;
+      }
+    }
+  }
   .section-title {
     img {
       width: 90px;
@@ -708,7 +721,7 @@ header {
   }
   .leftContent {
     padding-right: 20px;
-    .bgbtn{
+    .bgbtn {
       font-family: $font-Alexandria !important;
       font-weight: 400;
     }
@@ -718,14 +731,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h2{
+    h2 {
       font-family: $font-marcellus;
     }
     p {
       padding-right: 30px;
       margin-bottom: 30px;
     }
-    .btn-outline-secondary{
+    .btn-outline-secondary {
       font-family: $font-Alexandria !important;
       font-weight: 300;
     }
@@ -772,7 +785,7 @@ header {
       height: 100%;
     }
   }
-   @media (min-width: 1401px) and (max-width: 1600px) {
+  @media (min-width: 1401px) and (max-width: 1600px) {
     .rightContent {
       p {
         padding-right: 30px;
@@ -987,6 +1000,21 @@ header {
         width: 200px;
         height: 200px;
         padding-block: 0px !important;
+        .icondiv {
+          width: 50px;
+          height: 50px;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
       }
     }
   }
@@ -1018,7 +1046,7 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
-    .vrline{
+    .vrline {
       color: #dbdbdb;
     }
   }
