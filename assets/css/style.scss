@@ -69,6 +69,9 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+.container{
+  padding-inline:0px ;
+}
 
 // ---------------------------------utils-------------------------------//
 
@@ -400,6 +403,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 11;
     .circle-div {
       position: relative;
       width: 100px;
@@ -687,6 +691,7 @@ header {
 // ---------------------------Section One-----------------------//
 .section-1 {
   position: relative;
+  background:#FEFFF3;
   .curve {
     position: absolute;
     width: 110%;
@@ -695,8 +700,7 @@ header {
     top: -26%;
     background-color: transparent !important;
     overflow: hidden;
-    // border: 2px solid green;
-    z-index: 1111;
+    z-index: 1;
     padding-top: 8rem !important;
 
     svg {
@@ -706,11 +710,7 @@ header {
       left: 45%;
       top: 50%;
       display: block;
-      // border: 2px solid red;   
       transform: translate(-50%, -50%);
-      path{
-        border-bottom: none !important;
-      }
     }
   }
   .section-title {
@@ -914,7 +914,7 @@ header {
   width: 100%;
 
   .section-title h2 {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     font-family: $font-marcellus;
   }

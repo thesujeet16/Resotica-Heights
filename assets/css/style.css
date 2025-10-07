@@ -51,6 +51,10 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  padding-inline: 0px;
+}
+
 .btn:hover {
   background-color: transparent;
 }
@@ -369,6 +373,7 @@ header .navbar-nav .nav-link.show {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  z-index: 11;
 }
 
 .hero-section .paginationImg .circle-div {
@@ -655,6 +660,7 @@ header .navbar-nav .nav-link.show {
 
 .section-1 {
   position: relative;
+  background: #FEFFF3;
 }
 
 .section-1 .curve {
@@ -665,7 +671,7 @@ header .navbar-nav .nav-link.show {
   top: -26%;
   background-color: transparent !important;
   overflow: hidden;
-  z-index: 1111;
+  z-index: 1;
   padding-top: 8rem !important;
 }
 
@@ -677,10 +683,6 @@ header .navbar-nav .nav-link.show {
   top: 50%;
   display: block;
   transform: translate(-50%, -50%);
-}
-
-.section-1 .curve svg path {
-  border-bottom: none !important;
 }
 
 .section-1 .section-title img {
@@ -866,7 +868,7 @@ header .navbar-nav .nav-link.show {
 }
 
 .section-3 .section-title h2 {
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   font-family: "Marcellus", serif;
 }

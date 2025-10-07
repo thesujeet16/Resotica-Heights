@@ -1,0 +1,605 @@
+.myfs-1 {
+  font-size: 14px;
+}
+
+.myfs-2 {
+  font-size: 15px;
+}
+
+.myfs-3 {
+  font-size: 16px;
+}
+
+.myfs-4 {
+  font-size: 18px;
+}
+
+.myfs-5 {
+  font-size: 20px;
+}
+
+.myfs-6 {
+  font-size: 22px;
+}
+
+.myfs-7 {
+  font-size: 24px;
+}
+
+.myfs-8 {
+  font-size: 26px;
+}
+
+.myfs-9 {
+  font-size: 28px;
+}
+
+.section-title h2 {
+  font-family: "Marcellus", serif;
+  font-size: 50px;
+}
+
+.section-first .swiper-slide .bg .hero-content {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+}
+
+.section-first .swiper-slide .bg .hero-content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  pointer-events: none;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.section-first .swiper-slide .bg .hero-content .layer {
+  height: 100%;
+  left: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.01) 0%, rgba(153, 153, 153, 0) 100%);
+  text-align: start;
+}
+
+.section-first .swiper-slide .bg .hero-content .layer .innercontent {
+  width: 1320px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.section-first .swiper-slide .bg .hero-content .layer .innercontent .glssybtn {
+  position: relative;
+  top: -20px;
+  padding: 11px 21px 11px 28px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.21);
+  backdrop-filter: blur(2.2px);
+  color: #fff;
+}
+
+.section-first .swiper-slide .bg .hero-content .layer .innercontent .glssybtn div {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.section-first .swiper-slide .bg .hero-content .layer .innercontent .glssybtn div img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-first .swiper-slide .bg .hero-content .layer .innercontent p {
+  font-family: "Marcellus", serif;
+  width: 50%;
+}
+
+.section-first .swiper-slide .bg .hero-content .layer .innercontent button {
+  font-family: Arial;
+}
+
+.section-first .swiper-slide .bg::after {
+  background: transparent;
+}
+
+.section-first .paginationImg {
+  justify-content: end;
+  padding-right: 6%;
+}
+
+.section-1 {
+  background-color: #fcffef;
+}
+
+.section-1 .patte {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.section-1 .paper-tear {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+.section-1 .paper-tear img {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  height: 100%;
+}
+
+.section-1 p {
+  font-family: "Marcellus", serif;
+  line-height: 38px;
+  /* 158.333% */
+}
+
+.section-1 .img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.section-1 .img-col .velimg {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+}
+
+.section-1 .img-col .velimg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 20px;
+  top: 20px;
+  border: 1px solid #1f730c;
+  z-index: -1;
+}
+
+.section-1 .img-col .velimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-1 .img-col .veliimg2 {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+}
+
+.section-1 .img-col .veliimg2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -20px;
+  top: 20px;
+  border: 1px solid #1f730c;
+  z-index: -1;
+}
+
+.section-2 {
+  position: relative;
+  background: url("../img/pages/sectionbg.png");
+  mix-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.section-2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+}
+
+.section-2 .section-title {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 11;
+}
+
+.section-2 .section-title .bgimg-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-2 .section-title .bgimg-title h2 {
+  position: absolute;
+  color: black !important;
+  font-size: 28px;
+  font-family: "Marcellus", serif;
+}
+
+.section-2 .highlights {
+  position: relative;
+  z-index: 11;
+}
+
+.section-2 .highlights .highbox {
+  display: flex;
+  width: 300px;
+  padding: 46px 45px 108px 44px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 400px;
+  border: 1px solid #e2edc7;
+  background: #f6fae4;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.section-2 .highlights .highbox .icon-circle {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border: 1px solid #b18133;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.section-2 .highlights .highbox p {
+  font-family: "Marcellus", serif;
+  transition: color 0.5s ease;
+}
+
+.section-2 .highlights .highbox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.section-2 .highlights .highbox:hover .icon-circle {
+  border-color: #ac813c;
+  background-color: rgba(255, 204, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.section-2 .highlights .highbox:hover .icon-circle img {
+  transform: rotate(15deg);
+  transition: all 0.5s ease;
+}
+
+.gallery {
+  position: relative;
+}
+
+.gallery .paper-tear {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: -30px;
+}
+
+.gallery .paper-tear img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .gallery-filters {
+  border: 1px solid #ffffff21;
+  width: fit-content;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.gallery .gallery-filters button {
+  margin: 0.3rem;
+  color: #ddd;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-family: "Marcellus", serif;
+  border: 0px;
+}
+
+.gallery .gallery-filters button.active, .gallery .gallery-filters button:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border-color: #444;
+}
+
+.gallery .gallery-grid .gallery-item {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  display: block;
+  height: 100%;
+  height: 100%;
+}
+
+.gallery .gallery-grid .gallery-item:hover {
+  transform: rotate(-3deg);
+  opacity: 0.9;
+  border: 2px solid #6f8800;
+}
+
+.gallery .gallery-grid .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brochure {
+  position: relative;
+  background-color: #f1ffe6;
+}
+
+.brochure::after {
+  content: "";
+  position: absolute;
+  bottom: -22%;
+  right: -5%;
+  width: 450px;
+  height: 400px;
+  z-index: 11;
+  background-image: url("../img/pages/leafup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(-105deg);
+  z-index: 0;
+}
+
+.brochure .paper-top,
+.brochure .paper-bottom {
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+}
+
+.brochure .paper-top img,
+.brochure .paper-bottom img {
+  width: 100%;
+}
+
+.brochure .paper-top {
+  top: -20px;
+}
+
+.brochure .paper-bottom {
+  bottom: -20px;
+}
+
+.brochure .bro-left,
+.brochure .bro-right {
+  font-family: "Marcellus", serif;
+}
+
+.brochure .bro-left h2,
+.brochure .bro-right h2 {
+  font-size: 50px;
+}
+
+.brochure .bro-left .btn-outline-secondary,
+.brochure .bro-right .btn-outline-secondary {
+  background-color: #000 !important;
+  border-radius: 0px;
+  border: 1px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400 !important;
+}
+
+.brochure .bro-right p {
+  line-height: 30px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.4s linear;
+  position: relative;
+}
+
+.download-btn .btn-text {
+  transition: margin-right 0.4s linear;
+}
+
+.download-btn .download-icon {
+  width: 0;
+  opacity: 0;
+  margin-left: 0;
+  transition: width 0.4s linear, opacity 0.3s linear, margin-left 0.4s linear;
+  display: inline-flex;
+  align-items: center;
+}
+
+.download-btn:hover {
+  width: fit-content;
+}
+
+.download-btn:hover .download-icon {
+  width: 20px;
+  opacity: 1;
+  margin-left: 8px;
+}
+
+.section-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.33) 100%), url("../img/pages/whyinvest.jpg") lightgray 50%/cover no-repeat;
+}
+
+.section-3 .blackBox {
+  height: auto;
+  width: auto;
+  padding: 14px;
+}
+
+.section-3 .blackBox .innerBox {
+  height: auto;
+}
+
+.proximity-hub {
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.13) 100%), url("../img/pages/proximity.jpg") lightgray -64.282px 0px/107.134% 100% no-repeat;
+  height: auto;
+}
+
+.proximity-hub::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(102, 102, 102, 0) -19.25%, rgba(0, 0, 0, 0.33) 49.92%, rgba(102, 102, 102, 0) 112.75%);
+  filter: blur(41.6px);
+}
+
+.proximity-hub .section-title {
+  position: relative;
+  z-index: 11;
+  margin-top: 30px;
+}
+
+.proximity-hub .proxi-locations {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+  text-align: center;
+  place-items: center;
+  z-index: 11;
+}
+
+.proximity-hub .proxi-locations .location {
+  display: flex;
+  height: 64px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(82, 120, 1, 0.19);
+  background: rgba(0, 0, 0, 0.79);
+}
+
+.proximity-hub .proxi-locations .location h3 {
+  color: #fff;
+  font-family: "Marcellus", serif;
+  margin: 0px;
+}
+
+.proximity-hub .whiteBox {
+  border: 0.975px solid #ddd;
+  background: rgba(255, 255, 255, 0.21);
+  padding: 14px;
+}
+
+.proximity-hub .whiteBox .innerBox {
+  background: #fff;
+}
+
+.proximity-hub .whiteBox .innerBox p,
+.proximity-hub .whiteBox .innerBox h3 {
+  font-family: "Marcellus", serif;
+}
+
+.proximity-hub .whiteBox .innerBox .icondiv {
+  border: 1px solid #b18133;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.proximity-hub .whiteBox .innerBox .icondiv img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease;
+}
+
+.brochure2 {
+  position: relative;
+  background: #fdfff0;
+}
+
+.brochure2::after {
+  bottom: -22%;
+  transform: rotate(-90deg);
+}
+
+.brochure2::before {
+  content: "";
+  position: absolute;
+  bottom: -22%;
+  left: -5%;
+  width: 450px;
+  height: 400px;
+  z-index: 11;
+  background-image: url("../img/leavies.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(90deg);
+  z-index: 0;
+}
+
+.brochure2 .download-btn {
+  background-color: #000;
+}
+
+.footer-para {
+  position: relative;
+}
+
+.footer-para p {
+  font-size: 34px;
+  line-height: 50px;
+  font-family: "Marcellus", serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.footer-para .top-quote {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+
+.footer-para .bottom-quote {
+  position: absolute;
+  right: 220px;
+  bottom: 10px;
+}
+/*# sourceMappingURL=vellura-farm-style.css.map */
