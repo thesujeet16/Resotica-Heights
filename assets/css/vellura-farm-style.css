@@ -345,10 +345,6 @@
   border-color: #444;
 }
 
-.gallery .gslide-description {
-  display: none;
-}
-
 .gallery .gallery-grid .gallery-item {
   overflow: hidden;
   position: relative;
@@ -491,6 +487,10 @@
   position: initial;
 }
 
+.placeslider .swiper-wrapper {
+  padding-block: 20px;
+}
+
 .placeslider .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -581,15 +581,8 @@
   background: #555;
 }
 
-.mySwiper3 .swiper-slide {
-  transition: all 0.3s ease;
-  transform: scale(0.9);
-  opacity: 0.6;
-}
-
 .mySwiper3 .swiper-slide-active-center {
-  opacity: 1;
-  border: 6px solid #E7F0CF;
+  border: 6px solid #e7f0cf;
   border-radius: 400px;
   background: transparent;
   box-shadow: 0 4px 26.8px 0 rgba(0, 0, 0, 0.25);

@@ -77,8 +77,8 @@ const swiper1 = new Swiper(".projectSwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 3000, // time between slides (ms) → 3s
-    disableOnInteraction: false, // keeps autoplay running after user swipes
+    delay: 3000, 
+    disableOnInteraction: false, 
   },
   breakpoints: {
     768: { slidesPerView: 2, spaceBetween: 30 },
@@ -95,26 +95,55 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.style.animationPlayState = "running";
-          observer.unobserve(entry.target); // unobserve only that path
+          observer.unobserve(entry.target);
         }
       });
     },
     { threshold: 0.5 }
   );
 
-  // Observe each path individually
   paths.forEach((path) => {
     observer.observe(path);
   });
 });
+// ------------------------vellura-farm slider----------------//
 
+var swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: true, 
+  loop: true,
+  freeMode: false,     
+  navigation: {
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, 
+  },
+  keyboard: true,
+  on: {
+    slideChange: function () {
+      document.querySelectorAll(".swiper-slide").forEach(slide => {
+        slide.classList.remove("swiper-slide-active-center");
+      });
+
+      const activeSlide = this.slides[this.activeIndex];
+      if (activeSlide) activeSlide.classList.add("swiper-slide-active-center");
+    },
+  },
+});
 // ------------gallery functionality------------//
 const filterButtons = document.querySelectorAll(".gallery-filters button");
 const galleryItems = document.querySelectorAll(".gallery-item");
 
 filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // Active button highlight
     filterButtons.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
@@ -130,34 +159,12 @@ filterButtons.forEach((btn) => {
   });
 });
 
-
-
-
-var swiper3 = new Swiper(".mySwiper3", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  centeredSlides: true,  // 👈 Ensures the active slide stays centered
+const lightbox = GLightbox({
+  selector: '.glightbox',
+  touchNavigation: true,
   loop: true,
-  freeMode: false,        // optional, disable if you want snapping
-  navigation: {
-    nextEl: '.custom-next',
-    prevEl: '.custom-prev',
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  keyboard: true,
-  on: {
-    slideChange: function () {
-      // remove active class from all slides
-      document.querySelectorAll(".swiper-slide").forEach(slide => {
-        slide.classList.remove("swiper-slide-active-center");
-      });
-
-      // add to current active slide
-      const activeSlide = this.slides[this.activeIndex];
-      if (activeSlide) activeSlide.classList.add("swiper-slide-active-center");
-    },
-  },
+  closeButton: true,   
+  slideEffect: 'fade', 
+  autoplayVideos: false,
 });
+// ------------gallery functionality------------//

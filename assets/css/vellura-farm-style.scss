@@ -347,9 +347,7 @@ $font-sizes: (
       }
     }
   }
-  .gslide-description {
-    display: none;
-  }
+
   .gallery-grid {
     .gallery-item {
       overflow: hidden;
@@ -487,6 +485,9 @@ $font-sizes: (
     height: 100%;
     position: initial;
   }
+  .swiper-wrapper{
+    padding-block: 20px;
+  }
 
   .swiper-slide {
     text-align: center;
@@ -538,60 +539,49 @@ $font-sizes: (
   }
 }
 
-
 .navigation {
-      position: absolute;
-      width: 100%;
-      top: 50%;
-      left: 0%;
-      z-index: 1;
-    }
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0%;
+  z-index: 1;
+}
 
-    .navigation .custom-prev,
-    .navigation .custom-next {
-      width: 60px;
-      height: 45px;
-      background: #000;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      i{
-        font-size: 25px;
-      }
-    }
-    .custom-prev{
-       border-top-right-radius: 50px;
-      border-bottom-right-radius: 50px;
-    }
-    .custom-next{
-       border-top-left-radius: 50px;
-      border-bottom-left-radius: 50px;
-    }
-
-    .navigation .custom-prev:hover,
-    .navigation .custom-next:hover {
-      background: #555;
-    }
-
-    .mySwiper3 .swiper-slide {
+.navigation .custom-prev,
+.navigation .custom-next {
+  width: 60px;
+  height: 45px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   transition: all 0.3s ease;
-  transform: scale(0.9);
-  opacity: 0.6;
+  i {
+    font-size: 25px;
+  }
+}
+.custom-prev {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.custom-next {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.navigation .custom-prev:hover,
+.navigation .custom-next:hover {
+  background: #555;
 }
 
 .mySwiper3 .swiper-slide-active-center {
-  opacity: 1;
-  border: 6px solid #E7F0CF;
+  border: 6px solid #e7f0cf;
   border-radius: 400px;
   background: transparent;
- box-shadow: 0 4px 26.8px 0 rgba(0, 0, 0, 0.25);
-
-
+  box-shadow: 0 4px 26.8px 0 rgba(0, 0, 0, 0.25);
 }
-
 
 // -------------proximity-hub-----------//
 
