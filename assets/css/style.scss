@@ -69,8 +69,8 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-.container{
-  padding-inline:0px ;
+.container {
+  padding-inline: 0px;
 }
 
 // ---------------------------------utils-------------------------------//
@@ -120,7 +120,7 @@ body {
   color: $white-color;
   border-radius: 0px;
   font-size: 14px;
-  padding-inline: 20px;
+  padding: 8px 20px;
   background-color: transparent;
   z-index: 111;
   transition: color 0.4s ease;
@@ -145,7 +145,9 @@ body {
   &:hover::before {
     left: 0;
   }
-
+  span {
+    margin-left: 8px;
+  }
   svg path {
     fill: #ac813c;
     transition: fill 0.3s ease;
@@ -173,6 +175,156 @@ body {
 @keyframes drawLine {
   to {
     stroke-dashoffset: 0; /* reveals the stroke */
+  }
+}
+
+// swiper js
+.swiper {
+  width: 100%;
+  padding-bottom: 0px;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+
+    .card {
+      display: flex;
+      background: #1c1c1c;
+      color: #fff;
+      overflow: hidden;
+      max-width: 1000px;
+      width: 100%;
+      flex-direction: row;
+      border-radius: 0px;
+
+      .card-img {
+        height: 100%;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .card-content {
+        padding: 30px;
+        position: relative;
+        width: 80%;
+
+        .card-number {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          font-size: 1rem;
+          opacity: 0.3;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #80816824;
+          color: #808168;
+          font-family: $font-marcellus;
+        }
+
+        h3 {
+          font-size: 28px;
+          margin: 20px 0 10px;
+          font-family: $font-marcellus;
+        }
+        .subtitle {
+          font-family: $font-marcellus;
+          margin-bottom: 15px;
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+        }
+
+        .btn-view {
+          padding: 10px 20px;
+          background: transparent;
+          border: 1px solid #fff;
+          color: #fff;
+          cursor: pointer;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .navignation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #3b3b3b;
+      top: 49%;
+      z-index: -1;
+    }
+    .navigationbtns {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 120px;
+      gap: 40px;
+      background-color: $bg-dark-two;
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: relative;
+        border: 1px solid #ffffff52;
+        justify-content: center;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: 10px;
+        overflow: hidden;
+        &::after {
+          display: none;
+        }
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: all 0.4s ease;
+        }
+
+        &:hover {
+          img.default-arrow {
+            opacity: 0;
+          }
+          img.hover-arrow {
+            transform: translate(-50%, -50%) scale(1.1);
+            opacity: 1;
+            transition: all 0.4s;
+          }
+        }
+      }
+
+      .swiper-button-prev img.hover-arrow {
+        transform: translate(150%, -50%);
+        opacity: 0;
+        transition: all 0.6s;
+      }
+
+      .swiper-button-next img.hover-arrow {
+        transform: translate(-150%, -50%);
+        opacity: 0;
+        transition: all 0.6s;
+      }
+    }
   }
 }
 
@@ -361,7 +513,7 @@ header {
             font-family: $font-marcellus;
           }
           p {
-            width: 40%;
+            width: 60%;
           }
         }
       }
@@ -538,160 +690,10 @@ header {
   }
 }
 
-// ----------------------swiper common component-----------------//
-.swiper {
-  width: 100%;
-  padding-bottom: 0px;
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-
-    .card {
-      display: flex;
-      background: #1c1c1c;
-      color: #fff;
-      overflow: hidden;
-      max-width: 1000px;
-      width: 100%;
-      flex-direction: row;
-      border-radius: 0px;
-
-      .card-img {
-        height: 100%;
-        width: 100%;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-
-      .card-content {
-        padding: 30px;
-        position: relative;
-        width: 80%;
-
-        .card-number {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          font-size: 1rem;
-          opacity: 0.3;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: #80816824;
-          color: #808168;
-          font-family: $font-marcellus;
-        }
-
-        h3 {
-          font-size: 28px;
-          margin: 20px 0 10px;
-          font-family: $font-marcellus;
-        }
-        .subtitle {
-          font-family: $font-marcellus;
-          margin-bottom: 15px;
-          font-size: 16px;
-        }
-        p {
-          font-size: 14px;
-        }
-
-        .btn-view {
-          padding: 10px 20px;
-          background: transparent;
-          border: 1px solid #fff;
-          color: #fff;
-          cursor: pointer;
-          margin-top: 20px;
-        }
-      }
-    }
-  }
-  .navignation {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background-color: #3b3b3b;
-      top: 49%;
-      z-index: -1;
-    }
-    .navigationbtns {
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 120px;
-      gap: 40px;
-      background-color: $bg-dark-two;
-
-      .swiper-button-next,
-      .swiper-button-prev {
-        position: relative;
-        border: 1px solid #ffffff52;
-        justify-content: center;
-        color: #fff;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        top: 10px;
-        overflow: hidden;
-        &::after {
-          display: none;
-        }
-
-        img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          transition: all 0.4s ease;
-        }
-
-        &:hover {
-          img.default-arrow {
-            opacity: 0;
-          }
-          img.hover-arrow {
-            transform: translate(-50%, -50%) scale(1.1);
-            opacity: 1;
-            transition: all 0.4s;
-          }
-        }
-      }
-
-      .swiper-button-prev img.hover-arrow {
-        transform: translate(150%, -50%);
-        opacity: 0;
-        transition: all 0.6s;
-      }
-
-      .swiper-button-next img.hover-arrow {
-        transform: translate(-150%, -50%);
-        opacity: 0;
-        transition: all 0.6s;
-      }
-    }
-  }
-}
-
 // ---------------------------Section One-----------------------//
 .section-1 {
   position: relative;
-  background:#FEFFF3;
+  background: #fefff3;
   .curve {
     position: absolute;
     width: 110%;
@@ -712,16 +714,22 @@ header {
       display: block;
       transform: translate(-50%, -50%);
     }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      background: $white-color;
+      bottom: 0;
+    }
   }
   .section-title {
-
     img {
       width: 90px;
       transform: translateY(-5px);
     }
-    
   }
-  
+
   .leftContent {
     padding-right: 20px;
     .bgbtn {
@@ -842,23 +850,23 @@ header {
     }
   }
 
-   .leaf{
+  .leaf {
+    position: absolute;
+    top: -8%;
+    right: -3%;
+    width: 310px;
+    height: 310px;
+    transform: rotate(-90deg);
+    opacity: 0.6;
+    img {
       position: absolute;
-      top: -8%;
-      right: -3%;
-      width: 310px;
-      height: 310px;
-      transform: rotate(-90deg);
-     opacity: 0.6;
-      img{
-        position: absolute;
-        top: -0%;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-      }
-    } 
+      top: -0%;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  }
 
   @media (min-width: 1200px) and (max-width: 1400px) {
     .swiper {

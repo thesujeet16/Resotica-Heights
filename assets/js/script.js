@@ -133,3 +133,31 @@ filterButtons.forEach((btn) => {
 
 
 
+var swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: true,  // 👈 Ensures the active slide stays centered
+  loop: true,
+  freeMode: false,        // optional, disable if you want snapping
+  navigation: {
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  keyboard: true,
+  on: {
+    slideChange: function () {
+      // remove active class from all slides
+      document.querySelectorAll(".swiper-slide").forEach(slide => {
+        slide.classList.remove("swiper-slide-active-center");
+      });
+
+      // add to current active slide
+      const activeSlide = this.slides[this.activeIndex];
+      if (activeSlide) activeSlide.classList.add("swiper-slide-active-center");
+    },
+  },
+});
