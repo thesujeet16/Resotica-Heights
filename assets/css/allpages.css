@@ -44,7 +44,7 @@
   position: absolute;
   width: 60%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.01) 0%, rgba(153, 153, 153, 0) 100%);
+  box-shadow: 0 30px 40px rgba(105, 105, 105, 0.1);
   backdrop-filter: blur(2px);
 }
 
@@ -62,8 +62,9 @@
   width: 60%;
   height: 100%;
   pointer-events: none;
-  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
-  filter: blur(5px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.01) 0%, rgba(153, 153, 153, 0) 100%);
+  box-shadow: 0 30px 40px rgba(105, 105, 105, 0.1);
+  filter: blur(4px);
   z-index: -1;
 }
 
@@ -833,4 +834,176 @@
   font-weight: bold;
   cursor: pointer;
 }
-/*# sourceMappingURL=vellura-farm-style.css.map */
+
+.Blog-hero {
+  position: relative;
+  background-image: url("../img/pages/blogbanner.png");
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+.Blog-hero .page-title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  font-family: "Marcellus", serif;
+}
+
+.Blog-hero .page-title .pgtitle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Blog-hero .page-title .pgtitle h2 {
+  font-size: 70px;
+  width: fit-content;
+  padding-inline: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.Blog-hero .page-title nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Blog-hero .page-title nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Blog-hero .page-title .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+
+.Blog-hero .page-title .breadcrumb-item.active {
+  color: #ac813c;
+}
+
+.blog-categories .btn {
+  font-family: "Marcellus", serif;
+  color: #fff;
+  border-radius: 50px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.blog-categories .btn:hover,
+.blog-categories .btn.active {
+  background-color: #ac813c;
+  color: #fff;
+  border-color: #ac813c;
+  padding: 10px 30px;
+}
+
+.blog-list-container .section-title h2 {
+  font-size: 32px;
+}
+
+.blog-list-container .section-title p {
+  font-family: "Alexandria", sans-serif;
+  color: #1b242c;
+  font-weight: 400;
+}
+
+.blog-list-container .blog-card {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3.102px 27.766px 0 rgba(0, 0, 0, 0.08);
+}
+
+.blog-list-container .blog-card .blog-img {
+  height: 300px;
+}
+
+.blog-list-container .blog-card .blog-img img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+.blog-list-container .blog-card h3 {
+  font-weight: 700;
+}
+
+.blog-list-container .blog-card p {
+  font-size: 12px;
+  color: #797070;
+}
+
+.blog-list-container .blog-card .para-link .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ac813c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.blog-list-container .blog-card .para-link .btn i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.blog-list-container .blog-card .para-link .btn:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
+.blog-list-container .blog-card .arrow path {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.5s linear;
+}
+
+.blog-list-container .blog-card .btn:hover .arrow path {
+  animation: draw 2s forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 50;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.blog-list-container .page-link {
+  color: #000;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-list-container .page-item:first-child .page-link {
+  background-color: #565656;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.blog-list-container .page-item:first-child .page-link svg {
+  padding-right: 4px;
+}
+
+.blog-list-container .page-item:last-child .page-link {
+  background-color: #ac813c;
+  color: #fff;
+  border-radius: 6px !important;
+}
+
+.blog-list-container .active > .page-link,
+.blog-list-container .page-link.active {
+  border-radius: 6px;
+  background: #e9e9e9;
+  border: 1px solid #e9e9e9;
+}
+/*# sourceMappingURL=allpages.css.map */

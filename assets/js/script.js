@@ -2,10 +2,10 @@
 const swiper = new Swiper(".mySwiper", {
   loop: true,
   speed: 1000,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
   on: {
     slideChange() {
       const index = this.realIndex;
@@ -168,3 +168,30 @@ const lightbox = GLightbox({
   autoplayVideos: false,
 });
 // ------------gallery functionality------------//
+
+
+// ------------Blogs---------------//
+document.addEventListener("DOMContentLoaded", function () {
+  const categoryButtons = document.querySelectorAll(".blog-categories .btn");
+  const blogPosts = document.querySelectorAll(".blog-post");
+
+  categoryButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault(); // stops page refresh
+      categoryButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.getAttribute("data-filter");
+
+      blogPosts.forEach((post) => {
+        if (filter === "all" || post.classList.contains(filter)) {
+          post.style.display = "block";
+        } else {
+          post.style.display = "none";
+        }
+      });
+    });
+  });
+});
+ 
+// ------------Blogs---------------//
