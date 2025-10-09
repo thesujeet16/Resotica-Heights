@@ -588,6 +588,10 @@
   box-shadow: 0 4px 26.8px 0 rgba(0, 0, 0, 0.25);
 }
 
+.whitepptear {
+  bottom: -22px;
+}
+
 .proximity-hub {
   position: relative;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.13) 100%), url("../img/pages/proximity.jpg") lightgray -64.282px 0px/107.134% 100% no-repeat;
