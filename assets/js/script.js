@@ -34,30 +34,34 @@ firstCircle.querySelector(".number").style.visibility = "hidden";
 
 // ------------------------- Counter ------------------------ //
 function animateCounter(el, target, duration = 2000) {
-  let current = 0,
-    increment = target / (duration / 16),
-    suffix = el.dataset.suffix || "";
+  let startTime = null;
+  const suffix = el.dataset.suffix || "";
 
-  function update() {
-    current += increment;
-    if (current < target) {
-      el.textContent =
-        target >= 1000
-          ? Math.floor(current) + suffix
-          : current.toFixed(1).replace(/\.0$/, "") + suffix;
+  function update(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = Math.min((timestamp - startTime) / duration, 1);
+    const current = target * progress;
+
+    el.textContent =
+      target >= 1000
+        ? Math.floor(current) + suffix
+        : current.toFixed(1).replace(/\.0$/, "") + suffix;
+
+    if (progress < 1) {
       requestAnimationFrame(update);
     } else {
       el.textContent = target + suffix;
     }
   }
-  update();
+
+  requestAnimationFrame(update);
 }
 
 const observer = new IntersectionObserver(
   (entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        animateCounter(entry.target, parseFloat(entry.target.dataset.target));
+        animateCounter(entry.target, parseFloat(entry.target.dataset.target), 4000); // slower, 4s
         obs.unobserve(entry.target);
       }
     });

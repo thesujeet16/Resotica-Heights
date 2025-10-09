@@ -602,6 +602,17 @@ header .navbar-nav .nav-link.show {
   .hero-section .paginationImg {
     bottom: 12%;
   }
+  .hero-section .section-1 .curve {
+    position: absolute;
+    width: 130%;
+    height: 200px;
+    left: -135px;
+    top: -26%;
+    background-color: transparent !important;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 8rem 128px !important;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -669,9 +680,9 @@ header .navbar-nav .nav-link.show {
 
 .section-1 .curve {
   position: absolute;
-  width: 110%;
+  width: 120%;
   height: 200px;
-  left: 0px;
+  left: -100px;
   top: -26%;
   background-color: transparent !important;
   overflow: hidden;
