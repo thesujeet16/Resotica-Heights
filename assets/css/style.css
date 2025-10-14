@@ -637,7 +637,7 @@ header .navbar-nav .nav-link.show {
     height: auto;
   }
   .hero-section .paginationImg {
-    bottom: 12%;
+    bottom: 4%;
   }
 }
 
@@ -1084,7 +1084,7 @@ header .navbar-nav .nav-link.show {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: inherit;
+  padding: 1.6rem;
 }
 
 .blackBox .innerBox .back {
@@ -1298,6 +1298,7 @@ header .navbar-nav .nav-link.show {
   background-color: #ffffff1f;
   color: #fff;
   border: 1px solid #ffffff28;
+  font-weight: 300;
 }
 
 .footer #contactForm .form-control:focus {
@@ -1312,7 +1313,8 @@ header .navbar-nav .nav-link.show {
   height: 200px;
 }
 
-.footer #contactForm .submit-btn {
+.footer #contactForm .btn-outline-secondary {
+  padding: 8px 40px !important;
   border: 1px solid #fff !important;
 }
 

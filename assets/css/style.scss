@@ -500,7 +500,7 @@ header {
       }
     }
     .navbar-nav {
-      .nav-link{
+      .nav-link {
         padding-inline: 14px !important;
       }
     }
@@ -654,7 +654,7 @@ header {
   @media (min-width: 1401px) and (max-width: 1600px) {
     height: auto;
     .paginationImg {
-      bottom: 12%;
+      bottom: 4%;
     }
   }
 
@@ -865,28 +865,28 @@ header {
 
   @media (min-width: 992px) and (max-width: 1024px) {
     .curve {
-    position: absolute;
-    width: 135%;
-    height: 108px;
-    left: -112px;
-    top: -15%;
-    .rightContent {
-      padding-left: 0px;
-      p {
-        padding-right: 0px;
-        margin-bottom: 30px;
+      position: absolute;
+      width: 135%;
+      height: 108px;
+      left: -112px;
+      top: -15%;
+      .rightContent {
+        padding-left: 0px;
+        p {
+          padding-right: 0px;
+          margin-bottom: 30px;
+        }
       }
-    }
-    .bottom-shape {
-      transform: translateY(30px);
-    }
-    .counter {
-      .count h3 {
-        font-size: 20px;
+      .bottom-shape {
+        transform: translateY(30px);
+      }
+      .counter {
+        .count h3 {
+          font-size: 20px;
+        }
       }
     }
   }
-}
 }
 // --------------------Section-2----------------------//
 
@@ -1128,7 +1128,7 @@ header {
       align-items: center;
       flex-direction: column;
       text-align: center;
-      padding: inherit;
+      padding: 1.6rem;
     }
 
     .back {
@@ -1333,6 +1333,7 @@ header {
       background-color: #ffffff1f;
       color: $white-color;
       border: 1px solid #ffffff28;
+      font-weight: 300;
 
       &:focus {
         box-shadow: none;
@@ -1345,7 +1346,8 @@ header {
     textarea {
       height: 200px;
     }
-    .submit-btn {
+    .btn-outline-secondary {
+      padding: 8px 40px !important;
       border: 1px solid #fff !important;
     }
   }
