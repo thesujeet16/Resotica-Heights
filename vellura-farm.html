@@ -1,1155 +1,980 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resotica Heights</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marcellus&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/allpages.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="position-absolute w-100">
-      <div class="container py-2 px-0">
-        <div class="header-top d-flex justify-content-between text-white">
-          <div class="hcontact align-items-center d-flex gap-5">
-            <span class="d-flex gap-2"
-              ><i class="ri-phone-line"></i> 999999999</span
-            >
-            <span class="d-flex gap-2"
-              ><i class="ri-mail-line"></i>alma.lawson@example.com</span
-            >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resotica Heights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marcellus&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/allpages.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="position-absolute w-100">
+    <div class="container py-2 px-0">
+      <div class="header-top d-flex justify-content-between text-white">
+        <div class="hcontact align-items-center d-flex gap-5">
+          <span class="d-flex gap-2"><i class="ri-phone-line"></i> 999999999</span>
+          <span class="d-flex gap-2"><i class="ri-mail-line"></i>alma.lawson@example.com</span>
+        </div>
+        <div class="hsocial d-flex gap-5">
+          <ul class="d-flex gap-4 align-items-center mb-0">
+            <li>
+              <a href="/"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-twitter-x-line"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-instagram-line"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container px-0">
+        <a class="navbar-brand" href="#">
+          <h2 class="">
+            Resotica
+            <div>Heights</div>
+          </h2>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Add ms-auto to push nav items to the right -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a></li>
+
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blogs.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contactus.html">Contact Us</a>
+            </li>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-outline-secondary">
+            Get In Touch
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header -->
+
+  <div class="hero-section section-first">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bg">
+            <div class="hero-content">
+              <div class="layer">
+                <div class="container">
+                  <div class="innercontent">
+                    <a href="" class="btn glssybtn">
+                      <div>
+                        <img src="./assets/img/pages/leaf1.png" class="w-100 h-100" alt="" />
+                      </div>
+                      Luxury in Nature’s Lap
+                    </a>
+                    <h1>Vellura Farms & Resorts</h1>
+                    <p class="myfs-8 py-3">
+                      - Where Luxury Meets High-Growth Potential
+                    </p>
+                    <p class="myfs-1 pb-2">
+                      Nestled in the scenic landscapes of Garhmukteshwar,
+                      Hapur, Vellura Farms & Resorts offers more than just
+                      luxury living—it presents a high-appreciation investment
+                      in one of North India’s fastest-growing lifestyle and
+                      leisure corridors.
+                    </p>
+                    <div class="d-flex gap-4">
+                      <a href="path/to/file.pdf" class="btn btn-outline-secondary mt-3 download-btn">
+                        Book a Site Visit
+                      </a>
+                      <a href="path/to/file.pdf" class="btn btn-outline-secondary mt-3 download-btn">
+                        Download Brochure
+                        <span class="download-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20"
+                            height="20">
+                            <path
+                              d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z">
+                            </path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/img/pages/vallura-farm.jpg" alt="" />
           </div>
-          <div class="hsocial d-flex gap-5">
-            <ul class="d-flex gap-4 align-items-center mb-0">
-              <li>
-                <a href="/"><i class="ri-facebook-fill"></i></a>
-              </li>
-              <li>
-                <a href="/"><i class="ri-twitter-x-line"></i></a>
-              </li>
-              <li>
-                <a href="/"><i class="ri-youtube-fill"></i></a>
-              </li>
-              <li>
-                <a href="/"><i class="ri-instagram-line"></i></a>
-              </li>
-            </ul>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg">
+            <div class="hero-content">
+              <div class="layer">
+                <div class="container">
+                  <div class="innercontent">
+                    <a href="" class="btn glssybtn">
+                      <div>
+                        <img src="./assets/img/pages/leaf1.png" class="w-100 h-100" alt="" />
+                      </div>
+                      Luxury in Nature’s Lap
+                    </a>
+                    <h1>Vellura Farms & Resorts</h1>
+                    <p class="myfs-8 py-3">
+                      - Where Luxury Meets High-Growth Potential
+                    </p>
+                    <p class="myfs-1 pb-2">
+                      Nestled in the scenic landscapes of Garhmukteshwar,
+                      Hapur, Vellura Farms & Resorts offers more than just
+                      luxury living—it presents a high-appreciation investment
+                      in one of North India’s fastest-growing lifestyle and
+                      leisure corridors.
+                    </p>
+                    <div class="d-flex gap-4">
+                      <button type="button" class="btn btn-outline-secondary">
+                        Book a Site Visit
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        Download Brochure
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/img/pages/vallura-farm.jpg" alt="" />
           </div>
         </div>
       </div>
-      <div class="line"></div>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container px-0">
-          <a class="navbar-brand" href="#">
-            <h2 class="">
-              Resotica
-              <div>Heights</div>
-            </h2>
-          </a>
+    </div>
+    <div class="paginationImg gap-4">
+      <div class="circle-div">
+        <div class="number fs-3">01</div>
+        <img src="./assets/img/HeroBanner.jpg" alt="" />
+      </div>
+      <div class="circle-div">
+        <div class="number fs-3">02</div>
+        <img src="./assets/img/HeroBanner.jpg" alt="" />
+      </div>
+    </div>
+  </div>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <div class="section-1">
+    <div class="paper-tear">
+      <img src="./assets/img/pages/paper-tear.png" alt="" />
+    </div>
+    <div class="patte">
+      <div class="left">
+        <img src="./assets/img/pages/left-leaf.png" alt="" />
+      </div>
+      <div class="right">
+        <img src="./assets/img/pages/right-leaf.png" alt="" />
+      </div>
+    </div>
+    <div class="container px-0 py-5">
+      <div class="row">
+        <div class="col-md-12 pb-5">
+          <div class="section-title text-center">
+            <h2>Vellura Farms & Resorts</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-col">
+            <div class="velimg">
+              <img src="./assets/img/pages/velimg1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="myfs-7 text-center">
+            Vellura Farms & Resorts is a luxury farmhouse and resort community
+            spread across acres of lush landscapes at Garhmukteshwar, Hapur.
+            Designed for those who value privacy, comfort, and nature, the
+            project offers a blend of modern architecture, world-class
+            amenities, and serene surroundings. Perfect for both investment
+            and personal retreats, it stands as a unique lifestyle
+            destination.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="img-col">
+            <div class="velimg veliimg2">
+              <img src="./assets/img/pages/velimg2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-shape">
+      <img src="./assets/img/shape-1.png" alt="" />
+    </div>
+  </div>
+  <!-- section-2 -->
+  <div class="section-2">
+    <div class="container px-0 py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <div class="bgimg-title">
+              <img src="./assets/img/pages/papertear2.png" alt="" />
+              <h2 class="mb-0 lh-1 myfs-9 text-white">Key Highlights</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="highlights py-3 mb-5">
+        <div class="d-flex justify-content-center gap-5">
+          <div class="d-flex justify-content-center align-content-center">
+            <div class="highbox">
+              <div class="icon-circle mb-3">
+                <img src="./assets/img/pages/reliability.svg" alt="" />
+              </div>
+              <p>Exclusive gated community with round-the-clock security</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-content-center">
+            <div class="highbox">
+              <div class="icon-circle mb-3">
+                <img src="./assets/img/pages/reliability.svg" alt="" />
+              </div>
+              <p>Exclusive gated community with round-the-clock security</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-content-center">
+            <div class="highbox">
+              <div class="icon-circle mb-3">
+                <img src="./assets/img/pages/reliability.svg" alt="" />
+              </div>
+              <p>Exclusive gated community with round-the-clock security</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="highlights pb-5">
+        <div class="d-flex justify-content-center gap-5">
+          <div class="d-flex justify-content-center align-content-center">
+            <div class="highbox">
+              <div class="icon-circle mb-3">
+                <img src="./assets/img/pages/reliability.svg" alt="" />
+              </div>
+              <p>Exclusive gated community with round-the-clock security</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-content-center">
+            <div class="highbox">
+              <div class="icon-circle mb-3">
+                <img src="./assets/img/pages/reliability.svg" alt="" />
+              </div>
+              <p>Exclusive gated community with round-the-clock security</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-content-center">
+            <div class="highbox">
+              <div class="icon-circle mb-3">
+                <img src="./assets/img/pages/reliability.svg" alt="" />
+              </div>
+              <p>Exclusive gated community with round-the-clock security</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section-gallery -->
+  <div class="gallery bg-black text-white">
+    <div class="paper-tear">
+      <img src="./assets/img/pages/paper-tear.png" alt="" />
+    </div>
+    <div class="container py-5 px-0">
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <div class="section-title text-center">
+            <h2>Gallery</h2>
+          </div>
+        </div>
 
-          <!-- Add ms-auto to push nav items to the right -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Projects
-                </a>
-                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a></li>
-
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/blogs.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="/contactus.html">Contact Us</a>
-              </li>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-outline-secondary">
-              Get In Touch
+        <div class="col-md-12 d-flex justify-content-center mb-5">
+          <div class="gallery-filters text-center mt-5">
+            <button class="btn btn-outline-light active" data-filter="all">
+              All
+            </button>
+            <button class="btn btn-outline-light" data-filter="interior">
+              Interior View
+            </button>
+            <button class="btn btn-outline-light" data-filter="exterior">
+              Exterior Views
+            </button>
+            <button class="btn btn-outline-light" data-filter="kitchen">
+              Kitchen & Dining
+            </button>
+            <button class="btn btn-outline-light" data-filter="pool">
+              Swimming Pool & Spa
+            </button>
+            <button class="btn btn-outline-light" data-filter="event">
+              Event & Celebration Spaces
             </button>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- header -->
-
-    <div class="hero-section section-first">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="bg">
-              <div class="hero-content">
-                <div class="layer">
-                  <div class="container">
-                    <div class="innercontent">
-                      <a href="" class="btn glssybtn">
-                        <div>
-                          <img
-                            src="./assets/img/pages/leaf1.png"
-                            class="w-100 h-100"
-                            alt=""
-                          />
-                        </div>
-                        Luxury in Nature’s Lap</a
-                      >
-                      <h1>Vellura Farms & Resorts</h1>
-                      <p class="myfs-8 py-3">
-                        - Where Luxury Meets High-Growth Potential
-                      </p>
-                      <p class="myfs-1 pb-2">
-                        Nestled in the scenic landscapes of Garhmukteshwar,
-                        Hapur, Vellura Farms & Resorts offers more than just
-                        luxury living—it presents a high-appreciation investment
-                        in one of North India’s fastest-growing lifestyle and
-                        leisure corridors.
-                      </p>
-                      <div class="d-flex gap-4">
-                        <a
-                          href="path/to/file.pdf"
-                          class="btn btn-outline-secondary mt-3 download-btn"
-                        >
-                          Book a Site Visit
-                        </a>
-                        <a
-                          href="path/to/file.pdf"
-                          class="btn btn-outline-secondary mt-3 download-btn"
-                        >
-                          Download Brochure
-                          <span class="download-icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              width="20"
-                              height="20"
-                            >
-                              <path
-                                d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"
-                              ></path>
-                            </svg>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <img src="./assets/img/pages/vallura-farm.jpg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg">
-              <div class="hero-content">
-                <div class="layer">
-                  <div class="container">
-                    <div class="innercontent">
-                      <a href="" class="btn glssybtn">
-                        <div>
-                          <img
-                            src="./assets/img/pages/leaf1.png"
-                            class="w-100 h-100"
-                            alt=""
-                          />
-                        </div>
-                        Luxury in Nature’s Lap</a
-                      >
-                      <h1>Vellura Farms & Resorts</h1>
-                      <p class="myfs-8 py-3">
-                        - Where Luxury Meets High-Growth Potential
-                      </p>
-                      <p class="myfs-1 pb-2">
-                        Nestled in the scenic landscapes of Garhmukteshwar,
-                        Hapur, Vellura Farms & Resorts offers more than just
-                        luxury living—it presents a high-appreciation investment
-                        in one of North India’s fastest-growing lifestyle and
-                        leisure corridors.
-                      </p>
-                      <div class="d-flex gap-4">
-                        <button type="button" class="btn btn-outline-secondary">
-                          Book a Site Visit
-                        </button>
-                        <button type="button" class="btn btn-outline-secondary">
-                          Download Brochure
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <img src="./assets/img/pages/vallura-farm.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="paginationImg gap-4">
-        <div class="circle-div">
-          <div class="number fs-3">01</div>
-          <img src="./assets/img/HeroBanner.jpg" alt="" />
-        </div>
-        <div class="circle-div">
-          <div class="number fs-3">02</div>
-          <img src="./assets/img/HeroBanner.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="section-1">
-      <div class="paper-tear">
-        <img src="./assets/img/pages/paper-tear.png" alt="" />
-      </div>
-      <div class="patte">
-        <div class="left">
-          <img src="./assets/img/pages/left-leaf.png" alt="" />
-        </div>
-        <div class="right">
-          <img src="./assets/img/pages/right-leaf.png" alt="" />
-        </div>
-      </div>
-      <div class="container px-0 py-5">
-        <div class="row">
-          <div class="col-md-12 pb-5">
-            <div class="section-title text-center">
-              <h2>Vellura Farms & Resorts</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="img-col">
-              <div class="velimg">
-                <img src="./assets/img/pages/velimg1.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <p class="myfs-7 text-center">
-              Vellura Farms & Resorts is a luxury farmhouse and resort community
-              spread across acres of lush landscapes at Garhmukteshwar, Hapur.
-              Designed for those who value privacy, comfort, and nature, the
-              project offers a blend of modern architecture, world-class
-              amenities, and serene surroundings. Perfect for both investment
-              and personal retreats, it stands as a unique lifestyle
-              destination.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <div class="img-col">
-              <div class="velimg veliimg2">
-                <img src="./assets/img/pages/velimg2.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-shape">
-        <img src="./assets/img/shape-1.png" alt="" />
-      </div>
-    </div>
-    <!-- section-2 -->
-    <div class="section-2">
-      <div class="container px-0 py-5">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-title">
-              <div class="bgimg-title">
-                <img src="./assets/img/pages/papertear2.png" alt="" />
-                <h2 class="mb-0 lh-1 myfs-9 text-white">Key Highlights</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="highlights py-3 mb-5">
-          <div class="d-flex justify-content-center gap-5">
-            <div class="d-flex justify-content-center align-content-center">
-              <div class="highbox">
-                <div class="icon-circle mb-3">
-                  <img src="./assets/img/pages/reliability.svg" alt="" />
-                </div>
-                <p>Exclusive gated community with round-the-clock security</p>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center align-content-center">
-              <div class="highbox">
-                <div class="icon-circle mb-3">
-                  <img src="./assets/img/pages/reliability.svg" alt="" />
-                </div>
-                <p>Exclusive gated community with round-the-clock security</p>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center align-content-center">
-              <div class="highbox">
-                <div class="icon-circle mb-3">
-                  <img src="./assets/img/pages/reliability.svg" alt="" />
-                </div>
-                <p>Exclusive gated community with round-the-clock security</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="highlights pb-5">
-          <div class="d-flex justify-content-center gap-5">
-            <div class="d-flex justify-content-center align-content-center">
-              <div class="highbox">
-                <div class="icon-circle mb-3">
-                  <img src="./assets/img/pages/reliability.svg" alt="" />
-                </div>
-                <p>Exclusive gated community with round-the-clock security</p>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center align-content-center">
-              <div class="highbox">
-                <div class="icon-circle mb-3">
-                  <img src="./assets/img/pages/reliability.svg" alt="" />
-                </div>
-                <p>Exclusive gated community with round-the-clock security</p>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center align-content-center">
-              <div class="highbox">
-                <div class="icon-circle mb-3">
-                  <img src="./assets/img/pages/reliability.svg" alt="" />
-                </div>
-                <p>Exclusive gated community with round-the-clock security</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- section-gallery -->
-    <div class="gallery bg-black text-white">
-      <div class="paper-tear">
-        <img src="./assets/img/pages/paper-tear.png" alt="" />
-      </div>
-      <div class="container py-5 px-0">
-        <div class="row">
-          <div class="col-md-12 mt-5">
-            <div class="section-title text-center">
-              <h2>Gallery</h2>
-            </div>
-          </div>
-
-          <div class="col-md-12 d-flex justify-content-center mb-5">
-            <div class="gallery-filters text-center mt-5">
-              <button class="btn btn-outline-light active" data-filter="all">
-                All
-              </button>
-              <button class="btn btn-outline-light" data-filter="interior">
-                Interior View
-              </button>
-              <button class="btn btn-outline-light" data-filter="exterior">
-                Exterior Views
-              </button>
-              <button class="btn btn-outline-light" data-filter="kitchen">
-                Kitchen & Dining
-              </button>
-              <button class="btn btn-outline-light" data-filter="pool">
-                Swimming Pool & Spa
-              </button>
-              <button class="btn btn-outline-light" data-filter="event">
-                Event & Celebration Spaces
-              </button>
-            </div>
-          </div>
-          <!-- Gallery Grid -->
-          <div class="row g-3 gallery-grid pb-5">
-            <!-- First Row -->
-            <div class="col-md-7">
-              <div class="gallery-item interior">
-                <a
-                  href="./assets/img/pages/img4.jpg"
-                  class="glightbox"
-                  data-gallery="resort-gallery"
-                >
-                  <img
-                    src="./assets/img/pages/img4.jpg"
-                    class="img-fluid"
-                    alt="Event"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div class="gallery-item pool">
-                <a
-                  href="./assets/img/pages/img6.jpg"
-                  class="glightbox"
-                  data-gallery="resort-gallery"
-                >
-                  <img
-                    src="./assets/img/pages/img6.jpg"
-                    class="img-fluid"
-                    alt="Pool 1"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <!-- Second Row -->
-            <div class="col-md-7 mt-4">
-              <div class="gallery-item kitchen">
-                <a
-                  href="./assets/img/pages/img5.jpg"
-                  class="glightbox"
-                  data-gallery="resort-gallery"
-                >
-                  <img
-                    src="./assets/img/pages/img5.jpg"
-                    class="img-fluid"
-                    alt="Kitchen"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-5 mt-4">
-              <div class="gallery-item exterior">
-                <a
-                  href="./assets/img/pages/img3.jpg"
-                  class="glightbox"
-                  data-gallery="resort-gallery"
-                >
-                  <img
-                    src="./assets/img/pages/img3.jpg"
-                    class="img-fluid"
-                    alt="Exterior 1"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <!-- Third Row -->
-            <div class="col-md-4 mt-4">
-              <div class="gallery-item interior">
-                <a
-                  href="./assets/img/pages/img2.jpg"
-                  class="glightbox"
-                  data-gallery="resort-gallery"
-                >
-                  <img
-                    src="./assets/img/pages/img2.jpg"
-                    class="img-fluid"
-                    alt="Interior 2"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-8 mt-4">
-              <div class="gallery-item event">
-                <a
-                  href="./assets/img/pages/img1.jpg"
-                  class="glightbox"
-                  data-gallery="resort-gallery"
-                >
-                  <img
-                    src="./assets/img/pages/img1.jpg"
-                    class="img-fluid"
-                    alt="Event"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- section-gallery -->
-    <div class="brochure">
-      <div class="paper-top">
-        <img src="./assets/img/pages/papertear3.png" alt="" />
-      </div>
-      <div class="container py-5 px-0">
-        <div class="row py-5">
-          <div class="col-md-6">
-            <div class="bro-left">
-              <h2>
-                An Exclusive Investment Opportunity for Truly Discerning
-                Investors
-              </h2>
-              <a
-                href="path/to/file.pdf"
-                class="btn btn-outline-secondary mt-3 download-btn"
-              >
-                Download Brochure
-                <span class="download-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    width="20"
-                    height="20"
-                  >
-                    <path
-                      d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"
-                    ></path>
-                  </svg>
-                </span>
+        <!-- Gallery Grid -->
+        <div class="row g-3 gallery-grid pb-5">
+          <!-- First Row -->
+          <div class="col-md-7">
+            <div class="gallery-item interior">
+              <a href="./assets/img/pages/img4.jpg" class="glightbox" data-gallery="resort-gallery">
+                <img src="./assets/img/pages/img4.jpg" class="img-fluid" alt="Event" />
               </a>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="bro-right">
-              <p class="myfs-5">
-                Nestled in the scenic landscapes of Garhmukteshwar, Hapur,
-                Vellura Farms & Resorts offers more than just luxury living
-                <br />
-                —it presents a high-appreciation investment in one of North
-                India’s fastest-growing lifestyle and leisure corridors.
-              </p>
+          <div class="col-md-5">
+            <div class="gallery-item pool">
+              <a href="./assets/img/pages/img6.jpg" class="glightbox" data-gallery="resort-gallery">
+                <img src="./assets/img/pages/img6.jpg" class="img-fluid" alt="Pool 1" />
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="paper-bottom">
-        <img src="./assets/img/pages/papertear3.png" alt="" />
-      </div>
-    </div>
-    <!-- why invest in resotica -->
-    <div class="section-3 py-5">
-      <div class="container px-0 py-5">
-        <div class="row">
-          <div class="col-md-12"></div>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-4 border-danger d-flex justify-content-end align-items-center"
-          >
-            <div
-              class="blackBox d-flex justify-content-center align-items-center"
-            >
-              <div
-                class="innerBox d-flex justify-content-center flex-column align-items-center text-center py-5 px-4"
-              >
-                <div class="icondiv mb-3">
-                  <img src="./assets/img/sustainabiity.png" alt="" />
-                </div>
-                <div>
-                  <h3 class="myfs-6">Unmatched Location Advantage</h3>
-                  <p class="myfs-1">
-                    Direct access to Ganga Expressway (just 2 minutes away)
-                    ensures seamless connectivity to Delhi NCR, Lucknow, and
-                    other major cities.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"></div>
-          <div
-            class="col-md-4 border-danger d-flex justify-content-start align-items-center"
-          >
-            <div
-              class="blackBox d-flex justify-content-center align-items-center"
-            >
-              <div
-                class="innerBox d-flex justify-content-center flex-column align-items-center text-center py-5 px-4"
-              >
-                <div class="icondiv mb-3">
-                  <img src="./assets/img/sustainabiity.png" alt="" />
-                </div>
-                <div>
-                  <h3 class="myfs-6">Natural Asset – Ganga Canal Boundary</h3>
-                  <p class="myfs-1">
-                    A rare, scenic waterfront feature that enhances property
-                    value and provides a serene, resort-like ambiance
-                    year-round.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="section-title mb-4">
-            <h2 class="mb-0 lh-1 myfs-5 text-white">Why Invest in Vellura?</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-4 border-danger d-flex justify-content-end align-items-center"
-          >
-            <div
-              class="blackBox d-flex justify-content-center align-items-center"
-            >
-              <div
-                class="innerBox d-flex justify-content-center flex-column align-items-center text-center py-5 px-4"
-              >
-                <div class="icondiv mb-3">
-                  <img src="./assets/img/sustainabiity.png" alt="" />
-                </div>
-                <div>
-                  <h3 class="myfs-6">Premium Infrastructure</h3>
-                  <p class="myfs-1">
-                    Gated community, landscaped farmhouses, wellness facilities,
-                    and organic farming zones designed to attract high-end
-                    buyers and holiday seekers.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"></div>
-          <div
-            class="col-md-4 border-danger d-flex justify-content-start align-items-center"
-          >
-            <div
-              class="blackBox d-flex justify-content-center align-items-center"
-            >
-              <div
-                class="innerBox d-flex justify-content-center flex-column align-items-center text-center py-5 px-4"
-              >
-                <div class="icondiv mb-3">
-                  <img src="./assets/img/sustainabiity.png" alt="" />
-                </div>
-                <div>
-                  <h3 class="myfs-6">Rising Demand</h3>
-                  <p class="myfs-1">
-                    With growing interest in luxury weekend homes, wedding
-                    destinations, and agro-tourism, the area promises strong
-                    rental yields and long-term appreciation.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- why invest in resotica -->
 
-    <!-- swiper -->
-    <div class="position-relative w-100">
-      <div class="container placeslider py-5">
-        <div class="section-title text-center pb-5">
-          <h2>Nature & Culture Around You</h2>
-        </div>
-        <div class="swiper mySwiper3 pb-5">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="img-wrapper">
-                <img src="./assets/img/pages/beach.jpg" alt="" />
-                <div class="content">
-                  <h3>Ganga Riverfont</h3>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-wrapper">
-                <img src="./assets/img/pages/beach.jpg" alt="" />
-                <div class="content">
-                  <h3>Ganga Riverfont</h3>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-wrapper">
-                <img src="./assets/img/pages/beach.jpg" alt="" />
-                <div class="content">
-                  <h3>Ganga Riverfont</h3>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-wrapper">
-                <img src="./assets/img/pages/beach.jpg" alt="" />
-                <div class="content">
-                  <h3>Ganga Riverfont</h3>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-wrapper">
-                <img src="./assets/img/pages/beach.jpg" alt="" />
-                <div class="content">
-                  <h3>Ganga Riverfont</h3>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="img-wrapper">
-                <img src="./assets/img/pages/beach.jpg" alt="" />
-                <div class="content">
-                  <h3>Ganga Riverfont</h3>
-                </div>
-              </div>
+          <!-- Second Row -->
+          <div class="col-md-7 mt-4">
+            <div class="gallery-item kitchen">
+              <a href="./assets/img/pages/img5.jpg" class="glightbox" data-gallery="resort-gallery">
+                <img src="./assets/img/pages/img5.jpg" class="img-fluid" alt="Kitchen" />
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-      <div
-        class="navigation d-flex justify-content-between align-items-center gap-3 mt-3"
-      >
-        <div class="custom-prev">
-          <i class="ri-arrow-left-s-line"></i>
-        </div>
-        <div class="custom-next">
-          <i class="ri-arrow-right-s-line"></i>
-        </div>
-      </div>
-      <div class="whitepptear position-absolute z-1 w-100">
-        <img src="./assets/img/pages/white-paper-tear.svg" class="w-100" alt="">
-      </div>
-    </div>
-    <!-- swiper -->
+          <div class="col-md-5 mt-4">
+            <div class="gallery-item exterior">
+              <a href="./assets/img/pages/img3.jpg" class="glightbox" data-gallery="resort-gallery">
+                <img src="./assets/img/pages/img3.jpg" class="img-fluid" alt="Exterior 1" />
+              </a>
+            </div>
+          </div>
 
-    <!-- proximity hub -->
-    <div class="proximity-hub">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-12 mt-5 pt-5">
-            <div class="section-title text-center">
-              <h2 class="text-white">Proximity to Key Hubs:</h2>
+          <!-- Third Row -->
+          <div class="col-md-4 mt-4">
+            <div class="gallery-item interior">
+              <a href="./assets/img/pages/img2.jpg" class="glightbox" data-gallery="resort-gallery">
+                <img src="./assets/img/pages/img2.jpg" class="img-fluid" alt="Interior 2" />
+              </a>
             </div>
           </div>
-          <div class="col-md-12 mt-5 d-flex flex-column align-items-center">
-            <div class="proxi-locations">
-              <div class="location">
-                <h3 class="myfs-5">Noida & Ghaziabad – 50 mins</h3>
-              </div>
-              <div class="location">
-                <h3 class="myfs-5">Hindon Airport – 60 mins</h3>
-              </div>
-            </div>
-            <div class="proxi-locations">
-              <div class="location">
-                <h3 class="myfs-5">IGI Airport – 100 mins</h3>
-              </div>
-              <div class="location">
-                <h3 class="myfs-5">NH9 – 10 mins</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row py-5 mt-5">
-          <div
-            class="col-md-6 border-danger d-flex justify-content-end align-items-center"
-          >
-            <div class="whiteBox">
-              <div class="innerBox py-5 px-4">
-                <div class="icondiv mb-3">
-                  <img src="./assets/img/pages/statistics.png" alt="" />
-                </div>
-                <div>
-                  <h3 class="myfs-6">High Return Potential</h3>
-                  <p class="myfs-1">
-                    Early investors benefit from introductory pricing in a
-                    project with limited inventory and premium location. With
-                    the Ganga Expressway driving regional development, Vellura
-                    is positioned for exceptional value growth.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 border-danger d-flex justify-content-end align-items-center"
-          >
-            <div class="whiteBox">
-              <div class="innerBox py-5 px-4">
-                <div class="icondiv mb-3">
-                  <img src="./assets/img/pages/money-flow.png" alt="" />
-                </div>
-                <div>
-                  <h3 class="myfs-6">A Lifestyle that Pays Dividends</h3>
-                  <p class="myfs-1">
-                    From luxury living and weekend getaways to high-value event
-                    hosting and rental opportunities, Vellura offers multiple
-                    revenue streams while delivering unmatched
-                    lifestyle benefits.
-                  </p>
-                </div>
-              </div>
+          <div class="col-md-8 mt-4">
+            <div class="gallery-item event">
+              <a href="./assets/img/pages/img1.jpg" class="glightbox" data-gallery="resort-gallery">
+                <img src="./assets/img/pages/img1.jpg" class="img-fluid" alt="Event" />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- proximity hub -->
-    <div class="brochure2 brochure">
-      <div class="paper-top">
-        <img src="./assets/img/pages/papertear4.svg" alt="" />
-      </div>
-      <div class="container py-5 px-0">
-        <div class="row py-5">
-          <div class="col-md-12 text-center">
-            <div class="bro-left">
-              <h2>
-                Where Nature Inspires, Luxury <br />
-                Welcomes, and Investments Grow.
-              </h2>
-            </div>
-          </div>
-          <div class="col-md-12 text-center">
-            <div class="bro-right">
-              <p class="myfs-5 mt-4">
-                Experience the rare blend of luxury living and high-value
-                investment at Garhmukteshwar. Just <br />
-                minutes from Ganga Expressway, Vellura is your retreat, your
-                lifestyle, your growing asset.
-              </p>
-            </div>
-            <a
-              href="path/to/file.pdf"
-              class="btn btn-outline-secondary mt-3 download-btn"
-            >
+  </div>
+  <!-- section-gallery -->
+  <div class="brochure">
+    <div class="paper-top">
+      <img src="./assets/img/pages/papertear3.png" alt="" />
+    </div>
+    <div class="container py-5 px-0">
+      <div class="row py-5">
+        <div class="col-md-6">
+          <div class="bro-left">
+            <h2>
+              An Exclusive Investment Opportunity for Truly Discerning
+              Investors
+            </h2>
+            <a href="path/to/file.pdf" class="btn btn-outline-secondary mt-3 download-btn">
               Download Brochure
               <span class="download-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  width="20"
-                  height="20"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
                   <path
-                    d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"
-                  ></path>
+                    d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z">
+                  </path>
                 </svg>
               </span>
             </a>
           </div>
         </div>
+        <div class="col-md-6">
+          <div class="bro-right">
+            <p class="myfs-5">
+              Nestled in the scenic landscapes of Garhmukteshwar, Hapur,
+              Vellura Farms & Resorts offers more than just luxury living
+              <br />
+              —it presents a high-appreciation investment in one of North
+              India’s fastest-growing lifestyle and leisure corridors.
+            </p>
+          </div>
+        </div>
       </div>
-      <!-- <div class="paper-bottom">
+    </div>
+    <div class="paper-bottom">
+      <img src="./assets/img/pages/papertear3.png" alt="" />
+    </div>
+  </div>
+  <!-- why invest in resotica -->
+  <div class="section-3 py-5">
+    <div class="container px-0 py-5">
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+      <div class="row">
+  <div class="col-md-4 border-danger d-flex justify-content-end align-items-center">
+    <div class="blackBox d-flex justify-content-center align-items-center">
+      <div class="innerBox d-flex justify-content-center flex-column align-items-center text-center px-4">
+        <div class="front">
+          <div class="icondiv mb-3">
+            <img src="./assets/img/sustainabiity.png" alt="" />
+          </div>
+          <h3 class="myfs-6">Unmatched Location Advantage</h3>
+          <p class="myfs-1">
+            Direct access to Ganga Expressway (just 2 minutes away) ensures seamless connectivity to Delhi NCR, Lucknow, and other major cities.
+          </p>
+        </div>
+        <div class="back">
+          <div class="icondiv mb-3">
+            <img src="./assets/img/sustainabiity.png" alt="" />
+          </div>
+          <h3 class="myfs-6">Unmatched Location Advantage</h3>
+          <p class="myfs-1">
+            Direct access to Ganga Expressway (just 2 minutes away) ensures seamless connectivity to Delhi NCR, Lucknow, and other major cities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4"></div>
+
+  <div class="col-md-4 border-danger d-flex justify-content-start align-items-center">
+    <div class="blackBox d-flex justify-content-center align-items-center">
+      <div class="innerBox d-flex justify-content-center flex-column align-items-center text-center px-4">
+        <div class="front">
+          <div class="icondiv mb-3">
+            <img src="./assets/img/sustainabiity.png" alt="" />
+          </div>
+          <h3 class="myfs-6">Natural Asset – Ganga Canal Boundary</h3>
+          <p class="myfs-1">
+            A rare, scenic waterfront feature that enhances property value and provides a serene, resort-like ambiance year-round.
+          </p>
+        </div>
+        <div class="back">
+          <div class="icondiv mb-3">
+            <img src="./assets/img/sustainabiity.png" alt="" />
+          </div>
+          <h3 class="myfs-6">Natural Asset – Ganga Canal Boundary</h3>
+          <p class="myfs-1">
+            A rare, scenic waterfront feature that enhances property value and provides a serene, resort-like ambiance year-round.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="section-title mb-4">
+    <h2 class="mb-0 lh-1 myfs-5 text-white">Why Invest in Vellura?</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 border-danger d-flex justify-content-end align-items-center">
+    <div class="blackBox d-flex justify-content-center align-items-center">
+      <div class="innerBox d-flex justify-content-center flex-column align-items-center text-center px-4">
+        <div class="front">
+          <div class="icondiv mb-3">
+            <img src="./assets/img/sustainabiity.png" alt="" />
+          </div>
+          <h3 class="myfs-6">Premium Infrastructure</h3>
+          <p class="myfs-1">
+            Gated community, landscaped farmhouses, wellness facilities, and organic farming zones designed to attract high-end buyers and holiday seekers.
+          </p>
+        </div>
+        <div class="back">
+          <div class="icondiv mb-3">
+            <img src="./assets/img/sustainabiity.png" alt="" />
+          </div>
+          <h3 class="myfs-6">Premium Infrastructure</h3>
+          <p class="myfs-1">
+            Gated community, landscaped farmhouses, wellness facilities, and organic farming zones designed to attract high-end buyers and holiday seekers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4"></div>
+
+  <div class="col-md-4 border-danger d-flex justify-content-start align-items-center">
+    <div class="blackBox d-flex justify-content-center align-items-center">
+      <div class="innerBox d-flex justify-content-center flex-column align-items-center text-center px-4">
+        <div class="front">
+          <div class="icondiv mb-3">
+            <img src="./assets/img/sustainabiity.png" alt="" />
+          </div>
+          <h3 class="myfs-6">Rising Demand</h3>
+          <p class="myfs-1">
+            With growing interest in luxury weekend homes, wedding destinations, and agro-tourism, the area promises strong rental yields and long-term appreciation.
+          </p>
+        </div>
+        <div class="back">
+          <div class="icondiv mb-3">
+            <img src="./assets/img/sustainabiity.png" alt="" />
+          </div>
+          <h3 class="myfs-6">Rising Demand</h3>
+          <p class="myfs-1">
+            With growing interest in luxury weekend homes, wedding destinations, and agro-tourism, the area promises strong rental yields and long-term appreciation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <!-- why invest in resotica -->
+
+  <!-- swiper -->
+  <div class="position-relative w-100">
+    <div class="container placeslider py-5">
+      <div class="section-title text-center pb-5">
+        <h2>Nature & Culture Around You</h2>
+      </div>
+      <div class="swiper mySwiper3 pb-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/img/pages/beach.jpg" alt="" />
+              <div class="content">
+                <h3>Ganga Riverfont</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/img/pages/beach.jpg" alt="" />
+              <div class="content">
+                <h3>Ganga Riverfont</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/img/pages/beach.jpg" alt="" />
+              <div class="content">
+                <h3>Ganga Riverfont</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/img/pages/beach.jpg" alt="" />
+              <div class="content">
+                <h3>Ganga Riverfont</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/img/pages/beach.jpg" alt="" />
+              <div class="content">
+                <h3>Ganga Riverfont</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./assets/img/pages/beach.jpg" alt="" />
+              <div class="content">
+                <h3>Ganga Riverfont</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navigation d-flex justify-content-between align-items-center gap-3 mt-3">
+      <div class="custom-prev">
+        <i class="ri-arrow-left-s-line"></i>
+      </div>
+      <div class="custom-next">
+        <i class="ri-arrow-right-s-line"></i>
+      </div>
+    </div>
+    <div class="whitepptear position-absolute z-1 w-100">
+      <img src="./assets/img/pages/white-paper-tear.svg" class="w-100" alt="">
+    </div>
+  </div>
+  <!-- swiper -->
+
+  <!-- proximity hub -->
+  <div class="proximity-hub">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 mt-5 pt-5">
+          <div class="section-title text-center">
+            <h2 class="text-white">Proximity to Key Hubs:</h2>
+          </div>
+        </div>
+        <div class="col-md-12 mt-5 d-flex flex-column align-items-center">
+          <div class="proxi-locations">
+            <div class="location">
+              <h3 class="myfs-5">Noida & Ghaziabad – 50 mins</h3>
+            </div>
+            <div class="location">
+              <h3 class="myfs-5">Hindon Airport – 60 mins</h3>
+            </div>
+          </div>
+          <div class="proxi-locations">
+            <div class="location">
+              <h3 class="myfs-5">IGI Airport – 100 mins</h3>
+            </div>
+            <div class="location">
+              <h3 class="myfs-5">NH9 – 10 mins</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-5 mt-5">
+        <div class="col-md-6 border-danger d-flex justify-content-end align-items-center">
+          <div class="whiteBox">
+            <div class="innerBox py-5 px-4">
+              <div class="icondiv mb-3">
+                <img src="./assets/img/pages/statistics.png" alt="" />
+              </div>
+              <div>
+                <h3 class="myfs-6">High Return Potential</h3>
+                <p class="myfs-1">
+                  Early investors benefit from introductory pricing in a
+                  project with limited inventory and premium location. With
+                  the Ganga Expressway driving regional development, Vellura
+                  is positioned for exceptional value growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 border-danger d-flex justify-content-end align-items-center">
+          <div class="whiteBox">
+            <div class="innerBox py-5 px-4">
+              <div class="icondiv mb-3">
+                <img src="./assets/img/pages/money-flow.png" alt="" />
+              </div>
+              <div>
+                <h3 class="myfs-6">A Lifestyle that Pays Dividends</h3>
+                <p class="myfs-1">
+                  From luxury living and weekend getaways to high-value event
+                  hosting and rental opportunities, Vellura offers multiple
+                  revenue streams while delivering unmatched
+                  lifestyle benefits.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- proximity hub -->
+  <div class="brochure2 brochure">
+    <div class="paper-top">
+      <img src="./assets/img/pages/papertear4.svg" alt="" />
+    </div>
+    <div class="container py-5 px-0">
+      <div class="row py-5">
+        <div class="col-md-12 text-center">
+          <div class="bro-left">
+            <h2>
+              Where Nature Inspires, Luxury <br />
+              Welcomes, and Investments Grow.
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-12 text-center">
+          <div class="bro-right">
+            <p class="myfs-5 mt-4">
+              Experience the rare blend of luxury living and high-value
+              investment at Garhmukteshwar. Just <br />
+              minutes from Ganga Expressway, Vellura is your retreat, your
+              lifestyle, your growing asset.
+            </p>
+          </div>
+          <a href="path/to/file.pdf" class="btn btn-outline-secondary mt-3 download-btn">
+            Download Brochure
+            <span class="download-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z">
+                </path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="paper-bottom">
         <img src="./assets/img/pages/papertear3.png" alt="" />
       </div> -->
-    </div>
+  </div>
 
-    <!-- video-section -->
-       <!-- video-section -->
-    <div class="video-section position-relative">
-      <img src="./assets/img/pages/videoimg.jpg" alt="" class="w-100" />
+  <!-- video-section -->
+  <!-- video-section -->
+  <div class="video-section position-relative">
+    <img src="./assets/img/pages/videoimg.jpg" alt="" class="w-100" />
 
-      <div class="play-outline-circle cursor-pointer">
-        <a href="https://youtu.be/aO_kPW39um8?si=Z1sMNZ9UauCIlxq0" class="glightbox" data-gallery="resort-gallery">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="70"
-          height="70"
-          viewBox="0 0 70 70"
-          fill="none"
-        >
-          <path
-            d="M23.3333 17.5L52.5 35L23.3333 52.5V17.5Z"
-            stroke="white"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+    <div class="play-outline-circle cursor-pointer">
+      <a href="https://youtu.be/aO_kPW39um8?si=Z1sMNZ9UauCIlxq0" class="glightbox" data-gallery="resort-gallery">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+          <path d="M23.3333 17.5L52.5 35L23.3333 52.5V17.5Z" stroke="white" stroke-width="4" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
-        </a>
+      </a>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-content">
+      <span class="video-modal-close">&times;</span>
+      <iframe id="videoFrame" width="800" height="450" src="" title="Video" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+  <!-- video-section -->
+
+  <div class="footer-quote pt-3">
+    <div class="container py-5 mt-5">
+      <div class="row">
+        <div class="col-md-8 m-auto">
+          <div class="quotes-text">
+            <span class="top-quote">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <g clip-path="url(#clip0_78_1067)">
+                  <path
+                    d="M43.9695 24.4341L34.5742 24.4341C34.0892 28.7936 35.188 34.3632 43.9695 34.3632C43.9695 37.455 43.9695 38.3541 43.9695 38.3603C25.706 38.3604 25.145 29.2991 25.145 24.434L25.145 5.60961L43.9695 5.60961L43.9695 24.4341Z"
+                    fill="#AC813C" />
+                  <path
+                    d="M18.8245 24.434L9.42956 24.434C8.94461 28.7936 10.0433 34.3632 18.8245 34.3632C18.8245 37.455 18.8245 38.3541 18.8245 38.3603C0.561384 38.3603 -7.92166e-07 29.299 -1.21748e-06 24.434L-2.86316e-06 5.60961L18.8245 5.60961L18.8245 24.434Z"
+                    fill="#AC813C" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_78_1067">
+                    <rect width="43.9695" height="43.9695" fill="white" transform="matrix(-1 0 0 1 43.9695 0)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <p>
+              At Vellura Farms & Resorts, every moment is luxury, every view
+              is nature, and every investment grows into timeless value for
+              life.
+            </p>
+            <span class="bottom-quote">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <g clip-path="url(#clip0_78_1072)">
+                  <path
+                    d="M3.12482e-06 19.5356L9.39531 19.5356C9.88026 15.1761 8.78145 9.60656 2.25679e-06 9.60656C1.98649e-06 6.5147 1.9079e-06 5.61565 1.90735e-06 5.60938C18.2635 5.60938 18.8245 14.6706 18.8245 19.5357L18.8245 38.3601L4.77051e-06 38.3601L3.12482e-06 19.5356Z"
+                    fill="#AC813C" />
+                  <path
+                    d="M25.145 19.5357L34.5399 19.5357C35.0249 15.1761 33.9261 9.60656 25.145 9.60656C25.145 6.5147 25.145 5.61565 25.145 5.60938C43.4081 5.60946 43.9695 14.6707 43.9695 19.5357L43.9695 38.3601L25.145 38.3601L25.145 19.5357Z"
+                    fill="#AC813C" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_78_1072">
+                    <rect width="43.9695" height="43.9695" fill="white" transform="matrix(1 0 0 -1 0 43.9697)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Video Modal -->
-    <div id="videoModal" class="video-modal">
-      <div class="video-modal-content">
-        <span class="video-modal-close">&times;</span>
-        <iframe
-          id="videoFrame"
-          width="800"
-          height="450"
-          src=""
-          title="Video"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+  <!-- footer with contact-us form -->
+  <div class="footer">
+    <div class="container position-relative z-3">
+      <div class="row">
+        <div class="col-md-8 m-auto py-5">
+          <div class="section-title mb-4 text-center">
+            <h2 class="mb-0 lh-1 myfs-5 text-white">Get in Touch</h2>
+          </div>
+          <form id="contactForm">
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="First Name" required />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Last Name" required />
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email" required />
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="Phone" required />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <textarea class="form-control" placeholder="Write your Messages......" required></textarea>
+            </div>
+            <div class="col-md-12 text-center pt-4">
+              <button type="button" class="btn btn-outline-secondary">
+                Know More
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-
-
-    <!-- video-section -->
-
-    <div class="footer-quote pt-3">
-      <div class="container py-5 mt-5">
-        <div class="row">
-          <div class="col-md-8 m-auto">
-            <div class="quotes-text">
-              <span class="top-quote">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_78_1067)">
-                    <path
-                      d="M43.9695 24.4341L34.5742 24.4341C34.0892 28.7936 35.188 34.3632 43.9695 34.3632C43.9695 37.455 43.9695 38.3541 43.9695 38.3603C25.706 38.3604 25.145 29.2991 25.145 24.434L25.145 5.60961L43.9695 5.60961L43.9695 24.4341Z"
-                      fill="#AC813C"
-                    />
-                    <path
-                      d="M18.8245 24.434L9.42956 24.434C8.94461 28.7936 10.0433 34.3632 18.8245 34.3632C18.8245 37.455 18.8245 38.3541 18.8245 38.3603C0.561384 38.3603 -7.92166e-07 29.299 -1.21748e-06 24.434L-2.86316e-06 5.60961L18.8245 5.60961L18.8245 24.434Z"
-                      fill="#AC813C"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_78_1067">
-                      <rect
-                        width="43.9695"
-                        height="43.9695"
-                        fill="white"
-                        transform="matrix(-1 0 0 1 43.9695 0)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
+    <footer class="footer-section pt-5">
+      <div class="container footer-content m-auto px-0">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="brand-section">
+              <h2>
+                Resotica <br />
+                <span>Heights</span>
+              </h2>
               <p>
-                At Vellura Farms & Resorts, every moment is luxury, every view
-                is nature, and every investment grows into timeless value for
-                life.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do e amet, consectetur adipiscing elit, sed do e dolor sit
+                amet, consectetur adipiscing elit, sed do e a.
               </p>
-              <span class="bottom-quote">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_78_1072)">
-                    <path
-                      d="M3.12482e-06 19.5356L9.39531 19.5356C9.88026 15.1761 8.78145 9.60656 2.25679e-06 9.60656C1.98649e-06 6.5147 1.9079e-06 5.61565 1.90735e-06 5.60938C18.2635 5.60938 18.8245 14.6706 18.8245 19.5357L18.8245 38.3601L4.77051e-06 38.3601L3.12482e-06 19.5356Z"
-                      fill="#AC813C"
-                    />
-                    <path
-                      d="M25.145 19.5357L34.5399 19.5357C35.0249 15.1761 33.9261 9.60656 25.145 9.60656C25.145 6.5147 25.145 5.61565 25.145 5.60938C43.4081 5.60946 43.9695 14.6707 43.9695 19.5357L43.9695 38.3601L25.145 38.3601L25.145 19.5357Z"
-                      fill="#AC813C"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_78_1072">
-                      <rect
-                        width="43.9695"
-                        height="43.9695"
-                        fill="white"
-                        transform="matrix(1 0 0 -1 0 43.9697)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
+
+              <div class="social-icons">
+                <a href="#" class="social-icon">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-youtube-fill"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="footer-heading">Quick Access</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="footer-heading">Quick Access</h3>
+            <ul class="footer-links">
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="footer-heading">Info</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <div class="info-text">
+                <p>2118 Thornridge Cir. Syracuse,<br />Connecticut 35624</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-phone-line"></i>
+              </div>
+              <div class="info-text">
+                <p>(+33)6 55 59 32 88<br />(+33)6 55 59 32 88</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-mail-line"></i>
+              </div>
+              <div class="info-text">
+                <p>alma.lawson@example.com<br />manhhachk@example.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="copyright">© Copyright 2025. All Rights Reserved.</div>
+          <div class="powered-by">
+            Powered by <span>Doors</span> <span>Studio</span>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
+  </div>
+  <!-- footer with contact-us form -->
 
-    <!-- footer with contact-us form -->
-    <div class="footer">
-      <div class="container position-relative z-3">
-        <div class="row">
-          <div class="col-md-8 m-auto py-5">
-            <div class="section-title mb-4 text-center">
-              <h2 class="mb-0 lh-1 myfs-5 text-white">Get in Touch</h2>
-            </div>
-            <form id="contactForm">
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="First Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Last Name"
-                    required
-                  />
-                </div>
-              </div>
+  <!-- js part -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
 
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="tel"
-                    class="form-control"
-                    placeholder="Phone"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="mb-4">
-                <textarea
-                  class="form-control"
-                  placeholder="Write your Messages......"
-                  required
-                ></textarea>
-              </div>
-              <div class="col-md-12 text-center pt-4">
-                <button type="button" class="btn btn-outline-secondary">
-                  Know More
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <footer class="footer-section pt-5">
-        <div class="container footer-content m-auto px-0">
-          <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-              <div class="brand-section">
-                <h2>
-                  Resotica <br />
-                  <span>Heights</span>
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do e amet, consectetur adipiscing elit, sed do e dolor sit
-                  amet, consectetur adipiscing elit, sed do e a.
-                </p>
-
-                <div class="social-icons">
-                  <a href="#" class="social-icon">
-                    <i class="ri-facebook-fill"></i>
-                  </a>
-                  <a href="#" class="social-icon">
-                    <i class="ri-twitter-x-line"></i>
-                  </a>
-                  <a href="#" class="social-icon">
-                    <i class="ri-youtube-fill"></i>
-                  </a>
-                  <a href="#" class="social-icon">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="footer-heading">Quick Access</h3>
-              <ul class="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="footer-heading">Quick Access</h3>
-              <ul class="footer-links">
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="footer-heading">Info</h3>
-
-              <div class="info-item">
-                <div class="info-icon">
-                  <i class="ri-map-pin-line"></i>
-                </div>
-                <div class="info-text">
-                  <p>2118 Thornridge Cir. Syracuse,<br />Connecticut 35624</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="info-icon">
-                  <i class="ri-phone-line"></i>
-                </div>
-                <div class="info-text">
-                  <p>(+33)6 55 59 32 88<br />(+33)6 55 59 32 88</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="info-icon">
-                  <i class="ri-mail-line"></i>
-                </div>
-                <div class="info-text">
-                  <p>alma.lawson@example.com<br />manhhachk@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Footer Bottom -->
-          <div class="footer-bottom">
-            <div class="copyright">© Copyright 2025. All Rights Reserved.</div>
-            <div class="powered-by">
-              Powered by <span>Doors</span> <span>Studio</span>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <!-- footer with contact-us form -->
-
-    <!-- js part -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>

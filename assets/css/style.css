@@ -474,8 +474,8 @@ header .navbar-nav .nav-link.show {
     font-size: 14px;
     transition: transform 0.4s ease, color 0.4s ease;
   }
-  header .navbar-nav {
-    gap: 10px !important;
+  header .navbar-nav .nav-link {
+    padding-inline: 14px !important;
   }
 }
 
@@ -677,12 +677,13 @@ header .navbar-nav .nav-link.show {
   .hero-section .swiper-slide .bg .hero-content .layer {
     width: 100%;
     z-index: 11;
+    gap: 20px;
   }
   .hero-section .swiper-slide .bg .hero-content .layer h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .hero-section .swiper-slide .bg .hero-content .layer p {
-    width: 70%;
+    width: 80%;
   }
   .hero-section .paginationImg {
     height: 100px;
@@ -834,17 +835,24 @@ header .navbar-nav .nav-link.show {
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-  .section-1 .rightContent {
+  .section-1 .curve {
+    position: absolute;
+    width: 135%;
+    height: 108px;
+    left: -112px;
+    top: -15%;
+  }
+  .section-1 .curve .rightContent {
     padding-left: 0px;
   }
-  .section-1 .rightContent p {
+  .section-1 .curve .rightContent p {
     padding-right: 0px;
     margin-bottom: 30px;
   }
-  .section-1 .bottom-shape {
+  .section-1 .curve .bottom-shape {
     transform: translateY(30px);
   }
-  .section-1 .counter .count h3 {
+  .section-1 .curve .counter .count h3 {
     font-size: 20px;
   }
 }

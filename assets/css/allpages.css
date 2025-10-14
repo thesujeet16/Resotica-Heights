@@ -128,6 +128,27 @@
   width: fit-content;
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  .section-first .hero-content .layer {
+    margin-top: 50px;
+  }
+  .section-first .hero-content .layer h1 {
+    font-size: 3rem !important;
+    margin-bottom: 0px;
+  }
+  .section-first .hero-content .layer .innercontent p {
+    font-size: 18px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .section-first .hero-content .layer .innercontent p:last-of-type {
+    font-size: 14px;
+  }
+  .section-first .hero-content .layer .glssybtn {
+    font-size: 12px;
+  }
+}
+
 .section-1 {
   background-color: #fcffef;
 }
@@ -468,13 +489,43 @@
 }
 
 .section-3 .blackBox {
-  height: auto;
-  width: auto;
   padding: 14px;
 }
 
-.section-3 .blackBox .innerBox {
-  height: auto;
+.blackBox {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blackBox:hover .innerBox {
+  transform: rotateY(180deg);
+}
+
+.blackBox .innerBox {
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.blackBox .innerBox .front,
+.blackBox .innerBox .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: inherit;
+}
+
+.blackBox .innerBox .back {
+  transform: rotateY(180deg);
 }
 
 .placeslider {
@@ -861,7 +912,7 @@
 }
 
 .common-hero::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1571,7 +1622,7 @@
 .blog-detail-container .vrline {
   height: 100%;
   width: 1px;
-  background-color: #DBDBDB66;
+  background-color: #dbdbdb66;
 }
 
 @media (max-width: 768px) {
@@ -1584,11 +1635,11 @@
 }
 
 .related-blogs {
-  background: #FFFCF8;
+  background: #fffcf8;
 }
 
 .related-blogs .section-title h2 {
-  color: #101010ED;
+  color: #101010ed;
 }
 
 .related-blogs .blog-card {
@@ -1614,13 +1665,13 @@
 
 .related-blogs .blog-card p {
   font-size: 16px;
-  color: #1B242C;
+  color: #1b242c;
   font-family: "Poppins", sans-serif;
 }
 
 .related-blogs .blog-card h3 {
   font-family: "HelveticaNormal", sans-serif;
-  color: #1B242C;
+  color: #1b242c;
   font-size: 16px;
 }
 

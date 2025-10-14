@@ -500,7 +500,9 @@ header {
       }
     }
     .navbar-nav {
-      gap: 10px !important;
+      .nav-link{
+        padding-inline: 14px !important;
+      }
     }
   }
 }
@@ -700,12 +702,13 @@ header {
           .layer {
             width: 100%;
             z-index: 11;
+            gap: 20px;
 
             h1 {
-              font-size: 4.5rem;
+              font-size: 4rem;
             }
             p {
-              width: 70%;
+              width: 80%;
             }
           }
         }
@@ -861,6 +864,12 @@ header {
   }
 
   @media (min-width: 992px) and (max-width: 1024px) {
+    .curve {
+    position: absolute;
+    width: 135%;
+    height: 108px;
+    left: -112px;
+    top: -15%;
     .rightContent {
       padding-left: 0px;
       p {
@@ -878,7 +887,7 @@ header {
     }
   }
 }
-
+}
 // --------------------Section-2----------------------//
 
 .section-2 {

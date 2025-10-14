@@ -2,7 +2,7 @@ $font-marcellus: "Marcellus", serif;
 $font-primary: "HelveticaNormal", sans-serif;
 $font-Alexandria: "Alexandria", sans-serif;
 $font-arial: "Arial", sans-serif;
-$font-poppins :"Poppins", sans-serif;
+$font-poppins: "Poppins", sans-serif;
 
 $bg-dark: #0b0b0c;
 $bg-dark-tint: #181a1e;
@@ -16,8 +16,7 @@ $golden-color: 5px solid #c1b800;
 $blog-text: #797070;
 $blog-para: #6c6c6c;
 $black-text: #000;
-$bg-off-white:#FFFCF8;
-
+$bg-off-white: #fffcf8;
 
 $pagination-overlay: linear-gradient(
   0deg,
@@ -64,13 +63,7 @@ $font-sizes: (
         position: absolute;
         width: 60%;
         height: 100%;
-        // background: linear-gradient(
-        //   90deg,
-        //   rgba(255, 255, 255, 0.01) 0%,
-        //   rgba(153, 153, 153, 0) 100%
-        // );
         box-shadow: 0 30px 40px rgba(105, 105, 105, 0.1);
-
         backdrop-filter: blur(2px);
       }
       .hero-content {
@@ -97,7 +90,6 @@ $font-sizes: (
           box-shadow: 0 30px 40px rgba(105, 105, 105, 0.1);
           filter: blur(4px);
           z-index: -1;
-          // border: 1px solid red;
         }
         .layer {
           height: 100%;
@@ -158,6 +150,30 @@ $font-sizes: (
     right: 6%;
     bottom: 10%;
     width: fit-content;
+  }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    .hero-content {
+      .layer {
+        margin-top: 50px;
+        h1 {
+          font-size: 3rem !important;
+          margin-bottom: 0px;
+        }
+        .innercontent p {
+          font-size: 18px;
+          padding-top: 0px !important;
+          padding-bottom: 0px !important;
+
+          &:last-of-type {
+            font-size: 14px;
+          }
+        }
+        .glssybtn{
+          font-size: 12px;
+        }
+      }
+    }
+
   }
 }
 
@@ -235,6 +251,7 @@ $font-sizes: (
       }
     }
   }
+  
 }
 
 .section-2 {
@@ -482,11 +499,40 @@ $font-sizes: (
     ),
     url("../img/pages/whyinvest.jpg") lightgray 50% / cover no-repeat;
   .blackBox {
-    height: auto;
-    width: auto;
     padding: 14px;
-    .innerBox {
-      height: auto;
+  }
+}
+.blackBox {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover .innerBox {
+    transform: rotateY(180deg);
+  }
+
+  .innerBox {
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+
+    .front,
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: inherit;
+    }
+
+    .back {
+      transform: rotateY(180deg);
     }
   }
 }
@@ -862,16 +908,16 @@ $font-sizes: (
   background-image: url("../img/pages/blogbanner.png");
   background-position: center;
   background-size: cover;
-  background: rgba(0, 0, 0, 0.70); 
+  background: rgba(0, 0, 0, 0.7);
   height: 60vh;
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.70);
+    background: rgba(0, 0, 0, 0.7);
     left: 0;
-    top:0;
+    top: 0;
   }
   .page-title {
     position: absolute;
@@ -1435,7 +1481,6 @@ $font-sizes: (
       border: 1px solid rgba(0, 0, 0, 0.05);
       background: #fff;
       box-shadow: -3px 2px 48px 0 rgba(0, 0, 0, 0.05);
-      
 
       .post-thumbnail {
         width: 50px;
@@ -1569,11 +1614,11 @@ $font-sizes: (
       height: 100%;
     }
   }
-  .vrline{
-  height: 100%;
-  width: 1px;
-  background-color: #DBDBDB66;
-}
+  .vrline {
+    height: 100%;
+    width: 1px;
+    background-color: #dbdbdb66;
+  }
 
   @media (max-width: 768px) {
     .post-title {
@@ -1586,53 +1631,51 @@ $font-sizes: (
   }
 }
 
-.related-blogs{
+.related-blogs {
   background: $bg-off-white;
-  .section-title{
-    h2{
-      color: #101010ED;
+  .section-title {
+    h2 {
+      color: #101010ed;
     }
   }
-  .blog-card{
+  .blog-card {
     position: relative;
     padding: 15px;
     border-radius: 0px;
     height: 100%;
-    .btn{
+    .btn {
       position: absolute;
       right: 20px;
       bottom: 20px;
     }
-   .blog-img{
-    height: 100% !important;
-     img{
-    border-radius: 0px;
+    .blog-img {
+      height: 100% !important;
+      img {
+        border-radius: 0px;
+      }
     }
-   }
-   
-    p{
+
+    p {
       font-size: 16px;
-      color: #1B242C;
+      color: #1b242c;
       font-family: $font-poppins;
-     
     }
-    h3{
+    h3 {
       font-family: $font-primary;
-      color: #1B242C;
+      color: #1b242c;
       font-size: 16px;
     }
-    .para-link{
-      p{
+    .para-link {
+      p {
         font-size: 14px;
       }
     }
   }
 }
 
-
 // -----------------About page------------//
-.abtbg{
-  background-image: url('../img/pages/aboutus-banner.png');
+.abtbg {
+  background-image: url("../img/pages/aboutus-banner.png");
   background-size: cover;
   background-position: center top;
 }
