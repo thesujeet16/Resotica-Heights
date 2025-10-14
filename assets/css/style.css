@@ -389,26 +389,59 @@ header .navbar .navbar-brand div {
   font-size: 25px;
 }
 
+header .navbar-nav {
+  margin-right: 20px;
+}
+
 header .navbar-nav .nav-link {
+  position: relative;
   color: #fff;
   font-size: 14px;
   font-family: "HelveticaNormal", sans-serif;
+  padding-inline: 20px !important;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+header .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ac813c;
+  transition: all 0.4s ease;
+  z-index: -1;
 }
 
 header .navbar-nav .nav-link:hover {
-  color: #ac813c;
+  color: #fff;
+}
+
+header .navbar-nav .nav-link:hover::before {
+  left: 0;
 }
 
 header .navbar-nav .nav-link.active {
-  color: #ac813c;
+  color: #fff;
+}
+
+header .navbar-nav .nav-link.active::before {
+  left: 0;
 }
 
 header .navbar-nav .nav-link:active {
-  color: #ac813c;
+  color: #fff;
+}
+
+header .navbar-nav .nav-link:active::before {
+  left: 0;
 }
 
 header .navbar-nav .nav-link.show {
-  color: #ac813c;
+  color: #fff;
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -497,6 +530,10 @@ header .navbar-nav .nav-link.show {
   width: 60%;
 }
 
+.hero-section .swiper-slide .bg .btn-outline-secondary {
+  padding: 12px 20px;
+}
+
 .hero-section .swiper-slide .bg img {
   width: 100%;
   height: 100%;
@@ -526,7 +563,7 @@ header .navbar-nav .nav-link.show {
 
 .hero-section .paginationImg {
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   width: 100%;
   height: 200px;
   z-index: 1;
@@ -680,33 +717,23 @@ header .navbar-nav .nav-link.show {
 
 .section-1 .curve {
   position: absolute;
-  width: 120%;
-  height: 200px;
+  width: 124%;
+  height: 117px;
   left: -100px;
-  top: -26%;
+  top: -15%;
   background-color: transparent !important;
   overflow: hidden;
   z-index: 1;
-  padding-top: 8rem !important;
 }
 
 .section-1 .curve svg {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 108%;
   left: 45%;
   top: 50%;
   display: block;
-  transform: translate(-50%, -50%);
-}
-
-.section-1 .curve::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  background: #fff;
-  bottom: 0;
+  transform: translate(-52%, -48%);
 }
 
 .section-1 .section-title img {
@@ -1018,6 +1045,42 @@ header .navbar-nav .nav-link.show {
     font-size: 12px;
     line-height: 14px;
   }
+}
+
+.blackBox {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blackBox:hover .innerBox {
+  transform: rotateY(180deg);
+}
+
+.blackBox .innerBox {
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.blackBox .innerBox .front,
+.blackBox .innerBox .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: inherit;
+}
+
+.blackBox .innerBox .back {
+  transform: rotateY(180deg);
 }
 
 .section-4 .section-title h2 {
@@ -1371,7 +1434,6 @@ header .navbar-nav .nav-link.show {
 
 .footer-section .info-item .info-text {
   flex: 1;
-  padding-top: 8px;
 }
 
 .footer-section .info-item .info-text p {
