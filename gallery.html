@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Section with Ripple</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f5f5f5;
+    }
+
+    .videoParent {
+      position: relative;
+      width: 600px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .videoParent img {
+      width: 100%;
+      display: block;
+    }
+
+    .ripple {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 8px solid white;
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: transform 0.3s;
+    }
+    .play-btn:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    /* Modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .modal-content {
+      position: relative;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .modal iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 16px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 50%;
+      padding: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .close-btn:hover {
+      background: rgba(255,255,255,0.8);
+    }
+  </style>
+</head>
+<body>
+
+<div class="videoParent">
+  <img src="./assets/img/pages/videoimg-2.jpg" alt="Video Thumbnail">
+
+  <div class="ripple-container">
+    <div class="ripple"></div>
+    <div class="ripple"></div>
+    <div class="ripple"></div>
+  </div>
+
+  <div class="play-btn">
+    <img src="play.svg" alt="Play">
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" style="display: none;">
+  <div class="modal-content">
+    <div class="close-btn">&times;</div>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  // GSAP Ripple Animation
+  const ripples = document.querySelectorAll(".ripple");
+  ripples.forEach((circle, i) => {
+    gsap.fromTo(
+      circle,
+      { scale: 0.5, opacity: 0.6 },
+      {
+        scale: 1.5,
+        opacity: 0,
+        duration: 2,
+        ease: "power2.out",
+        repeat: -1,
+        repeatDelay: 0.8,
+        delay: i * 0.6,
+      }
+    );
+  });
+
+  // Modal functionality
+  const playBtn = document.querySelector(".play-btn");
+  const modal = document.querySelector(".modal");
+  const closeBtn = document.querySelector(".close-btn");
+
+  playBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    // stop the video when modal closes
+    const iframe = modal.querySelector("iframe");
+    iframe.src = iframe.src;
+  });
+</script>
+
+</body>
+</html>

@@ -482,9 +482,9 @@ header .navbar-nav .nav-link.show {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
   background-color: #fefff3 !important;
+  overflow: hidden;
 }
 
 .hero-section .swiper-slide {
@@ -563,7 +563,7 @@ header .navbar-nav .nav-link.show {
 
 .hero-section .paginationImg {
   position: absolute;
-  bottom: 2%;
+  bottom: 16%;
   width: 100%;
   height: 200px;
   z-index: 1;
@@ -700,6 +700,62 @@ header .navbar-nav .nav-link.show {
   }
 }
 
+.curved-shape {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  width: 103%;
+  height: 152px;
+  overflow: hidden;
+}
+
+.curved-shape .curve {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent !important;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.curved-shape .curve img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .curved-shape {
+    width: 100%;
+    height: 130px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .curved-shape {
+    width: 100%;
+    height: 110px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .curved-shape {
+    height: 90px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .curved-shape {
+    height: 90px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .curved-shape {
+    height: 66px;
+  }
+}
+
 .getintouchimg .overlay {
   position: absolute;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -714,27 +770,6 @@ header .navbar-nav .nav-link.show {
 .section-1 {
   position: relative;
   background: #fefff3;
-}
-
-.section-1 .curve {
-  position: absolute;
-  width: 124%;
-  height: 117px;
-  left: -100px;
-  top: -15%;
-  background-color: transparent !important;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.section-1 .curve svg {
-  position: absolute;
-  width: 100%;
-  height: 108%;
-  left: 45%;
-  top: 50%;
-  display: block;
-  transform: translate(-52%, -48%);
 }
 
 .section-1 .section-title img {
@@ -820,17 +855,25 @@ header .navbar-nav .nav-link.show {
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
-  .section-1 .section-1 .curve {
+  .section-1 .curve {
     width: 130%;
     left: -135px;
-    top: -26%;
+    top: -15%;
+    height: 100px !important;
   }
   .section-1 .rightContent p {
     padding-right: 30px;
     margin-bottom: 0px;
   }
+  .section-1 .getintouchimg {
+    margin-top: 0px !important;
+  }
   .section-1 .bottom-shape {
     transform: translateY(38px);
+  }
+  .section-1 .leftContent p,
+  .section-1 .rightContent p {
+    font-size: 13px !important;
   }
 }
 
@@ -896,6 +939,11 @@ header .navbar-nav .nav-link.show {
   }
   .section-2 .swiper .swiper-slide .card .card-content p:nth-of-type(2) {
     font-size: 11px;
+  }
+  .section-2 .leaf {
+    position: absolute;
+    top: -10%;
+    right: -5%;
   }
 }
 
@@ -1010,6 +1058,42 @@ header .navbar-nav .nav-link.show {
   gap: 70px;
 }
 
+.section-3 .blackBox {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 .blackBox:hover .innerBox {
+  transform: rotateY(180deg);
+}
+
+.section-3 .blackBox .innerBox {
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.section-3 .blackBox .innerBox .front,
+.section-3 .blackBox .innerBox .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.6rem;
+}
+
+.section-3 .blackBox .innerBox .back {
+  transform: rotateY(180deg);
+}
+
 @media (max-width: 1024px) {
   .section-3 .centerBox {
     gap: 30px;
@@ -1053,42 +1137,6 @@ header .navbar-nav .nav-link.show {
     font-size: 12px;
     line-height: 14px;
   }
-}
-
-.blackBox {
-  perspective: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.blackBox:hover .innerBox {
-  transform: rotateY(180deg);
-}
-
-.blackBox .innerBox {
-  transform-style: preserve-3d;
-  transition: transform 0.8s ease;
-}
-
-.blackBox .innerBox .front,
-.blackBox .innerBox .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 1.6rem;
-}
-
-.blackBox .innerBox .back {
-  transform: rotateY(180deg);
 }
 
 .section-4 .section-title h2 {
@@ -1444,6 +1492,7 @@ header .navbar-nav .nav-link.show {
 
 .footer-section .info-item .info-text {
   flex: 1;
+  word-break: break-all;
 }
 
 .footer-section .info-item .info-text p {
