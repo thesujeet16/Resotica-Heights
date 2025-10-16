@@ -9,19 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
       on: {
         slideChange() {
           const index = this.realIndex;
-          document.querySelectorAll(".paginationImg .circle-div").forEach((el, i) => {
-            el.classList.toggle("active", i === index);
-            const num = el.querySelector(".number");
-            if (num) num.style.visibility = i === index ? "hidden" : "visible";
-          });
+          document
+            .querySelectorAll(".paginationImg .circle-div")
+            .forEach((el, i) => {
+              el.classList.toggle("active", i === index);
+              const num = el.querySelector(".number");
+              if (num)
+                num.style.visibility = i === index ? "hidden" : "visible";
+            });
         },
       },
     });
 
     // Pagination click
-    document.querySelectorAll(".paginationImg .circle-div").forEach((el, i) =>
-      el.addEventListener("click", () => swiper.slideToLoop(i))
-    );
+    document
+      .querySelectorAll(".paginationImg .circle-div")
+      .forEach((el, i) =>
+        el.addEventListener("click", () => swiper.slideToLoop(i))
+      );
 
     // Initialize first state
     const firstCircle = document.querySelector(".paginationImg .circle-div");
@@ -77,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     counterElements.forEach((el) => observer.observe(el));
   }
 
-  // ------------------------- Project Swiper ------------------------ //
+  // ------------------------- testimonial ------------------------ //
   const projectSwiperEl = document.querySelector(".projectSwiper");
   if (projectSwiperEl) {
     const swiper1 = new Swiper(projectSwiperEl, {
@@ -96,6 +101,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ------project------//
+  const projectSwiperEl1 = document.querySelector(".projectSwiper1");
+  if (projectSwiperEl1) {
+    const swiper1 = new Swiper(projectSwiperEl1, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // autoplay: { delay: 3000, disableOnInteraction: false },
+      breakpoints: {
+        768: { slidesPerView: 2, spaceBetween: 30 },
+        1024: { slidesPerView: 2, spaceBetween: 40 },
+      },
+    });
+  }
   // ----------------------- Underline Animation -----------------//
   const paths = document.querySelectorAll(".underline-path");
   if (paths.length) {
@@ -133,7 +156,8 @@ document.addEventListener("DOMContentLoaded", () => {
             slide.classList.remove("swiper-slide-active-center");
           });
           const activeSlide = this.slides[this.activeIndex];
-          if (activeSlide) activeSlide.classList.add("swiper-slide-active-center");
+          if (activeSlide)
+            activeSlide.classList.add("swiper-slide-active-center");
         },
       },
     });
@@ -197,25 +221,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ----------about-us--------------//
   function animateStats() {
-      const stats = document.querySelectorAll('.percent');
+    const stats = document.querySelectorAll(".percent");
 
-      stats.forEach(stat => {
-        const target = +stat.getAttribute('data-percentage');
-        const progressBar = stat.parentElement.querySelector('.progress-bar');
-        let count = 0;
-        const width = progressBar.parentElement.getAttribute('width');
+    stats.forEach((stat) => {
+      const target = +stat.getAttribute("data-percentage");
+      const progressBar = stat.parentElement.querySelector(".progress-bar");
+      let count = 0;
+      const width = progressBar.parentElement.getAttribute("width");
 
-        const interval = setInterval(() => {
-          if (count < target) {
-            count++;
-            stat.textContent = count + '%';
-            progressBar.setAttribute('width', (count / 100) * width);
-          } else {
-            clearInterval(interval);
-          }
-        }, 20);
-      });
-    }
+      const interval = setInterval(() => {
+        if (count < target) {
+          count++;
+          stat.textContent = count + "%";
+          progressBar.setAttribute("width", (count / 100) * width);
+        } else {
+          clearInterval(interval);
+        }
+      }, 20);
+    });
+  }
 
-    window.addEventListener('DOMContentLoaded', animateStats);
+  window.addEventListener("DOMContentLoaded", animateStats);
 });

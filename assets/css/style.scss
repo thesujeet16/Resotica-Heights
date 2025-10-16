@@ -398,6 +398,11 @@ header {
         font-size: 25px;
       }
     }
+    .navbar-toggler{
+      i{
+        color: #fff;
+      }
+    }
   }
   .navbar-nav {
     margin-right: 20px;
@@ -505,6 +510,45 @@ header {
       }
     }
   }
+  @media (max-width: 768px) {
+    .navbar-collapse{
+      background-color: $beige-color;
+      padding: 20px;
+    }
+    .hcontact {
+      gap: 10px !important;
+      span {
+        font-size: 13px;
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+    .hsocial {
+      ul {
+        gap: 10px !important;
+        li {
+          a {
+            i {
+              font-size: 14px;
+              transition: transform 0.4s ease, color 0.4s ease;
+            }
+          }
+        }
+      }
+    }
+    .navbar {
+      padding: 0px;
+    }
+    .navbar-brand {
+      h2 {
+        font-size: 20px;
+        div {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
 }
 // ---------------------------------Header-------------------------------//
 // ---------------------------------Hero Section-------------------------------//
@@ -593,7 +637,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    z-index: 11;
+    z-index: 1;
     .circle-div {
       position: relative;
       width: 100px;
@@ -729,7 +773,100 @@ header {
       }
     }
   }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .swiper-slide {
+      .bg {
+        .hero-content {
+          .layer {
+            gap: 10px;
+            h1 {
+              font-size: 2.5rem;
+            }
+            p {
+              width: 100%;
+              font-size: 12px;
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+    .swiper-slide .bg .btn-outline-secondary {
+      padding-block: 8px;
+    }
+    .paginationImg {
+      height: auto;
+      bottom: 6%;
+      .circle-div {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  @media (min-width: 640px) and (max-width: 768px) {
+    .swiper-slide {
+      .bg {
+        .hero-content {
+          .layer {
+            gap: 10px;
+            h1 {
+              font-size: 2.5rem;
+            }
+            p {
+              width: 100%;
+              font-size: 12px;
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+    .swiper-slide .bg .btn-outline-secondary {
+      padding-block: 8px;
+    }
+    .paginationImg {
+      height: auto;
+      bottom: 6%;
+      .circle-div {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+@media (max-width: 640px){
+    .swiper-slide {
+      .bg {
+        .hero-content {
+          .layer {
+            gap: 8px;
+            h1 {
+              font-size: 1.8rem;
+            }
+            p {
+              width: 100%;
+              font-size: 10px;
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+    .swiper-slide .bg .btn-outline-secondary {
+      padding-block: 8px;
+    }
+    .paginationImg {
+      height: auto;
+      bottom: 6%;
+      .circle-div {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
 }
+
+// --------------------shape----------------//
 .curved-shape {
   position: absolute;
   left: 0;
@@ -768,7 +905,6 @@ header {
     height: 66px;
   }
 }
-
 // ---------------------------Section One-----------------------//
 .getintouchimg {
   .overlay {
@@ -805,6 +941,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
     h2 {
       font-family: $font-marcellus;
     }
@@ -818,6 +956,8 @@ header {
     }
   }
   .aboutimg {
+    width: 100%;
+    height: 100%;
     img {
       object-fit: cover;
       object-position: center;
@@ -965,19 +1105,24 @@ header {
       }
     }
     .leaf {
-      position: absolute;
       top: -10%;
       right: -5%;
     }
   }
   @media (min-width: 992px) and (max-width: 1024px) {
+    .leaf {
+      width: 250px;
+      height: 250px;
+      top: -8%;
+      right: -5%;
+    }
     .swiper {
       .swiper-slide {
         .card {
           .card-content {
             padding: 10px;
             h3 {
-              font-size: 20px;
+              font-size: 18px;
             }
             .subtitle {
               font-size: 14px;
@@ -990,8 +1135,22 @@ header {
               right: 10px;
             }
           }
+          .btn-outline-secondary {
+            padding-block: 5px;
+            font-size: 12px;
+          }
         }
       }
+    }
+  }
+  @media (min-width: 640px) and (max-width: 768px) {
+    padding-top: 90px;
+    .leaf {
+      position: absolute;
+      top: -8%;
+      right: -10%;
+      width: 250px;
+      height: 250px;
     }
   }
 }
@@ -1126,15 +1285,20 @@ header {
   @media (min-width: 1200px) and (max-width: 1400px) {
   }
   @media (max-width: 1024px) {
+    .section-title h2 {
+      font-size: 40px;
+    }
+
     .centerBox {
       gap: 30px;
     }
     .blackBox {
-      width: 290px;
-      height: 290px;
+      width: 250px;
+      height: 250px;
+      margin-bottom: 0px !important;
       .innerBox {
-        width: 270px;
-        height: 270px;
+        width: 230px;
+        height: 230px;
         padding-block: 0px !important;
       }
     }
@@ -1150,6 +1314,9 @@ header {
         width: 200px;
         height: 200px;
         padding-block: 0px !important;
+        .front, .back{
+          padding: 1rem;
+        }
         .icondiv {
           width: 50px;
           height: 50px;
@@ -1330,6 +1497,12 @@ header {
           }
         }
       }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1024px) {
+    p {
+      font-size: 13px;
     }
   }
 }

@@ -389,6 +389,10 @@ header .navbar .navbar-brand div {
   font-size: 25px;
 }
 
+header .navbar .navbar-toggler i {
+  color: #fff;
+}
+
 header .navbar-nav {
   margin-right: 20px;
 }
@@ -476,6 +480,38 @@ header .navbar-nav .nav-link.show {
   }
   header .navbar-nav .nav-link {
     padding-inline: 14px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navbar-collapse {
+    background-color: #ac813c;
+    padding: 20px;
+  }
+  header .hcontact {
+    gap: 10px !important;
+  }
+  header .hcontact span {
+    font-size: 13px;
+  }
+  header .hcontact span i {
+    font-size: 16px;
+  }
+  header .hsocial ul {
+    gap: 10px !important;
+  }
+  header .hsocial ul li a i {
+    font-size: 14px;
+    transition: transform 0.4s ease, color 0.4s ease;
+  }
+  header .navbar {
+    padding: 0px;
+  }
+  header .navbar-brand h2 {
+    font-size: 20px;
+  }
+  header .navbar-brand h2 div {
+    font-size: 14px !important;
   }
 }
 
@@ -571,7 +607,7 @@ header .navbar-nav .nav-link.show {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  z-index: 11;
+  z-index: 1;
 }
 
 .hero-section .paginationImg .circle-div {
@@ -700,6 +736,81 @@ header .navbar-nav .nav-link.show {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-section .swiper-slide .bg .hero-content .layer {
+    gap: 10px;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer p {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .hero-section .swiper-slide .bg .btn-outline-secondary {
+    padding-block: 8px;
+  }
+  .hero-section .paginationImg {
+    height: auto;
+    bottom: 6%;
+  }
+  .hero-section .paginationImg .circle-div {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .hero-section .swiper-slide .bg .hero-content .layer {
+    gap: 10px;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer p {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .hero-section .swiper-slide .bg .btn-outline-secondary {
+    padding-block: 8px;
+  }
+  .hero-section .paginationImg {
+    height: auto;
+    bottom: 6%;
+  }
+  .hero-section .paginationImg .circle-div {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section .swiper-slide .bg .hero-content .layer {
+    gap: 8px;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer h1 {
+    font-size: 1.8rem;
+  }
+  .hero-section .swiper-slide .bg .hero-content .layer p {
+    width: 100%;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .hero-section .swiper-slide .bg .btn-outline-secondary {
+    padding-block: 8px;
+  }
+  .hero-section .paginationImg {
+    height: auto;
+    bottom: 6%;
+  }
+  .hero-section .paginationImg .circle-div {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .curved-shape {
   position: absolute;
   left: 0;
@@ -791,6 +902,8 @@ header .navbar-nav .nav-link.show {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .section-1 .rightContent h2 {
@@ -805,6 +918,11 @@ header .navbar-nav .nav-link.show {
 .section-1 .rightContent .btn-outline-secondary {
   font-family: "Alexandria", sans-serif !important;
   font-weight: 300;
+}
+
+.section-1 .aboutimg {
+  width: 100%;
+  height: 100%;
 }
 
 .section-1 .aboutimg img {
@@ -941,18 +1059,23 @@ header .navbar-nav .nav-link.show {
     font-size: 11px;
   }
   .section-2 .leaf {
-    position: absolute;
     top: -10%;
     right: -5%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
+  .section-2 .leaf {
+    width: 250px;
+    height: 250px;
+    top: -8%;
+    right: -5%;
+  }
   .section-2 .swiper .swiper-slide .card .card-content {
     padding: 10px;
   }
   .section-2 .swiper .swiper-slide .card .card-content h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .section-2 .swiper .swiper-slide .card .card-content .subtitle {
     font-size: 14px;
@@ -963,6 +1086,23 @@ header .navbar-nav .nav-link.show {
   .section-2 .swiper .swiper-slide .card .card-content .card-number {
     top: 8px;
     right: 10px;
+  }
+  .section-2 .swiper .swiper-slide .card .btn-outline-secondary {
+    padding-block: 5px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .section-2 {
+    padding-top: 90px;
+  }
+  .section-2 .leaf {
+    position: absolute;
+    top: -8%;
+    right: -10%;
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -1095,16 +1235,20 @@ header .navbar-nav .nav-link.show {
 }
 
 @media (max-width: 1024px) {
+  .section-3 .section-title h2 {
+    font-size: 40px;
+  }
   .section-3 .centerBox {
     gap: 30px;
   }
   .section-3 .blackBox {
-    width: 290px;
-    height: 290px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 0px !important;
   }
   .section-3 .blackBox .innerBox {
-    width: 270px;
-    height: 270px;
+    width: 230px;
+    height: 230px;
     padding-block: 0px !important;
   }
 }
@@ -1121,6 +1265,9 @@ header .navbar-nav .nav-link.show {
     width: 200px;
     height: 200px;
     padding-block: 0px !important;
+  }
+  .section-3 .blackBox .innerBox .front, .section-3 .blackBox .innerBox .back {
+    padding: 1rem;
   }
   .section-3 .blackBox .innerBox .icondiv {
     width: 50px;
@@ -1306,6 +1453,12 @@ header .navbar-nav .nav-link.show {
 
 .section-5 .swiper-slide .testimonial-Card .inner .content h3 {
   font-weight: 600;
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .section-5 p {
+    font-size: 13px;
+  }
 }
 
 .footer {
