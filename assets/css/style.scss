@@ -76,7 +76,18 @@ body {
 }
 
 // ---------------------------------utils-------------------------------//
+@media (max-width: 450px) {
+  .desktop {
+    display: none;
+  }
 
+  .mobile {
+    display: block;
+  }
+}
+.mobile {
+  display: none;
+}
 .btn:hover {
   background-color: transparent;
 }
@@ -338,6 +349,15 @@ body {
         transition: all 0.6s;
       }
     }
+  }
+}
+@media (max-width: 400px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 }
 
@@ -623,7 +643,6 @@ header {
   }
 }
 
-
 // ---------------------------------Header-------------------------------//
 // ---------------------------------Hero Section-------------------------------//
 
@@ -781,16 +800,6 @@ header {
 
   .mobile-text {
     display: none;
-  }
-
-  @media (max-width: 400px) {
-    .desktop-text {
-      display: none;
-    }
-
-    .mobile-text {
-      display: block;
-    }
   }
 
   @media (min-width: 1401px) and (max-width: 1600px) {
@@ -1406,24 +1415,22 @@ header {
 
     .swiper .swiper-slide .card .card-content {
       padding: 10px;
-      .btn-outline-secondary{
+      .btn-outline-secondary {
         padding-block: 5px;
       }
-      .card{
 
-      }
-      .card-number{
+      .card-number {
         top: 5px;
         right: 5px;
         width: 35px;
         height: 35px;
-      } 
+      }
       h3 {
         font-size: 20px;
       }
-      p{
+      p {
         font-size: 16px;
-        &:last-of-type{
+        &:last-of-type {
           font-size: 13px;
         }
       }
@@ -1436,17 +1443,17 @@ header {
       height: 200px;
     }
   }
-   @media (max-width: 450px){
-    .swiper .swiper-slide .card{
+  @media (max-width: 450px) {
+    .swiper .swiper-slide .card {
       flex-direction: column;
-      .card-img{
+      .card-img {
         height: 200px;
       }
-      .card-content{
+      .card-content {
         width: 100%;
       }
     }
-   }
+  }
 }
 
 // --------------------Section-3----------------------//
@@ -1646,11 +1653,13 @@ header {
 
   @media (max-width: 540px) {
     .section-title h2 {
-        font-size: 30px;
+      font-size: 30px;
     }
+    .blackBox {
+      margin-bottom: 16px !important;
+    }
+  }
 }
-}
-
 
 // -----------------------section-4-----------------------------//
 .section-4 {
@@ -1743,7 +1752,13 @@ header {
     background-color: $beige-color;
     color: white;
   }
-
+  .mobile .btn-outline-secondary {
+    border: 1px solid $beige-color;
+    color: $beige-color;
+    &:focus {
+      color: $white-color;
+    }
+  }
   @media (max-width: 1024px) {
     .blog-title {
       font-size: 16px;
@@ -1834,6 +1849,41 @@ header {
   @media (min-width: 992px) and (max-width: 1024px) {
     p {
       font-size: 13px;
+    }
+  }
+  @media (max-width: 450px) {
+    .section-title h2:nth-child(2) {
+      font-size: 24px;
+    }
+    .swiper-slide .testimonial-Card .inner {
+      .content {
+        margin-top: 1rem;
+        p {
+          font-size: 13px;
+        }
+      }
+      .quotion {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .user-img {
+        top: -30px;
+        right: 0;
+        .rating {
+          right: 0;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
 }
@@ -2064,5 +2114,28 @@ header {
         }
       }
     }
+  }
+  @media (max-width: 450px) {
+    .footer-bottom {
+      margin-top: 10px;
+      gap: 0;
+      justify-content: center;
+      .powered-by {
+        font-size: 10px;
+        span {
+          font-size: 10px;
+        }
+      }
+      
+    }
+    .brand-section{
+      margin-bottom: 20px;
+    }
+    .footer-heading {
+      margin-bottom: 10px !important;
+    }
+ .footer-links li {
+        margin-bottom: 0px !important;
+      }
   }
 }
