@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       autoplay: { delay: 3000, disableOnInteraction: false },
       breakpoints: {
-        768: { slidesPerView: 2, spaceBetween: 30 },
+        768: { slidesPerView: 1, spaceBetween: 30 },
         1024: { slidesPerView: 2, spaceBetween: 40 },
       },
     });
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       // autoplay: { delay: 3000, disableOnInteraction: false },
       breakpoints: {
-        768: { slidesPerView: 2, spaceBetween: 30 },
+        768: { slidesPerView: 1, spaceBetween: 30 },
         1024: { slidesPerView: 2, spaceBetween: 40 },
       },
     });
