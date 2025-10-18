@@ -44,60 +44,48 @@
       </div>
     </div>
     <div class="line"></div>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container px-lg-0 px-md-0 px-3">
-        <a class="navbar-brand" href="#">
-          <h2 class="">
-            Resotica
-            <div>Heights</div>
-          </h2>
-        </a>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid px-lg-5 px-md-4 px-3">
+    <a class="navbar-brand" href="#">
+      <h2>Resotica <div>Heights</div></h2>
+    </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="ri-menu-3-fill"></i>
-        </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <i class="ri-menu-3-fill"></i>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Projects
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/blogs.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contactus.html">Contact Us</a>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-outline-secondary">
-            Get In Touch
-          </button>
-        </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </nav>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a></li>
+              <li><a class="dropdown-item" href="#">Vellura Farm</a></li>
+              <li><a class="dropdown-item" href="#">Vellura Farm</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blogs.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contactus.html">Contact Us</a></li>
+        </ul>
+        <button type="button" class="btn btn-outline-secondary ms-lg-3 mt-3 mt-lg-0">
+          Get In Touch
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
   </header>
   <!-- header -->
 
@@ -662,7 +650,7 @@
                 See why customers choose us.
               </h2>
             </div>
-            <button type="button" class="btn btn-outline-secondary desktop">
+            <button type="button" class="btn btn-outline-secondary desktop mobile">
               View All
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 22" fill="none">

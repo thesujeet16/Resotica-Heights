@@ -347,6 +347,27 @@ header {
   z-index: 11;
 }
 
+header .offcanvas {
+  background-color: #000;
+}
+
+header .offcanvas .btn-close {
+  filter: invert(1);
+}
+
+header .offcanvas .btn-close:hover {
+  filter: invert(0.8);
+}
+
+header .offcanvas-header {
+  color: #fff;
+}
+
+header .offcanvas-header .btn-close i {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
 header .line {
   border-bottom: 1px solid #ffffff33;
 }
@@ -537,10 +558,10 @@ header .navbar-nav .nav-link.show {
     padding: 0px;
   }
   header .navbar-brand h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   header .navbar-brand h2 div {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
 }
 
@@ -1106,6 +1127,9 @@ header .navbar-nav .nav-link.show {
 }
 
 @media (min-width: 640px) and (max-width: 992px) {
+  .section-1 p {
+    font-size: 15px !important;
+  }
   .section-1 .rightContent p {
     padding-right: 0;
     margin-bottom: 0;
@@ -1116,10 +1140,16 @@ header .navbar-nav .nav-link.show {
 }
 
 @media (max-width: 640px) {
+  .section-1 p {
+    font-size: 15px !important;
+  }
   .section-1 .rightContent {
     padding-left: 0px;
     margin-top: 2rem;
     justify-content: start;
+  }
+  .section-1 .getintouchimg h3 {
+    margin-bottom: 20px;
   }
 }
 
@@ -1289,11 +1319,12 @@ header .navbar-nav .nav-link.show {
   border: 0.98px solid #ffffff;
   transition: all 0.5s ease;
   cursor: pointer;
+  padding: 10px;
 }
 
 .section-3 .blackBox .innerBox {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   background-color: #0c0c0c;
   color: #fff;
   transition: all 0.5s ease;
@@ -1410,8 +1441,6 @@ header .navbar-nav .nav-link.show {
     margin-bottom: 0px !important;
   }
   .section-3 .blackBox .innerBox {
-    width: 230px;
-    height: 230px;
     padding-block: 0px !important;
   }
 }
@@ -1420,13 +1449,7 @@ header .navbar-nav .nav-link.show {
   .section-3 .centerBox {
     gap: 30px;
   }
-  .section-3 .blackBox {
-    width: 220px;
-    height: 220px;
-  }
   .section-3 .blackBox .innerBox {
-    width: 200px;
-    height: 200px;
     padding-block: 0px !important;
   }
   .section-3 .blackBox .innerBox .front,
@@ -1434,19 +1457,19 @@ header .navbar-nav .nav-link.show {
     padding: 1rem;
   }
   .section-3 .blackBox .innerBox .icondiv {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
   }
   .section-3 .blackBox .innerBox .icondiv img {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
   }
   .section-3 .blackBox .innerBox h3 {
     font-size: 15px;
   }
   .section-3 .blackBox .innerBox p {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 
@@ -1455,6 +1478,8 @@ header .navbar-nav .nav-link.show {
     font-size: 30px;
   }
   .section-3 .blackBox {
+    width: 325px;
+    height: 325px;
     margin-bottom: 16px !important;
   }
 }
@@ -1640,6 +1665,15 @@ header .navbar-nav .nav-link.show {
 @media (min-width: 992px) and (max-width: 1024px) {
   .section-5 p {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 540px) {
+  .section-5 .section-title h2:nth-child(2) {
+    font-size: 30px;
+  }
+  .section-5 .swiper-slide .testimonial-Card .inner .content {
+    margin-top: 1rem !important;
   }
 }
 
@@ -1907,7 +1941,6 @@ header .navbar-nav .nav-link.show {
   .footer-section .footer-bottom {
     margin-top: 10px;
     gap: 0;
-    justify-content: center;
   }
   .footer-section .footer-bottom .powered-by {
     font-size: 10px;
