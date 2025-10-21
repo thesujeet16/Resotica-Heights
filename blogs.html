@@ -1,764 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resotica Heights</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marcellus&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/allpages.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="position-absolute w-100">
-      <div class="container py-2 px-0">
-        <div class="header-top d-flex justify-content-between text-white">
-          <div class="hcontact align-items-center d-flex gap-5">
-            <span class="d-flex gap-2"
-              ><i class="ri-phone-line"></i> 999999999</span
-            >
-            <span class="d-flex gap-2"
-              ><i class="ri-mail-line"></i>alma.lawson@example.com</span
-            >
-          </div>
-          <div class="hsocial d-flex gap-5">
-            <ul class="d-flex gap-4 align-items-center mb-0">
-              <li>
-                <a href="/"><i class="ri-facebook-fill"></i></a>
-              </li>
-              <li>
-                <a href="/"><i class="ri-twitter-x-line"></i></a>
-              </li>
-              <li>
-                <a href="/"><i class="ri-youtube-fill"></i></a>
-              </li>
-              <li>
-                <a href="/"><i class="ri-instagram-line"></i></a>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resotica Heights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marcellus&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/allpages.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="position-absolute w-100">
+    <div class="container preheader px-md-0 py-2 px-0">
+      <div class="header-top d-flex justify-content-between text-white">
+        <div class="hcontact align-items-center d-flex gap-5">
+          <span class="d-flex gap-2"><i class="ri-phone-line"></i> 999999999</span>
+          <span class="d-flex gap-2"><i class="ri-mail-line"></i>alma.lawson@example.com</span>
+        </div>
+        <div class="hsocial d-flex gap-5">
+          <ul class="d-flex gap-4 align-items-center mb-0">
+            <li>
+              <a href="/"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-twitter-x-line"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-instagram-line"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="line"></div>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container px-0">
-          <a class="navbar-brand" href="#">
-            <h2 class="">
-              Resotica
-              <div>Heights</div>
-            </h2>
-          </a>
+    </div>
+    <div class="line"></div>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container px-lg-0 px-md-0 px-3 pb-sm-0">
+        <a class="navbar-brand" href="#">
+          <h2>Resotica <div>Heights</div>
+          </h2>
+        </a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="ri-menu-3-fill"></i>
+        </button>
 
-          <!-- Add ms-auto to push nav items to the right -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About Us</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Projects
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Vellura Farm</a></li>
+                  <li><a class="dropdown-item" href="#">Vellura Farm</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/blogs.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="/contactus.html">Contact Us</a>
-              </li>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+              <li class="nav-item"><a class="nav-link" href="/blogs.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contactus.html">Contact Us</a></li>
             </ul>
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" class="btn btn-outline-secondary ms-lg-3 mt-3 mt-lg-0">
               Get In Touch
             </button>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- header -->
-
-    <div class="common-hero hero-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="page-title text-center text-white">
-              <div class="pgtitle">
-                <h2>Blogs</h2>
-              </div>
-              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">
-                    <a href="/index.html">Home</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    blogs
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="blog-categories text-center py-4 bg-black">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="nav justify-content-center flex-wrap gap-5">
-              <li class="nav-item">
-                <a href="#" class="btn active" data-filter="all">All</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="btn" data-filter="travel">Lorem Ipsum</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="btn" data-filter="food">Lorem Ipsum</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="btn" data-filter="lifestyle">Lorem Ipsum</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="btn" data-filter="tips">Lorem Ipsum</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="blog-list-container">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-title text-center pb-5">
-              <h2>Navigating Real Estate with Expert Advice and</h2>
-              <h2>Market Updates</h2>
-              <p>Stories, strategies, and sparks of creativity.</p>
+  </header>
+  <!-- header -->
+
+  <div class="common-hero hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-title text-center text-white">
+            <div class="pgtitle">
+              <h2>Blogs</h2>
             </div>
-          </div>
-        </div>
-        <div class="row pb-4">
-          <div class="col-md-3 pb-4">
-            <div class="blog-card travel">
-              <div class="blog-img w-100">
-                <img
-                  src="./assets/img/pages/blog-2.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex justify-content-between py-2 px-3">
-                <p>By Resotica Heights</p>
-                <p>Nov 25 , 2025</p>
-              </div>
-              <h3 class="px-3 myfs-4">
-                Dream house that you’ll never ever forgets
-              </h3>
-              <div class="para-link d-flex justify-content-between px-3 pb-2">
-                <p>
-                  deserunt sed enim reprehenderit <br />
-                  pariatur id reprehenderit
-                </p>
-
-                <a href="/" class="btn">
-                  <svg
-                    class="arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
-                      stroke="#FFFBFB"
-                      stroke-width="1.74507"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 pb-4">
-            <div class="blog-card food">
-              <div class="blog-img w-100">
-                <img
-                  src="./assets/img/pages/blog-3.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex justify-content-between py-2 px-3">
-                <p>By Resotica Heights</p>
-                <p>Nov 25 , 2025</p>
-              </div>
-              <h3 class="px-3 myfs-4">
-                Dream house that you’ll never ever forgets
-              </h3>
-              <div class="para-link d-flex justify-content-between px-3 pb-2">
-                <p>
-                  deserunt sed enim reprehenderit <br />
-                  pariatur id reprehenderit
-                </p>
-
-                <a href="/" class="btn">
-                  <svg
-                    class="arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
-                      stroke="#FFFBFB"
-                      stroke-width="1.74507"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 pb-4">
-            <div class="blog-card">
-              <div class="blog-img w-100 lifestyle">
-                <img
-                  src="./assets/img/pages/blog-4.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex justify-content-between py-2 px-3">
-                <p>By Resotica Heights</p>
-                <p>Nov 25 , 2025</p>
-              </div>
-              <h3 class="px-3 myfs-4">
-                Dream house that you’ll never ever forgets
-              </h3>
-              <div class="para-link d-flex justify-content-between px-3 pb-2">
-                <p>
-                  deserunt sed enim reprehenderit <br />
-                  pariatur id reprehenderit
-                </p>
-
-                <a href="/" class="btn">
-                  <svg
-                    class="arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
-                      stroke="#FFFBFB"
-                      stroke-width="1.74507"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 pb-4">
-            <div class="blog-card tips">
-              <div class="blog-img w-100">
-                <img
-                  src="./assets/img/pages/blog-5.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex justify-content-between py-2 px-3">
-                <p>By Resotica Heights</p>
-                <p>Nov 25 , 2025</p>
-              </div>
-              <h3 class="px-3 myfs-4">
-                Dream house that you’ll never ever forgets
-              </h3>
-              <div class="para-link d-flex justify-content-between px-3 pb-2">
-                <p>
-                  deserunt sed enim reprehenderit <br />
-                  pariatur id reprehenderit
-                </p>
-
-                <a href="/" class="btn">
-                  <svg
-                    class="arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
-                      stroke="#FFFBFB"
-                      stroke-width="1.74507"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 pb-4">
-            <div class="blog-card travel">
-              <div class="blog-img w-100">
-                <img
-                  src="./assets/img/pages/blog-6.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex justify-content-between py-2 px-3">
-                <p>By Resotica Heights</p>
-                <p>Nov 25 , 2025</p>
-              </div>
-              <h3 class="px-3 myfs-4">
-                Dream house that you’ll never ever forgets
-              </h3>
-              <div class="para-link d-flex justify-content-between px-3 pb-2">
-                <p>
-                  deserunt sed enim reprehenderit <br />
-                  pariatur id reprehenderit
-                </p>
-
-                <a href="/" class="btn">
-                  <svg
-                    class="arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
-                      stroke="#FFFBFB"
-                      stroke-width="1.74507"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 pb-4">
-            <div class="blog-card food">
-              <div class="blog-img w-100">
-                <img
-                  src="./assets/img/pages/blog-7.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex justify-content-between py-2 px-3">
-                <p>By Resotica Heights</p>
-                <p>Nov 25 , 2025</p>
-              </div>
-              <h3 class="px-3 myfs-4">
-                Dream house that you’ll never ever forgets
-              </h3>
-              <div class="para-link d-flex justify-content-between px-3 pb-2">
-                <p>
-                  deserunt sed enim reprehenderit <br />
-                  pariatur id reprehenderit
-                </p>
-
-                <a href="/" class="btn">
-                  <svg
-                    class="arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
-                      stroke="#FFFBFB"
-                      stroke-width="1.74507"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 pb-4">
-            <div class="blog-card">
-              <div class="blog-img w-100 lifestyle">
-                <img
-                  src="./assets/img/pages/blog-8.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex justify-content-between py-2 px-3">
-                <p>By Resotica Heights</p>
-                <p>Nov 25 , 2025</p>
-              </div>
-              <h3 class="px-3 myfs-4">
-                Dream house that you’ll never ever forgets
-              </h3>
-              <div class="para-link d-flex justify-content-between px-3 pb-2">
-                <p>
-                  deserunt sed enim reprehenderit <br />
-                  pariatur id reprehenderit
-                </p>
-
-                <a href="/" class="btn">
-                  <svg
-                    class="arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
-                      stroke="#FFFBFB"
-                      stroke-width="1.74507"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 pb-4">
-            <div class="blog-card tips">
-              <div class="blog-img w-100">
-                <img
-                  src="./assets/img/pages/blog-9.jpg"
-                  class="w-100 h-100"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex justify-content-between py-2 px-3">
-                <p>By Resotica Heights</p>
-                <p>Nov 25 , 2025</p>
-              </div>
-              <h3 class="px-3 myfs-4">
-                Dream house that you’ll never ever forgets
-              </h3>
-              <div class="para-link d-flex justify-content-between px-3 pb-2">
-                <p>
-                  deserunt sed enim reprehenderit <br />
-                  pariatur id reprehenderit
-                </p>
-
-                <a href="/" class="btn">
-                  <svg
-                    class="arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
-                      stroke="#FFFBFB"
-                      stroke-width="1.74507"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-
-        <div class="row pt-5 pb-5">
-          <div class="col-md-10 m-auto">
-            <nav aria-label="..." class="d-flex justify-content-center align-items-center">
-              <ul class="pagination d-flex gap-3 mb-0">
-                <li class="page-item">
-                  <a href="#" class="page-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M6.75 15.75L3 12M3 12L6.75 8.25M3 12L21 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>Prev</a>
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/index.html">Home</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active">
-                  <a class="page-link" href="#" aria-current="page">2</a>
+                <li class="breadcrumb-item active" aria-current="page">
+                  blogs
                 </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li  class="page-item"></li>
-                <li class="page-item "><a class="page-link" href="#">20</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M17.25 8.25L21 12M21 12L17.25 15.75M21 12L3 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></a>
-                </li>
-              </ul>
+              </ol>
             </nav>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- footer with contact-us form -->
-    <div class="footer">
-      <!-- <div class="container position-relative z-3">
-        <div class="row">
-          <div class="col-md-8 m-auto py-5">
-            <div class="section-title mb-4 text-center">
-              <h2 class="mb-0 lh-1 myfs-5 text-white">Get in Touch</h2>
-            </div>
-            <form id="contactForm">
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="First Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Last Name"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="tel"
-                    class="form-control"
-                    placeholder="Phone"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="mb-4">
-                <textarea
-                  class="form-control"
-                  placeholder="Write your Messages......"
-                  required
-                ></textarea>
-              </div>
-              <div class="col-md-12 text-center pt-4">
-                <button type="button" class="btn btn-outline-secondary">
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
+  <div class="blog-categories text-center py-4 bg-black">
+    <div class="container px-lg-0 px-md-0 px-3 px-0">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav justify-content-center flex-wrap gap-5">
+            <li class="nav-item">
+              <a href="#" class="btn active" data-filter="all">All</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn" data-filter="travel">Lorem Ipsum</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn" data-filter="food">Lorem Ipsum</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn" data-filter="lifestyle">Lorem Ipsum</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn" data-filter="tips">Lorem Ipsum</a>
+            </li>
+          </ul>
         </div>
-      </div> -->
-      <footer class="footer-section pt-5">
-        <div class="container footer-content m-auto px-0">
-          <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-              <div class="brand-section">
-                <h2>
-                  Resotica <br />
-                  <span>Heights</span>
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do e amet, consectetur adipiscing elit, sed do e dolor sit
-                  amet, consectetur adipiscing elit, sed do e a.
-                </p>
-
-                <div class="social-icons">
-                  <a href="#" class="social-icon">
-                    <i class="ri-facebook-fill"></i>
-                  </a>
-                  <a href="#" class="social-icon">
-                    <i class="ri-twitter-x-line"></i>
-                  </a>
-                  <a href="#" class="social-icon">
-                    <i class="ri-youtube-fill"></i>
-                  </a>
-                  <a href="#" class="social-icon">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="footer-heading">Quick Access</h3>
-              <ul class="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="footer-heading">Quick Access</h3>
-              <ul class="footer-links">
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="footer-heading">Info</h3>
-
-              <div class="info-item">
-                <div class="info-icon">
-                  <i class="ri-map-pin-line"></i>
-                </div>
-                <div class="info-text">
-                  <p>2118 Thornridge Cir. Syracuse,<br />Connecticut 35624</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="info-icon">
-                  <i class="ri-phone-line"></i>
-                </div>
-                <div class="info-text">
-                  <p>(+33)6 55 59 32 88<br />(+33)6 55 59 32 88</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="info-icon">
-                  <i class="ri-mail-line"></i>
-                </div>
-                <div class="info-text">
-                  <p>alma.lawson@example.com<br />manhhachk@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Footer Bottom -->
-          <div class="footer-bottom">
-            <div class="copyright">© Copyright 2025. All Rights Reserved.</div>
-            <div class="powered-by">
-              Powered by <span>Doors</span> <span>Studio</span>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </div>
     </div>
+  </div>
 
-    <!-- footer with contact-us form -->
+  <div class="blog-list-container">
+    <div class="container px-lg-0 px-md-0 px-3 px-0 py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title text-center pb-5">
+            <h2>Navigating Real Estate with Expert Advice and</h2>
+            <h2>Market Updates</h2>
+            <p>Stories, strategies, and sparks of creativity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-4">
+        <div class="col-md-3 pb-4">
+          <div class="blog-card travel">
+            <div class="blog-img w-100">
+              <img src="./assets/img/pages/blog-2.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="d-flex justify-content-between py-2 px-3">
+              <p>By Resotica Heights</p>
+              <p>Nov 25 , 2025</p>
+            </div>
+            <h3 class="px-3 myfs-4">
+              Dream house that you’ll never ever forgets
+            </h3>
+            <div class="para-link d-flex justify-content-between px-3 pb-2">
+              <p>
+                deserunt sed enim reprehenderit <br />
+                pariatur id reprehenderit
+              </p>
 
-    <!-- js part -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const filterButtons = document.querySelectorAll(".blog-categories .btn");
-    const blogCards = document.querySelectorAll(".blog-card");
+              <a href="/" class="btn">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                  fill="none">
+                  <path d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
+                    stroke="#FFFBFB" stroke-width="1.74507" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pb-4">
+          <div class="blog-card food">
+            <div class="blog-img w-100">
+              <img src="./assets/img/pages/blog-3.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="d-flex justify-content-between py-2 px-3">
+              <p>By Resotica Heights</p>
+              <p>Nov 25 , 2025</p>
+            </div>
+            <h3 class="px-3 myfs-4">
+              Dream house that you’ll never ever forgets
+            </h3>
+            <div class="para-link d-flex justify-content-between px-3 pb-2">
+              <p>
+                deserunt sed enim reprehenderit <br />
+                pariatur id reprehenderit
+              </p>
 
-    filterButtons.forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
+              <a href="/" class="btn">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                  fill="none">
+                  <path d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
+                    stroke="#FFFBFB" stroke-width="1.74507" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pb-4">
+          <div class="blog-card">
+            <div class="blog-img w-100 lifestyle">
+              <img src="./assets/img/pages/blog-4.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="d-flex justify-content-between py-2 px-3">
+              <p>By Resotica Heights</p>
+              <p>Nov 25 , 2025</p>
+            </div>
+            <h3 class="px-3 myfs-4">
+              Dream house that you’ll never ever forgets
+            </h3>
+            <div class="para-link d-flex justify-content-between px-3 pb-2">
+              <p>
+                deserunt sed enim reprehenderit <br />
+                pariatur id reprehenderit
+              </p>
 
-        // Remove active class from all buttons
-        filterButtons.forEach((b) => b.classList.remove("active"));
-        // Add active class to clicked button
-        btn.classList.add("active");
+              <a href="/" class="btn">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                  fill="none">
+                  <path d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
+                    stroke="#FFFBFB" stroke-width="1.74507" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pb-4">
+          <div class="blog-card tips">
+            <div class="blog-img w-100">
+              <img src="./assets/img/pages/blog-5.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="d-flex justify-content-between py-2 px-3">
+              <p>By Resotica Heights</p>
+              <p>Nov 25 , 2025</p>
+            </div>
+            <h3 class="px-3 myfs-4">
+              Dream house that you’ll never ever forgets
+            </h3>
+            <div class="para-link d-flex justify-content-between px-3 pb-2">
+              <p>
+                deserunt sed enim reprehenderit <br />
+                pariatur id reprehenderit
+              </p>
 
-        const filter = btn.getAttribute("data-filter");
+              <a href="/" class="btn">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                  fill="none">
+                  <path d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
+                    stroke="#FFFBFB" stroke-width="1.74507" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
-        blogCards.forEach((card) => {
-          // Check if card has category matching data-filter
-          // Assuming you add a category class to each blog-card like: travel, food, lifestyle, tips
-          if (filter === "all") {
-            card.parentElement.style.display = "block"; // Show all
-          } else {
-            if (card.classList.contains(filter)) {
+        <div class="col-md-3 pb-4">
+          <div class="blog-card travel">
+            <div class="blog-img w-100">
+              <img src="./assets/img/pages/blog-6.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="d-flex justify-content-between py-2 px-3">
+              <p>By Resotica Heights</p>
+              <p>Nov 25 , 2025</p>
+            </div>
+            <h3 class="px-3 myfs-4">
+              Dream house that you’ll never ever forgets
+            </h3>
+            <div class="para-link d-flex justify-content-between px-3 pb-2">
+              <p>
+                deserunt sed enim reprehenderit <br />
+                pariatur id reprehenderit
+              </p>
+
+              <a href="/" class="btn">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                  fill="none">
+                  <path d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
+                    stroke="#FFFBFB" stroke-width="1.74507" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pb-4">
+          <div class="blog-card food">
+            <div class="blog-img w-100">
+              <img src="./assets/img/pages/blog-7.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="d-flex justify-content-between py-2 px-3">
+              <p>By Resotica Heights</p>
+              <p>Nov 25 , 2025</p>
+            </div>
+            <h3 class="px-3 myfs-4">
+              Dream house that you’ll never ever forgets
+            </h3>
+            <div class="para-link d-flex justify-content-between px-3 pb-2">
+              <p>
+                deserunt sed enim reprehenderit <br />
+                pariatur id reprehenderit
+              </p>
+
+              <a href="/" class="btn">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                  fill="none">
+                  <path d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
+                    stroke="#FFFBFB" stroke-width="1.74507" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pb-4">
+          <div class="blog-card">
+            <div class="blog-img w-100 lifestyle">
+              <img src="./assets/img/pages/blog-8.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="d-flex justify-content-between py-2 px-3">
+              <p>By Resotica Heights</p>
+              <p>Nov 25 , 2025</p>
+            </div>
+            <h3 class="px-3 myfs-4">
+              Dream house that you’ll never ever forgets
+            </h3>
+            <div class="para-link d-flex justify-content-between px-3 pb-2">
+              <p>
+                deserunt sed enim reprehenderit <br />
+                pariatur id reprehenderit
+              </p>
+
+              <a href="/" class="btn">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                  fill="none">
+                  <path d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
+                    stroke="#FFFBFB" stroke-width="1.74507" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pb-4">
+          <div class="blog-card tips">
+            <div class="blog-img w-100">
+              <img src="./assets/img/pages/blog-9.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="d-flex justify-content-between py-2 px-3">
+              <p>By Resotica Heights</p>
+              <p>Nov 25 , 2025</p>
+            </div>
+            <h3 class="px-3 myfs-4">
+              Dream house that you’ll never ever forgets
+            </h3>
+            <div class="para-link d-flex justify-content-between px-3 pb-2">
+              <p>
+                deserunt sed enim reprehenderit <br />
+                pariatur id reprehenderit
+              </p>
+
+              <a href="/" class="btn">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                  fill="none">
+                  <path d="M1.30087 15.8406L15.8431 1.29832M15.8431 1.29832L4.93644 1.29832M15.8431 1.29832V12.205"
+                    stroke="#FFFBFB" stroke-width="1.74507" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row pt-5 pb-5">
+        <div class="col-md-10 m-auto">
+          <nav aria-label="..." class="d-flex justify-content-center align-items-center">
+            <ul class="pagination d-flex gap-3 mb-0">
+              <li class="page-item">
+                <a href="#" class="page-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M6.75 15.75L3 12M3 12L6.75 8.25M3 12L21 12" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>Prev</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#" aria-current="page">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"></li>
+              <li class="page-item "><a class="page-link" href="#">20</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M17.25 8.25L21 12M21 12L17.25 15.75M21 12L3 12" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer with contact-us form -->
+  <div class="footer">
+
+    <footer class="footer-section pt-5">
+      <div class="container px-lg-0 px-md-0 px-3 footer-content m-auto px-0">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="brand-section">
+              <h2>
+                Resotica <br />
+                <span>Heights</span>
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do e amet, consectetur adipiscing elit, sed do e dolor sit
+                amet, consectetur adipiscing elit, sed do e a.
+              </p>
+
+              <div class="social-icons">
+                <a href="#" class="social-icon">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-youtube-fill"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3 class="footer-heading">Quick Access</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3 class="footer-heading">Quick Access</h3>
+            <ul class="footer-links">
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3 class="footer-heading">Info</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <div class="info-text">
+                <p>2118 Thornridge Cir. Syracuse,<br />Connecticut 35624</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-phone-line"></i>
+              </div>
+              <div class="info-text">
+                <p>(+33)6 55 59 32 88<br />(+33)6 55 59 32 88</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-mail-line"></i>
+              </div>
+              <div class="info-text">
+                <p>alma.lawson@example.com<br />manhhachk@example.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="copyright">© Copyright 2025. All Rights Reserved.</div>
+          <div class="powered-by">
+            Powered by <span>Doors</span> <span>Studio</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- footer with contact-us form -->
+
+  <!-- js part -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".blog-categories .btn");
+      const blogCards = document.querySelectorAll(".blog-card");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          filterButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.getAttribute("data-filter");
+
+          blogCards.forEach((card) => {
+
+            if (filter === "all") {
               card.parentElement.style.display = "block";
             } else {
-              card.parentElement.style.display = "none";
+              if (card.classList.contains(filter)) {
+                card.parentElement.style.display = "block";
+              } else {
+                card.parentElement.style.display = "none";
+              }
             }
-          }
+          });
         });
       });
     });
-  });
-</script>
+  </script>
 
-  </body>
+</body>
+
 </html>

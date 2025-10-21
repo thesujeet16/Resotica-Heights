@@ -55,19 +55,6 @@ body {
   padding-inline: 0px;
 }
 
-@media (max-width: 450px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-}
-
-.mobile {
-  display: none;
-}
-
 .btn:hover {
   background-color: transparent;
 }
@@ -333,12 +320,32 @@ body {
   transition: all 0.6s;
 }
 
+.mobile {
+  display: none !important;
+}
+
 @media (max-width: 400px) {
   .desktop {
     display: none;
   }
   .mobile {
     display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .section-5 .btn-outline-secondary {
+    border: 1px solid #ac813c;
+    color: #ac813c;
+  }
+  .section-5 .btn-outline-secondary:hover {
+    color: #fff;
   }
 }
 
@@ -565,7 +572,7 @@ header .navbar-nav .nav-link.show {
   }
 }
 
-@media (min-width: 300px) and (max-width: 540px) {
+@media (min-width: 300px) and (max-width: 640px) {
   header .preheader,
   header .line {
     display: none;
@@ -750,7 +757,7 @@ header .navbar-nav .nav-link.show {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
   .hero-section {
     height: auto;
   }
@@ -1484,6 +1491,17 @@ header .navbar-nav .nav-link.show {
   }
 }
 
+@media (max-width: 350px) {
+  .section-3 .section-title h2 {
+    font-size: 30px;
+  }
+  .section-3 .blackBox {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 16px !important;
+  }
+}
+
 .section-4 .section-title h2 {
   color: #ac813c;
 }
@@ -1584,6 +1602,12 @@ header .navbar-nav .nav-link.show {
 @media (max-width: 1024px) {
   .section-4 .blog-title {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 540px) {
+  .section-4 {
+    padding-bottom: 1rem !important;
   }
 }
 
@@ -1935,6 +1959,28 @@ header .navbar-nav .nav-link.show {
 
 .footer-section .footer-bottom .powered-by span:nth-child(2) {
   color: #605f5f;
+}
+
+@media (max-width: 640px) {
+  .footer-section .footer-bottom {
+    margin-top: 10px;
+    gap: 0;
+  }
+  .footer-section .footer-bottom .powered-by {
+    font-size: 10px;
+  }
+  .footer-section .footer-bottom .powered-by span {
+    font-size: 10px;
+  }
+  .footer-section .brand-section {
+    margin-bottom: 20px;
+  }
+  .footer-section .footer-heading {
+    margin-bottom: 10px !important;
+  }
+  .footer-section .footer-links li {
+    margin-bottom: 0px !important;
+  }
 }
 
 @media (max-width: 450px) {

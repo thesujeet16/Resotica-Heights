@@ -965,10 +965,9 @@ $font-sizes: (
 
 .common-hero {
   position: relative;
-  background-image: url("../img/pages/blogbanner.png");
+  background-image: url("../img/banner/blogbanner.webp");
   background-position: center;
   background-size: cover;
-  background: rgba(0, 0, 0, 0.7);
   height: 60vh;
   &::after {
     content: "";
@@ -1197,9 +1196,6 @@ $font-sizes: (
   background: #000;
 }
 
-// ======================
-// Contact Section
-// ======================
 .contact-section {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -1421,7 +1417,139 @@ $font-sizes: (
     }
   }
 }
-
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact-section {
+    .left-section {
+      padding: 1rem !important;
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .info-box {
+        padding: 20px;
+        p {
+          font-size: 13px;
+          line-break: anywhere;
+        }
+      }
+    }
+    .right-section {
+      padding: 20px !important;
+      gap: 30px;
+      .social-divider {
+        padding-left: 30px;
+        svg {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .contact-section {
+    .left-section {
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .info-box {
+        p {
+          font-size: 13px;
+          line-break: anywhere;
+        }
+      }
+    }
+    .right-section {
+      gap: 30px;
+      .social-divider {
+        padding-left: 30px;
+        svg {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  .contact-section {
+    .left-section {
+      padding: 1rem !important;
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .info-box {
+        padding: 20px;
+        p {
+          font-size: 13px;
+          line-break: anywhere;
+        }
+      }
+    }
+    .right-section {
+      padding: 20px !important;
+      gap: 30px;
+      .social-divider {
+        padding-left: 30px;
+        svg {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 300px) and (max-width: 440px) {
+  .contact-section {
+    .left-section {
+      padding: 1rem !important;
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .info-box {
+        padding: 20px;
+        p {
+          font-size: 13px;
+          line-break: anywhere;
+        }
+      }
+    }
+    .right-section {
+      flex-direction: column;
+      padding: 20px !important;
+      gap: 30px;
+      .social-divider {
+        display: flex;
+        padding-left: 0px;
+        width: 100%;
+        .contact-social{
+          flex-direction: row !important;
+        }
+        .verticle-line{
+          position:static;
+          width: 100%;
+          height: 1px;
+          margin-top: 16px;
+          
+          p{
+            margin-bottom: 0;
+          }
+        }
+        svg {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
 // ---------------blog-details---------------//
 
 .blog-detail-container {
@@ -2107,10 +2235,10 @@ $font-sizes: (
       color: $white-color;
     }
   }
-  .btn-outline-secondary{
-    border:1px solid $beige-color ;
+  .btn-outline-secondary {
+    border: 1px solid $beige-color;
     color: $beige-color;
-    &:hover{
+    &:hover {
       color: $white-color;
     }
   }

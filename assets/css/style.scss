@@ -77,18 +77,6 @@ body {
 
 // ---------------------------------utils-------------------------------//
 
-@media (max-width: 450px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-}
-.mobile {
-  display: none;
-}
 .btn:hover {
   background-color: transparent;
 }
@@ -352,6 +340,10 @@ body {
     }
   }
 }
+
+.mobile {
+  display: none !important; 
+}
 @media (max-width: 400px) {
   .desktop {
     display: none;
@@ -359,6 +351,22 @@ body {
 
   .mobile {
     display: block;
+  }
+}
+@media (max-width: 640px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  .section-5 .btn-outline-secondary {
+    border: 1px solid $beige-color;
+    color: $beige-color;
+    &:hover {
+      color: $white-color;
+    }
   }
 }
 
@@ -374,7 +382,7 @@ header {
     filter: invert(1);
   }
 
-   .offcanvas .btn-close:hover {
+  .offcanvas .btn-close:hover {
     filter: invert(0.8);
   }
 
@@ -639,7 +647,7 @@ header {
   }
 }
 
-@media (min-width: 300px) and (max-width: 540px) {
+@media (min-width: 300px) and (max-width: 640px) {
   header {
     .preheader,
     .line {
@@ -831,7 +839,7 @@ header {
     }
   }
 
-  @media (min-width: 1200px) and (max-width: 1400px) {
+  @media (min-width: 1024px) and (max-width: 1400px) {
     height: auto;
 
     .swiper-slide {
@@ -1687,6 +1695,17 @@ header {
       margin-bottom: 16px !important;
     }
   }
+  
+  @media (max-width: 350px) {
+    .section-title h2 {
+      font-size: 30px;
+    }
+    .blackBox {
+      width: 280px;
+      height: 280px;
+      margin-bottom: 16px !important;
+    }
+  }
 }
 
 // -----------------------section-4-----------------------------//
@@ -1792,6 +1811,9 @@ header {
       font-size: 16px;
     }
   }
+  @media (min-width:300px) and (max-width: 540px){
+    padding-bottom: 1rem !important;
+  }
 }
 
 // -----------------------section-5-----------------------------//
@@ -1860,7 +1882,6 @@ header {
 
         .quotion {
           text-align: center;
-          // margin-top: 3rem;
         }
 
         .content {
@@ -1886,9 +1907,7 @@ header {
     .swiper-slide .testimonial-Card .inner {
       .content {
         margin-top: 1rem !important;
-        p {
-          // font-size: 13px;
-        }
+        
       }
     }
   }
@@ -2156,7 +2175,31 @@ header {
       }
     }
   }
+  
+  @media (max-width: 640px) {
+   
+    .footer-bottom {
+      margin-top: 10px;
+      gap: 0;
+      .powered-by {
+        font-size: 10px;
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+    .brand-section {
+      margin-bottom: 20px;
+    }
+    .footer-heading {
+      margin-bottom: 10px !important;
+    }
+    .footer-links li {
+      margin-bottom: 0px !important;
+    }
+  }
   @media (max-width: 450px) {
+   
     .footer-bottom {
       margin-top: 10px;
       gap: 0;
