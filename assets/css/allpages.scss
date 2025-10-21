@@ -58,6 +58,7 @@ $font-sizes: (
   }
 }
 
+// ---------------velluara Farm-----------//
 .section-first {
   .swiper-slide {
     .bg {
@@ -104,7 +105,6 @@ $font-sizes: (
           );
           text-align: start;
           .innercontent {
-            width: 1320px;
             height: auto;
             display: flex;
             justify-content: center;
@@ -133,7 +133,7 @@ $font-sizes: (
             }
             p {
               font-family: $font-marcellus;
-              width: 50%;
+              width: 70%;
             }
 
             button {
@@ -154,7 +154,7 @@ $font-sizes: (
     bottom: 10%;
     width: fit-content;
   }
-  @media (min-width: 992px) and (max-width: 1024px) {
+  @media (min-width: 992px) and (max-width: 1100px) {
     .hero-content {
       .layer {
         margin-top: 50px;
@@ -166,6 +166,36 @@ $font-sizes: (
           font-size: 18px;
           padding-top: 0px !important;
           padding-bottom: 0px !important;
+          width: 80%;
+          &:last-of-type {
+            font-size: 14px;
+          }
+        }
+        .glssybtn {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .hero-content {
+      .layer {
+        margin-top: 50px;
+        h1 {
+          font-size: 2rem !important;
+          margin-bottom: 0px;
+        }
+        .innercontent {
+          p {
+            font-size: 16px !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            width: 90% !important;
+            &:last-of-type {
+              font-size: 14px !important;
+              margin-top: 10px;
+            }
+          }
 
           &:last-of-type {
             font-size: 14px;
@@ -173,6 +203,41 @@ $font-sizes: (
         }
         .glssybtn {
           font-size: 12px;
+          padding: 8px 20px !important;
+          top: -3px !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .bg .hero-content {
+      top: 50% !important;
+    }
+    .hero-content {
+      .layer {
+        margin-top: 50px;
+        h1 {
+          font-size: 2rem !important;
+          margin-bottom: 0px;
+        }
+        .innercontent {
+          p {
+            font-size: 15px !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            width: 100% !important;
+            &:last-of-type {
+              font-size: 13px !important;
+              margin-top: 10px;
+            }
+          }
+
+          &:last-of-type {
+            font-size: 14px;
+          }
+        }
+        .glssybtn {
+          display: none;
         }
       }
     }
@@ -187,24 +252,23 @@ $font-sizes: (
     display: flex;
     justify-content: space-between;
     height: 0px;
-    transform: translateY(-45px);
+    transform: translateY(50px);
+    height: 100px;
   }
   .paper-tear {
     position: relative;
     width: 100%;
-    height: 100px;
     z-index: 1;
     img {
       position: absolute;
-      top: -50px;
+      top: -40px;
       width: 100%;
-      height: 100%;
     }
   }
 
   p {
     font-family: $font-marcellus;
-    line-height: 38px; /* 158.333% */
+    line-height: 38px;
   }
   .img-col {
     display: flex;
@@ -266,8 +330,81 @@ $font-sizes: (
       height: 300px;
     }
   }
-}
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .paper-tear img {
+      top: -30px;
+    }
+    .paper-tear img {
+      top: -20px;
+    }
+    .patte {
+      height: 50px;
+    }
+     .img-col .velimg,
+    .img-col .velimg2 {
+      width: 250px;
+      height: 250px;
+    }
+    p {
+      line-height: 24px;
+      padding-inline: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    .section-title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .paper-tear img {
+      top: -20px;
+    }
+    .patte {
+      height: 50px;
+    }
+    p {
+      line-height: 25px;
+      padding-block: 40px;
+    }
+  }
+  @media (max-width: 640px) {
+    .paper-tear {
+      height: 10px;
+      img {
+        top: -15px;
+        height: 30px;
+      }
+    }
+    .patte {
+      .right,
+      .left {
+        width: 180px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .section-title {
+      margin-bottom: 0 !important;
+      h2 {
+        font-size: 30px;
+      }
+    }
 
+    p {
+      font-size: 20px;
+      line-height: 25px;
+      padding-inline: 20px;
+      padding-block: 40px;
+    }
+    .img-col .velimg,
+    .img-col .velimg2 {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+// ---------------section-2--------//
 .section-2 {
   position: relative;
   background: url("../img/pages/sectionbg.png");
@@ -311,6 +448,9 @@ $font-sizes: (
   .highlights {
     position: relative;
     z-index: 11;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     .highbox {
       display: flex;
       width: 300px;
@@ -352,6 +492,44 @@ $font-sizes: (
             transition: all 0.5s ease;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1100px) {
+    .highlights {
+      div {
+        gap: 1rem !important;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .highlights {
+      .highbox {
+        display: flex;
+        width: 220px;
+        padding: 30px 30px 48px 30px;
+        .icon-circle {
+          width: 90px;
+          height: 90px;
+        }
+      }
+      div {
+        gap: 1rem !important;
+      }
+    }
+  }
+   @media (max-width: 768px){
+    .highlights {
+      margin-bottom: 1rem !important;
+      padding-bottom: 0 !important;
+      .highbox {
+        display: flex;
+      }
+      div {
+        gap: 1rem !important;
+        flex-direction: column;
+        align-items: center;
       }
     }
   }
@@ -448,6 +626,7 @@ $font-sizes: (
 //     height: 300px;
 //   }
 // }
+
 
 // ---------Brochure------------//
 
@@ -1232,18 +1411,17 @@ $font-sizes: (
 }
 
 @media (min-width: 540px) and (max-width: 640px) {
-    .blog-list-container {
+  .blog-list-container {
     padding-bottom: 0 !important;
     .section-title {
       margin-bottom: 0;
-      padding-bottom: 0 !important; 
+      padding-bottom: 0 !important;
     }
   }
   .pagination {
     gap: 10px !important;
     padding-block: 0px !important;
     .page-item .page-link {
-      // font-size: 13px;
       white-space: nowrap;
       svg {
         width: 10px;

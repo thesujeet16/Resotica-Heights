@@ -76,7 +76,6 @@
 }
 
 .section-first .swiper-slide .bg .hero-content .layer .innercontent {
-  width: 1320px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -109,7 +108,7 @@
 
 .section-first .swiper-slide .bg .hero-content .layer .innercontent p {
   font-family: "Marcellus", serif;
-  width: 50%;
+  width: 70%;
 }
 
 .section-first .swiper-slide .bg .hero-content .layer .innercontent button {
@@ -128,7 +127,7 @@
   width: fit-content;
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1100px) {
   .section-first .hero-content .layer {
     margin-top: 50px;
   }
@@ -140,12 +139,70 @@
     font-size: 18px;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+    width: 80%;
   }
   .section-first .hero-content .layer .innercontent p:last-of-type {
     font-size: 14px;
   }
   .section-first .hero-content .layer .glssybtn {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-first .hero-content .layer {
+    margin-top: 50px;
+  }
+  .section-first .hero-content .layer h1 {
+    font-size: 2rem !important;
+    margin-bottom: 0px;
+  }
+  .section-first .hero-content .layer .innercontent p {
+    font-size: 16px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    width: 90% !important;
+  }
+  .section-first .hero-content .layer .innercontent p:last-of-type {
+    font-size: 14px !important;
+    margin-top: 10px;
+  }
+  .section-first .hero-content .layer .innercontent:last-of-type {
+    font-size: 14px;
+  }
+  .section-first .hero-content .layer .glssybtn {
+    font-size: 12px;
+    padding: 8px 20px !important;
+    top: -3px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-first .bg .hero-content {
+    top: 50% !important;
+  }
+  .section-first .hero-content .layer {
+    margin-top: 50px;
+  }
+  .section-first .hero-content .layer h1 {
+    font-size: 2rem !important;
+    margin-bottom: 0px;
+  }
+  .section-first .hero-content .layer .innercontent p {
+    font-size: 15px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    width: 100% !important;
+  }
+  .section-first .hero-content .layer .innercontent p:last-of-type {
+    font-size: 13px !important;
+    margin-top: 10px;
+  }
+  .section-first .hero-content .layer .innercontent:last-of-type {
+    font-size: 14px;
+  }
+  .section-first .hero-content .layer .glssybtn {
+    display: none;
   }
 }
 
@@ -159,27 +216,25 @@
   display: flex;
   justify-content: space-between;
   height: 0px;
-  transform: translateY(-45px);
+  transform: translateY(50px);
+  height: 100px;
 }
 
 .section-1 .paper-tear {
   position: relative;
   width: 100%;
-  height: 100px;
   z-index: 1;
 }
 
 .section-1 .paper-tear img {
   position: absolute;
-  top: -50px;
+  top: -40px;
   width: 100%;
-  height: 100%;
 }
 
 .section-1 p {
   font-family: "Marcellus", serif;
   line-height: 38px;
-  /* 158.333% */
 }
 
 .section-1 .img-col {
@@ -247,6 +302,78 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1100px) {
+  .section-1 .paper-tear img {
+    top: -30px;
+  }
+  .section-1 .paper-tear img {
+    top: -20px;
+  }
+  .section-1 .patte {
+    height: 50px;
+  }
+  .section-1 .img-col .velimg,
+  .section-1 .img-col .velimg2 {
+    width: 250px;
+    height: 250px;
+  }
+  .section-1 p {
+    line-height: 24px;
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-1 .section-title h2 {
+    font-size: 30px;
+  }
+  .section-1 .paper-tear img {
+    top: -20px;
+  }
+  .section-1 .patte {
+    height: 50px;
+  }
+  .section-1 p {
+    line-height: 25px;
+    padding-block: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-1 .paper-tear {
+    height: 10px;
+  }
+  .section-1 .paper-tear img {
+    top: -15px;
+    height: 30px;
+  }
+  .section-1 .patte .right,
+  .section-1 .patte .left {
+    width: 180px;
+  }
+  .section-1 .patte .right img,
+  .section-1 .patte .left img {
+    width: 100%;
+  }
+  .section-1 .section-title {
+    margin-bottom: 0 !important;
+  }
+  .section-1 .section-title h2 {
+    font-size: 30px;
+  }
+  .section-1 p {
+    font-size: 20px;
+    line-height: 25px;
+    padding-inline: 20px;
+    padding-block: 40px;
+  }
+  .section-1 .img-col .velimg,
+  .section-1 .img-col .velimg2 {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .section-2 {
   position: relative;
   background: url("../img/pages/sectionbg.png");
@@ -294,6 +421,9 @@
 .section-2 .highlights {
   position: relative;
   z-index: 11;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .section-2 .highlights .highbox {
@@ -340,6 +470,42 @@
 .section-2 .highlights .highbox:hover .icon-circle img {
   transform: rotate(15deg);
   transition: all 0.5s ease;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .section-2 .highlights div {
+    gap: 1rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-2 .highlights .highbox {
+    display: flex;
+    width: 220px;
+    padding: 30px 30px 48px 30px;
+  }
+  .section-2 .highlights .highbox .icon-circle {
+    width: 90px;
+    height: 90px;
+  }
+  .section-2 .highlights div {
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-2 .highlights {
+    margin-bottom: 1rem !important;
+    padding-bottom: 0 !important;
+  }
+  .section-2 .highlights .highbox {
+    display: flex;
+  }
+  .section-2 .highlights div {
+    gap: 1rem !important;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .gallery {
