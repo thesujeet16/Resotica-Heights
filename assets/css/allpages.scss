@@ -57,6 +57,16 @@ $font-sizes: (
     font-size: 50px;
   }
 }
+@media (max-width: 992px) {
+  .section-title {
+    margin-bottom: 1rem !important;
+    padding-bottom: 0 !important;
+
+    .bgimg-title {
+      margin-bottom: 0 !important;
+    }
+  }
+}
 
 // ---------------velluara Farm-----------//
 .section-first {
@@ -450,6 +460,16 @@ $font-sizes: (
         font-size: 20px;
       }
     }
+    .img-col .velimg::after {
+      content: "";
+      left: 9px;
+      top: 9px;
+    }
+    .img-col .veliimg2::after {
+      content: "";
+      left: -9px;
+      top: 9px;
+    }
   }
 }
 // ---------------section-2--------//
@@ -761,9 +781,9 @@ $font-sizes: (
 @media (min-width: 200px) and (max-width: 564px) {
   .broch-container .rightleaf {
     right: -100px;
-    height: 60%;
+    height: 40%;
     top: initial;
-    bottom: -20%;
+    bottom: -18%;
   }
   .broch-container .paper-top {
     top: -12px;
@@ -814,46 +834,57 @@ $font-sizes: (
       rgba(0, 0, 0, 0.33) 100%
     ),
     url("../img/pages/whyinvest.jpg") lightgray 50% / cover no-repeat;
+
   .blackBox {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 14px;
-  }
-}
-.blackBox {
-  perspective: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:hover .innerBox {
-    transform: rotateY(180deg);
-  }
 
-  .innerBox {
-    transform-style: preserve-3d;
-    transition: transform 0.8s ease;
-
-    .front,
-    .back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      backface-visibility: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      padding: inherit;
-    }
-
-    .back {
+    &:hover .innerBox {
       transform: rotateY(180deg);
     }
-  }
-  @media (max-width: 768px) {
-    width: 325px !important;
-    height: 325px !important;
+
+    .innerBox {
+      transform-style: preserve-3d;
+      transition: transform 0.8s ease;
+
+      .front,
+      .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        // padding: inherit;
+      }
+
+      .back {
+        transform: rotateY(180deg);
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1100px) {
+      width: 100% !important;
+      height: 325px !important;
+      .blackBox {
+        .innerBox {
+          .front{
+            padding: 10px !important;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      width: 325px !important;
+      height: 325px !important;
+    }
   }
 }
 // -------------slider----------------//
@@ -1087,7 +1118,7 @@ $font-sizes: (
   }
 }
 
-@media (min-width: 200px) and (max-width: 540px) {
+@media (min-width: 200px) and (max-width: 640px) {
   .proximity-hub .proxi-locations {
     display: flex;
     flex-direction: column;
@@ -1095,11 +1126,35 @@ $font-sizes: (
   .whitepptear {
     bottom: -10px;
   }
+  .proximity-hub {
+    background: black;
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .proximity-hub .whiteBox .innerBox {
+    background: #fff;
+    padding-inline: 10px !important;
+    padding-block: 25px !important;
+  }
+  .proximity-hub .proxi-locations .location {
+    border: 1px solid $white-color;
+    padding-inline: 20px;
+    padding-block: 0;
+    height: 40px;
+    h3 {
+      font-size: 16px !important;
+    }
+  }
 }
 .paper-top {
   position: absolute;
   top: -15px;
   width: 100%;
+
+  @media (max-width: 640px) {
+    top: -13px;
+  }
 }
 
 // --------brochure2-----------//
@@ -1181,8 +1236,8 @@ $font-sizes: (
   @media (min-width: 300px) and (max-width: 640px) {
     &::before,
     &::after {
-      width: 230px;
-      height: 230px;
+      width: 200px;
+      height: 200px;
     }
     &::before {
       bottom: -15%;
@@ -1207,16 +1262,6 @@ $font-sizes: (
       color: $white-color;
       text-align: center;
     }
-    .top-quote {
-      position: absolute;
-      left: -20px;
-      top: -20px;
-    }
-    .bottom-quote {
-      position: absolute;
-      right: 220px;
-      bottom: 10px;
-    }
   }
   @media (min-width: 1200px) and (max-width: 1440px) {
     .quotes-text .bottom-quote {
@@ -1225,9 +1270,21 @@ $font-sizes: (
   }
 }
 
+@media (max-width: 540px) {
+  .footer-quote .quotes-text p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-inline: 40px;
+  }
+
+  .footer-quote svg {
+    width: 30px;
+  }
+}
+
 .video-section {
   position: relative;
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
   &::after {
     content: "";
@@ -1329,22 +1386,6 @@ $font-sizes: (
   }
 }
 
-@media (max-width: 540px) {
-  .footer-quote .quotes-text p {
-    font-size: 20px;
-    line-height: 35px;
-  }
-  .footer-quote .quotes-text .bottom-quote {
-    right: 45px;
-    bottom: 0;
-  }
-  .footer-quote svg {
-    width: 30px;
-  }
-  .footer-quote .quotes-text .top-quote {
-    left: 0px;
-  }
-}
 // ---------------------------------Blogs page-------------------------------//
 
 .common-hero {
@@ -2357,6 +2398,24 @@ $font-sizes: (
     }
   }
 }
+ @media (min-width:300px) and (max-width:640px) {
+  .blog-detail-container{
+    margin-block: 0 !important;
+    padding-block: 1rem !important;
+  }
+  .blog-detail-container .blog-image{
+    height: auto;
+  }
+  .blog-detail-container .getintouchimg{
+    height: auto !important;
+  }
+  .blog-detail-container .getintouchimg p{
+    font-size: 15px;
+  }
+  .blog-detail-container h3{
+    font-size: 13px;
+  }
+ }
 
 // -----------------About page------------//
 .abtbg {

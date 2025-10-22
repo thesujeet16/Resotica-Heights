@@ -23,96 +23,81 @@
 
 <body>
     <!-- header -->
-    <header id="contactHeader" class="position-absolute w-100">
-        <div class="container py-2 px-0">
-            <div class="header-top d-flex justify-content-between text-white">
-                <div class="hcontact align-items-center d-flex gap-5">
-                    <span class="d-flex gap-2"><i class="ri-phone-line"></i> 999999999</span>
-                    <span class="d-flex gap-2"><i class="ri-mail-line"></i>alma.lawson@example.com</span>
-                </div>
-                <div class="hsocial d-flex gap-5">
-                    <ul class="d-flex gap-4 align-items-center mb-0">
-                        <li>
-                            <a href="/"><i class="ri-facebook-fill"></i></a>
-                        </li>
-                        <li>
-                            <a href="/"><i class="ri-twitter-x-line"></i></a>
-                        </li>
-                        <li>
-                            <a href="/"><i class="ri-youtube-fill"></i></a>
-                        </li>
-                        <li>
-                            <a href="/"><i class="ri-instagram-line"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <header id="contactHeader" class="position-absolute w-100">
+    <div class="container preheader px-md-0 px-0 py-2">
+      <div class="header-top d-flex justify-content-between text-white">
+        <div class="hcontact align-items-center d-flex gap-5">
+          <span class="d-flex gap-2"><i class="ri-phone-line"></i> 999999999</span>
+          <span class="d-flex gap-2"><i class="ri-mail-line"></i>alma.lawson@example.com</span>
         </div>
-        <div class="line"></div>
-        <nav class="navbar navbar-expand-lg py-0">
-            <div class="container px-0">
-                <a class="navbar-brand" href="#">
-                    <h2 class="">
-                        Resotica
-                        <div>Heights</div>
-                    </h2>
-                </a>
+        <div class="hsocial d-flex gap-5">
+          <ul class="d-flex gap-4 align-items-center mb-0">
+            <li>
+              <a href="/"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-twitter-x-line"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="ri-instagram-line"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container px-lg-0 px-md-0 px-3 pb-sm-0">
+        <a class="navbar-brand" href="#">
+          <h2>Resotica <div>Heights</div>
+          </h2>
+        </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="ri-menu-3-fill"></i>
+        </button>
 
-                <!-- Add ms-auto to push nav items to the right -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Projects
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contactus.html">Contact Us</a>
-                        </li>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-outline-secondary">
-                        Get In Touch
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </header>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a></li>
+                  <li><a class="dropdown-item" href="#">Vellura Farm</a></li>
+                  <li><a class="dropdown-item" href="#">Vellura Farm</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="/blogs.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contactus.html">Contact Us</a></li>
+            </ul>
+            <button type="button" class="btn btn-outline-secondary ms-lg-3 mt-3 mt-lg-0">
+              Get In Touch
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+</header>
     <!-- header -->
-    <div class="blog-detail-container">
-        <div class="container my-5 py-5">
+    <div class="blog-detail-container my-5 py-5">
+        <div class="container px-lg-0 px-md-0 px-3 px-0">
             <div class="row">
                 <div class="col-lg-7 col-md-7">
-                    <div class="d-flex justify-content-between mb-4">
-                        <div class="d-flex align-items-center gap-3 justify-content-center">
+                    <div class="d-flex justify-content-between flex-md-row flex-column mb-4">
+                        <div class="d-flex align-items-center gap-3 justify-content-start justify-content-md-center">
                             <div class="uploadby ">
                                 <img src="./assets/img/pages/blog-user.svg" class="w-100 h-100" alt="">
                             </div>
@@ -242,7 +227,7 @@
                     </div>
 
                     <div class="getintouchimg position-relative w-100 mt-4">
-                        <div class="overlay position-absolute h-100 d-flex justify-content-between py-5">
+                        <div class="overlay position-absolute h-100 d-flex justify-content-evenly justify-content-md-between py-2 pt-3 py-md-5">
                             <div>
                                 <h2>
                                     Resotica <br> <span>Heights</span>
@@ -253,7 +238,7 @@
                                     Contact Us
                                 </h3>
                                 <p class="myfs-5">(91+) 982828898</p>
-                                <button type="button" class="btn btn-outline-secondary mt-4 mb-5">
+                                <button type="button" class="btn btn-outline-secondary mt-0 mt-md-4 mb-0 mb-md-5">
                                     Get In Touch
                                 </button>
                             </div>
@@ -265,7 +250,7 @@
         </div>
 
         <div class="related-blogs blog-list-container">
-            <div class="container py-5">
+            <div class="container px-lg-0 px-md-0 px-3 px-0 py-5">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title mb-4">
@@ -275,7 +260,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 pb-5 px-4">
-                        <div class="blog-card d-flex gap-4">
+                        <div class="blog-card d-flex flex-column flex-md-row gap-4">
                             <div class="blog-img w-100">
                                 <img src="./assets/img/pages/blog-2.jpg" class="w-100 h-100" alt="" />
                             </div>
@@ -304,7 +289,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 pb-5 px-4">
-                        <div class="blog-card d-flex gap-4">
+                        <div class="blog-card d-flex flex-column flex-md-row gap-4">
                             <div class="blog-img w-100">
                                 <img src="./assets/img/pages/blog-2.jpg" class="w-100 h-100" alt="" />
                             </div>
@@ -333,7 +318,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 pb-5 px-4">
-                        <div class="blog-card d-flex gap-4">
+                        <div class="blog-card d-flex flex-column flex-md-row gap-4">
                             <div class="blog-img w-100">
                                 <img src="./assets/img/pages/blog-2.jpg" class="w-100 h-100" alt="" />
                             </div>
@@ -362,7 +347,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 pb-5 px-4">
-                        <div class="blog-card d-flex gap-4">
+                        <div class="blog-card d-flex flex-column flex-md-row gap-4">
                             <div class="blog-img w-100">
                                 <img src="./assets/img/pages/blog-2.jpg" class="w-100 h-100" alt="" />
                             </div>
@@ -390,8 +375,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-6 pb-5 px-4">
-                        <div class="blog-card d-flex gap-4">
+                    <div class="col-md-6">
+                        <div class="blog-card d-flex flex-column flex-md-row gap-4">
                             <div class="blog-img w-100">
                                 <img src="./assets/img/pages/blog-2.jpg" class="w-100 h-100" alt="" />
                             </div>
@@ -424,134 +409,135 @@
     </div>
     <!-- footer with contact-us form -->
     <div class="footer">
-        <div class="container position-relative z-3">
-            <div class="row">
-                <div class="col-md-8 m-auto py-5">
-                    <div class="section-title mb-4 text-center">
-                        <h2 class="mb-0 lh-1 myfs-5 text-white">Get in Touch</h2>
-                    </div>
-                    <form id="contactForm">
-                        <div class="row g-3 mb-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="First Name" required />
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Last Name" required />
-                            </div>
-                        </div>
-
-                        <div class="row g-3 mb-3">
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Email" required />
-                            </div>
-                            <div class="col-md-6">
-                                <input type="tel" class="form-control" placeholder="Phone" required />
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <textarea class="form-control" placeholder="Write your Messages......" required></textarea>
-                        </div>
-                        <div class="col-md-12 text-center pt-4">
-                            <button type="button" class="btn btn-outline-secondary">
-                                Know More
-                            </button>
-                        </div>
-                    </form>
-                </div>
+    <div class="container px-lg-0 px-md-0 px-3 position-relative z-3">
+      <div class="row">
+        <div class="col-md-8 m-auto py-5">
+          <div class="section-title mb-4 text-center">
+            <h2 class="mb-0 lh-1 myfs-5 text-white">Get in Touch</h2>
+          </div>
+          <form id="contactForm">
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="First Name" required />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Last Name" required />
+              </div>
             </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email" required />
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="Phone" required />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <textarea class="form-control" placeholder="Write your Messages......" required></textarea>
+            </div>
+            <div class="col-md-12 text-center pt-4">
+              <button type="button" class="btn btn-outline-secondary">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
-        <footer class="footer-section pt-5">
-            <div class="container footer-content m-auto px-0">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="brand-section">
-                            <h2>
-                                Resotica <br />
-                                <span>Heights</span>
-                            </h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do e amet, consectetur adipiscing elit, sed do e dolor sit
-                                amet, consectetur adipiscing elit, sed do e a.
-                            </p>
-
-                            <div class="social-icons">
-                                <a href="#" class="social-icon">
-                                    <i class="ri-facebook-fill"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="ri-twitter-x-line"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="ri-youtube-fill"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="ri-instagram-line"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="footer-heading">Quick Access</h3>
-                        <ul class="footer-links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="footer-heading">Quick Access</h3>
-                        <ul class="footer-links">
-                            <li><a href="#">Testimonial</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="footer-heading">Info</h3>
-
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="ri-map-pin-line"></i>
-                            </div>
-                            <div class="info-text">
-                                <p>2118 Thornridge Cir. Syracuse,<br />Connecticut 35624</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="ri-phone-line"></i>
-                            </div>
-                            <div class="info-text">
-                                <p>(+33)6 55 59 32 88<br />(+33)6 55 59 32 88</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="ri-mail-line"></i>
-                            </div>
-                            <div class="info-text">
-                                <p>alma.lawson@example.com<br />manhhachk@example.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Footer Bottom -->
-                <div class="footer-bottom">
-                    <div class="copyright">© Copyright 2025. All Rights Reserved.</div>
-                    <div class="powered-by">
-                        Powered by <span>Doors</span> <span>Studio</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
+      </div>
     </div>
+    <footer class="footer-section pt-5">
+      <div class="container px-lg-0 px-md-0 px-3 footer-content m-auto px-0">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="brand-section">
+              <h2>
+                Resotica <br />
+                <span>Heights</span>
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do e amet, consectetur adipiscing elit, sed do e dolor sit
+                amet, consectetur adipiscing elit, sed do e a.
+              </p>
+
+              <div class="social-icons">
+                <a href="#" class="social-icon">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-youtube-fill"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3 class="footer-heading">Quick Access</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3 class="footer-heading">Quick Access</h3>
+            <ul class="footer-links">
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3 class="footer-heading">Info</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <div class="info-text">
+                <p>2118 Thornridge Cir. Syracuse,<br />Connecticut 35624</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-phone-line"></i>
+              </div>
+              <div class="info-text">
+                <p>(+33)6 55 59 32 88<br />(+33)6 55 59 32 88</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="ri-mail-line"></i>
+              </div>
+              <div class="info-text">
+                <p>alma.lawson@example.com<br />manhhachk@example.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="copyright">© Copyright 2025. All Rights Reserved.</div>
+          <div class="powered-by">
+            Powered by <span>Doors</span> <span>Studio</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
 
     <!-- footer with contact-us form -->
 
