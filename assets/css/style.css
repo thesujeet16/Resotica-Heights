@@ -55,6 +55,14 @@ body {
   padding-inline: 0px;
 }
 
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
 .btn:hover {
   background-color: transparent;
 }
@@ -742,10 +750,6 @@ header .navbar-nav .nav-link.show {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-}
-
-.hero-section .mobile-text {
-  display: none;
 }
 
 @media (min-width: 1401px) and (max-width: 1600px) {

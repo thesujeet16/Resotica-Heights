@@ -75,6 +75,12 @@ body {
   padding-inline: 0px;
 }
 
+.mobile{
+  display: none;
+}
+.desktop{
+  display: block  ;
+}
 // ---------------------------------utils-------------------------------//
 
 .btn:hover {
@@ -827,9 +833,6 @@ header {
     }
   }
 
-  .mobile-text {
-    display: none;
-  }
 
   @media (min-width: 1401px) and (max-width: 1600px) {
     height: auto;
@@ -2220,4 +2223,6 @@ header {
       margin-bottom: 0px !important;
     }
   }
+
 }
+

@@ -254,6 +254,9 @@ $font-sizes: (
     height: 0px;
     transform: translateY(50px);
     height: 100px;
+    img {
+      width: 100%;
+    }
   }
   .paper-tear {
     position: relative;
@@ -340,7 +343,7 @@ $font-sizes: (
     .patte {
       height: 50px;
     }
-     .img-col .velimg,
+    .img-col .velimg,
     .img-col .velimg2 {
       width: 250px;
       height: 250px;
@@ -379,9 +382,6 @@ $font-sizes: (
       .right,
       .left {
         width: 180px;
-        img {
-          width: 100%;
-        }
       }
     }
     .section-title {
@@ -403,6 +403,54 @@ $font-sizes: (
       height: 300px;
     }
   }
+  @media (min-width: 300px) and (max-width: 540px) {
+    .paper-tear {
+      height: 10px;
+      img {
+        top: -15px;
+        height: 30px;
+      }
+    }
+    .patte {
+      height: 0px;
+      transform: translateY(0px);
+      .right,
+      .left {
+        width: 100px;
+      }
+    }
+    .section-title {
+      margin-bottom: 0 !important;
+      h2 {
+        font-size: 25px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 25px;
+      padding-inline: 20px;
+      padding-block: 40px;
+    }
+    .img-col .velimg,
+    .img-col .velimg2 {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @media (max-width: 400px) {
+    .patte {
+      .right,
+      .left {
+        width: 70px;
+      }
+    }
+    .section-title {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
 }
 // ---------------section-2--------//
 .section-2 {
@@ -419,6 +467,7 @@ $font-sizes: (
     width: 100%;
     height: 100%;
     top: 0;
+    left: 0;
     z-index: 0;
   }
 
@@ -519,10 +568,11 @@ $font-sizes: (
       }
     }
   }
-   @media (max-width: 768px){
+  @media (max-width: 768px) {
     .highlights {
       margin-bottom: 1rem !important;
       padding-bottom: 0 !important;
+      gap: 1rem;
       .highbox {
         display: flex;
       }
@@ -577,8 +627,7 @@ $font-sizes: (
       position: relative;
       transition: transform 0.5s ease, opacity 0.3s ease;
       display: block;
-      height: 100%;
-      height: 100%;
+
       &:hover {
         transform: rotate(-3deg);
         opacity: 0.9;
@@ -586,73 +635,39 @@ $font-sizes: (
       }
       img {
         width: 100%;
-        height: 100%;
+        // height: 100%;
         object-fit: cover;
       }
     }
   }
 }
-// .gallery-grid {
-//   display: grid;
-//   width: 1320px;
-//   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-//   gap: 1.5rem;
-// }
-
-// .gallery-item {
-//   position: relative;
-//   overflow: hidden;
-//   border-radius: 10px;
-
-//   img {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//     transition: transform 0.4s ease;
-//   }
-
-//   &:hover img {
-//     transform: scale(1.05);
-//   }
-
-//   &.large {
-//     height: 300px;
-//     width: 600px;
-
-//   }
-
-//   &.small {
-//     width: 300px;
-//     height: 300px;
-//   }
-// }
-
+@media (min-width: 300px) and (max-width: 540px) {
+  .gallery .paper-tear {
+    height: auto;
+    top: -10px;
+  }
+}
 
 // ---------Brochure------------//
-
-.brochure {
-  position: relative;
-  background-color: #f1ffe6;
-  &::after {
-    content: "";
+.broch-container {
+  .rightleaf {
     position: absolute;
-    bottom: -22%;
-    right: -5%;
-    width: 450px;
-    height: 400px;
-    z-index: 11;
-    background-image: url("../img/pages/leafup.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: rotate(-105deg);
-    z-index: 0;
+    right: -70px;
+    height: 100%;
+    top: 117px;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-105deg);
+    }
   }
   .paper-top,
   .paper-bottom {
     position: absolute;
     z-index: 11;
     width: 100%;
+    overflow: hidden;
     img {
       width: 100%;
     }
@@ -663,6 +678,11 @@ $font-sizes: (
   .paper-bottom {
     bottom: -20px;
   }
+}
+.brochure {
+  position: relative;
+  background-color: #f1ffe6;
+
   .bro-left,
   .bro-right {
     font-family: $font-marcellus;
@@ -679,14 +699,77 @@ $font-sizes: (
   }
   .bro-right {
     p {
-      line-height: 30px;
+      line-height: 25px;
     }
   }
+
   @media (min-width: 1200px) and (max-width: 1440px) {
     &::after {
       bottom: -27%;
       right: -6%;
     }
+  }
+  @media (max-width: 1200px) {
+    .bro-left h2 {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 768px) {
+    .bro-left h2 {
+      font-size: 30px;
+    }
+    .bro-right {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .broch-container {
+    .paper-top,
+    .paper-bottom {
+      z-index: 11;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .paper-top {
+      top: -14px;
+    }
+    .paper-bottom {
+      bottom: -14px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .broch-container .rightleaf {
+    right: -100px;
+    height: 80%;
+    top: 180px;
+  }
+}
+@media (min-width: 564px) and (max-width: 768px) {
+  .broch-container .rightleaf {
+    right: -100px;
+    height: 80%;
+    top: 180px;
+  }
+}
+@media (min-width: 200px) and (max-width: 564px) {
+  .broch-container .rightleaf {
+    right: -100px;
+    height: 60%;
+    top: initial;
+    bottom: -20%;
+  }
+  .broch-container .paper-top {
+    top: -12px;
+  }
+  .broch-container .paper-bottom {
+    bottom: -12px;
   }
 }
 
@@ -697,6 +780,7 @@ $font-sizes: (
   white-space: nowrap;
   transition: width 0.4s linear;
   position: relative;
+  background-color: $beige-color;
 }
 
 .download-btn .btn-text {
@@ -721,7 +805,6 @@ $font-sizes: (
   opacity: 1;
   margin-left: 8px;
 }
-
 // ------------why invest-----------//
 
 .section-3 {
@@ -767,6 +850,10 @@ $font-sizes: (
     .back {
       transform: rotateY(180deg);
     }
+  }
+  @media (max-width: 768px) {
+    width: 325px !important;
+    height: 325px !important;
   }
 }
 // -------------slider----------------//
@@ -879,6 +966,23 @@ $font-sizes: (
 .whitepptear {
   bottom: -22px;
 }
+@media (max-width: 640px) {
+  .placeslider .section-title {
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .navigation .custom-prev,
+  .navigation .custom-next {
+    width: 30px;
+    height: 45px;
+    i {
+      font-size: 20px;
+    }
+  }
+}
 // -------------proximity-hub-----------//
 
 .proximity-hub {
@@ -983,11 +1087,28 @@ $font-sizes: (
   }
 }
 
+@media (min-width: 200px) and (max-width: 540px) {
+  .proximity-hub .proxi-locations {
+    display: flex;
+    flex-direction: column;
+  }
+  .whitepptear {
+    bottom: -10px;
+  }
+}
+.paper-top {
+  position: absolute;
+  top: -15px;
+  width: 100%;
+}
+
 // --------brochure2-----------//
 
 .brochure2 {
   position: relative;
   background: #fdfff0;
+  overflow: hidden;
+
   &::after {
     bottom: -22%;
     transform: rotate(-90deg);
@@ -1000,29 +1121,76 @@ $font-sizes: (
     width: 450px;
     height: 400px;
     z-index: 11;
-    background-image: url("../img/leavies.png");
+    background-image: url("../img/icons/leavies.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     transform: rotate(90deg);
     z-index: 0;
   }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -22%;
+    right: -5%;
+    width: 450px;
+    height: 400px;
+    z-index: 11;
+    background-image: url("../img/icons/leafup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-90deg);
+    z-index: 0;
+  }
   .download-btn {
     background-color: #000;
   }
   @media (min-width: 1200px) and (max-width: 1440px) {
+    &::before,
+    &::after {
+      width: 300px;
+      height: 300px;
+    }
     &::before {
       bottom: -22%;
       left: -6%;
-      width: 300px;
-      height: 300px;
     }
     &::after {
       bottom: -22%;
       right: -6%;
       transform: rotate(-90deg);
-      width: 300px;
-      height: 300px;
+    }
+  }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    &::before,
+    &::after {
+      width: 250px;
+      height: 250px;
+    }
+    &::before {
+      bottom: -22%;
+      left: -6%;
+    }
+    &::after {
+      bottom: -22%;
+      right: -6%;
+      transform: rotate(-90deg);
+    }
+  }
+  @media (min-width: 300px) and (max-width: 640px) {
+    &::before,
+    &::after {
+      width: 230px;
+      height: 230px;
+    }
+    &::before {
+      bottom: -15%;
+      left: -19%;
+    }
+    &::after {
+      bottom: -15%;
+      right: -19%;
     }
   }
 }
@@ -1139,7 +1307,44 @@ $font-sizes: (
   font-weight: bold;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .video-section {
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .video-section {
+    .play-outline-circle {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .video-section {
+    .play-outline-circle {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
 
+@media (max-width: 540px) {
+  .footer-quote .quotes-text p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .footer-quote .quotes-text .bottom-quote {
+    right: 45px;
+    bottom: 0;
+  }
+  .footer-quote svg {
+    width: 30px;
+  }
+  .footer-quote .quotes-text .top-quote {
+    left: 0px;
+  }
+}
 // ---------------------------------Blogs page-------------------------------//
 
 .common-hero {

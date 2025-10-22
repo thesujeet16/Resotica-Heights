@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const velluraSwiperEl = document.querySelector(".mySwiper3");
   if (velluraSwiperEl) {
     const swiper3 = new Swiper(velluraSwiperEl, {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
       centeredSlides: true,
       loop: true,
@@ -150,6 +150,10 @@ document.addEventListener("DOMContentLoaded", () => {
       pagination: { el: ".swiper-pagination", clickable: true },
       autoplay: { delay: 3000, disableOnInteraction: false },
       keyboard: true,
+      breakpoints: {
+        768: { slidesPerView: 3, spaceBetween: 30 },
+        1024: { slidesPerView: 3, spaceBetween: 40 },
+      },
       on: {
         slideChange: function () {
           document.querySelectorAll(".swiper-slide").forEach((slide) => {

@@ -220,6 +220,10 @@
   height: 100px;
 }
 
+.section-1 .patte img {
+  width: 100%;
+}
+
 .section-1 .paper-tear {
   position: relative;
   width: 100%;
@@ -351,10 +355,6 @@
   .section-1 .patte .left {
     width: 180px;
   }
-  .section-1 .patte .right img,
-  .section-1 .patte .left img {
-    width: 100%;
-  }
   .section-1 .section-title {
     margin-bottom: 0 !important;
   }
@@ -374,6 +374,51 @@
   }
 }
 
+@media (min-width: 300px) and (max-width: 540px) {
+  .section-1 .paper-tear {
+    height: 10px;
+  }
+  .section-1 .paper-tear img {
+    top: -15px;
+    height: 30px;
+  }
+  .section-1 .patte {
+    height: 0px;
+    transform: translateY(0px);
+  }
+  .section-1 .patte .right,
+  .section-1 .patte .left {
+    width: 100px;
+  }
+  .section-1 .section-title {
+    margin-bottom: 0 !important;
+  }
+  .section-1 .section-title h2 {
+    font-size: 25px;
+  }
+  .section-1 p {
+    font-size: 20px;
+    line-height: 25px;
+    padding-inline: 20px;
+    padding-block: 40px;
+  }
+  .section-1 .img-col .velimg,
+  .section-1 .img-col .velimg2 {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-1 .patte .right,
+  .section-1 .patte .left {
+    width: 70px;
+  }
+  .section-1 .section-title h2 {
+    font-size: 20px;
+  }
+}
+
 .section-2 {
   position: relative;
   background: url("../img/pages/sectionbg.png");
@@ -390,6 +435,7 @@
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   z-index: 0;
 }
 
@@ -497,6 +543,7 @@
   .section-2 .highlights {
     margin-bottom: 1rem !important;
     padding-bottom: 0 !important;
+    gap: 1rem;
   }
   .section-2 .highlights .highbox {
     display: flex;
@@ -551,8 +598,6 @@
   position: relative;
   transition: transform 0.5s ease, opacity 0.3s ease;
   display: block;
-  height: 100%;
-  height: 100%;
 }
 
 .gallery .gallery-grid .gallery-item:hover {
@@ -563,49 +608,54 @@
 
 .gallery .gallery-grid .gallery-item img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 300px) and (max-width: 540px) {
+  .gallery .paper-tear {
+    height: auto;
+    top: -10px;
+  }
+}
+
+.broch-container .rightleaf {
+  position: absolute;
+  right: -70px;
+  height: 100%;
+  top: 117px;
+  object-fit: cover;
+}
+
+.broch-container .rightleaf img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-105deg);
+}
+
+.broch-container .paper-top,
+.broch-container .paper-bottom {
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  overflow: hidden;
+}
+
+.broch-container .paper-top img,
+.broch-container .paper-bottom img {
+  width: 100%;
+}
+
+.broch-container .paper-top {
+  top: -20px;
+}
+
+.broch-container .paper-bottom {
+  bottom: -20px;
 }
 
 .brochure {
   position: relative;
   background-color: #f1ffe6;
-}
-
-.brochure::after {
-  content: "";
-  position: absolute;
-  bottom: -22%;
-  right: -5%;
-  width: 450px;
-  height: 400px;
-  z-index: 11;
-  background-image: url("../img/pages/leafup.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transform: rotate(-105deg);
-  z-index: 0;
-}
-
-.brochure .paper-top,
-.brochure .paper-bottom {
-  position: absolute;
-  z-index: 11;
-  width: 100%;
-}
-
-.brochure .paper-top img,
-.brochure .paper-bottom img {
-  width: 100%;
-}
-
-.brochure .paper-top {
-  top: -20px;
-}
-
-.brochure .paper-bottom {
-  bottom: -20px;
 }
 
 .brochure .bro-left,
@@ -628,13 +678,77 @@
 }
 
 .brochure .bro-right p {
-  line-height: 30px;
+  line-height: 25px;
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .brochure::after {
     bottom: -27%;
     right: -6%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .brochure .bro-left h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brochure .bro-left h2 {
+    font-size: 30px;
+  }
+  .brochure .bro-right p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .broch-container .paper-top,
+  .broch-container .paper-bottom {
+    z-index: 11;
+    width: 100%;
+  }
+  .broch-container .paper-top img,
+  .broch-container .paper-bottom img {
+    width: 100%;
+  }
+  .broch-container .paper-top {
+    top: -14px;
+  }
+  .broch-container .paper-bottom {
+    bottom: -14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .broch-container .rightleaf {
+    right: -100px;
+    height: 80%;
+    top: 180px;
+  }
+}
+
+@media (min-width: 564px) and (max-width: 768px) {
+  .broch-container .rightleaf {
+    right: -100px;
+    height: 80%;
+    top: 180px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 564px) {
+  .broch-container .rightleaf {
+    right: -100px;
+    height: 60%;
+    top: initial;
+    bottom: -20%;
+  }
+  .broch-container .paper-top {
+    top: -12px;
+  }
+  .broch-container .paper-bottom {
+    bottom: -12px;
   }
 }
 
@@ -645,6 +759,7 @@
   white-space: nowrap;
   transition: width 0.4s linear;
   position: relative;
+  background-color: #ac813c;
 }
 
 .download-btn .btn-text {
@@ -712,6 +827,13 @@
 
 .blackBox .innerBox .back {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+  .blackBox {
+    width: 325px !important;
+    height: 325px !important;
+  }
 }
 
 .placeslider {
@@ -831,6 +953,25 @@
   bottom: -22px;
 }
 
+@media (max-width: 640px) {
+  .placeslider .section-title {
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+  }
+  .placeslider .section-title h2 {
+    font-size: 30px;
+  }
+  .navigation .custom-prev,
+  .navigation .custom-next {
+    width: 30px;
+    height: 45px;
+  }
+  .navigation .custom-prev i,
+  .navigation .custom-next i {
+    font-size: 20px;
+  }
+}
+
 .proximity-hub {
   position: relative;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.13) 100%), url("../img/pages/proximity.jpg") lightgray -64.282px 0px/107.134% 100% no-repeat;
@@ -932,9 +1073,26 @@
   transform: rotate(15deg);
 }
 
+@media (min-width: 200px) and (max-width: 540px) {
+  .proximity-hub .proxi-locations {
+    display: flex;
+    flex-direction: column;
+  }
+  .whitepptear {
+    bottom: -10px;
+  }
+}
+
+.paper-top {
+  position: absolute;
+  top: -15px;
+  width: 100%;
+}
+
 .brochure2 {
   position: relative;
   background: #fdfff0;
+  overflow: hidden;
 }
 
 .brochure2::after {
@@ -950,11 +1108,27 @@
   width: 450px;
   height: 400px;
   z-index: 11;
-  background-image: url("../img/leavies.png");
+  background-image: url("../img/icons/leavies.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transform: rotate(90deg);
+  z-index: 0;
+}
+
+.brochure2::after {
+  content: "";
+  position: absolute;
+  bottom: -22%;
+  right: -5%;
+  width: 450px;
+  height: 400px;
+  z-index: 11;
+  background-image: url("../img/icons/leafup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(-90deg);
   z-index: 0;
 }
 
@@ -963,18 +1137,49 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
+  .brochure2::before, .brochure2::after {
+    width: 300px;
+    height: 300px;
+  }
   .brochure2::before {
     bottom: -22%;
     left: -6%;
-    width: 300px;
-    height: 300px;
   }
   .brochure2::after {
     bottom: -22%;
     right: -6%;
     transform: rotate(-90deg);
-    width: 300px;
-    height: 300px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1200px) {
+  .brochure2::before, .brochure2::after {
+    width: 250px;
+    height: 250px;
+  }
+  .brochure2::before {
+    bottom: -22%;
+    left: -6%;
+  }
+  .brochure2::after {
+    bottom: -22%;
+    right: -6%;
+    transform: rotate(-90deg);
+  }
+}
+
+@media (min-width: 300px) and (max-width: 640px) {
+  .brochure2::before, .brochure2::after {
+    width: 230px;
+    height: 230px;
+  }
+  .brochure2::before {
+    bottom: -15%;
+    left: -19%;
+  }
+  .brochure2::after {
+    bottom: -15%;
+    right: -19%;
   }
 }
 
@@ -1093,6 +1298,43 @@
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-section .play-outline-circle {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-section .play-outline-circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer-quote .quotes-text p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .footer-quote .quotes-text .bottom-quote {
+    right: 45px;
+    bottom: 0;
+  }
+  .footer-quote svg {
+    width: 30px;
+  }
+  .footer-quote .quotes-text .top-quote {
+    left: 0px;
+  }
 }
 
 .common-hero {
