@@ -11,7 +11,6 @@
 
 $font-marcellus: "Marcellus", serif;
 $font-primary: "HelveticaNormal", sans-serif;
-
 $font-Alexandria: "Alexandria", sans-serif;
 $font-arial: "Arial", sans-serif;
 
@@ -75,12 +74,10 @@ body {
   padding-inline: 0px;
 }
 
-.mobile{
+.mobile {
   display: none;
 }
-.desktop{
-  display: block  ;
-}
+
 // ---------------------------------utils-------------------------------//
 
 .btn:hover {
@@ -347,34 +344,15 @@ body {
   }
 }
 
-.mobile {
-  display: none !important; 
-}
-@media (max-width: 400px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-}
-@media (max-width: 640px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-  .section-5 .btn-outline-secondary {
-    border: 1px solid $beige-color;
-    color: $beige-color;
-    &:hover {
-      color: $white-color;
-    }
-  }
-}
+// @media (max-width: 640px) {
+//   .section-5 .btn-outline-secondary {
+//     border: 1px solid $beige-color;
+//     color: $beige-color !important;
+//     &:hover {
+//       color: $white-color;
+//     }
+//   }
+// }
 
 // ------------------------Header---------------------------//
 header {
@@ -833,7 +811,6 @@ header {
     }
   }
 
-
   @media (min-width: 1401px) and (max-width: 1600px) {
     height: auto;
 
@@ -1009,9 +986,10 @@ header {
             }
 
             p {
-              width: 90%;
-              font-size: 13px;
+              width: 100%;
+              font-size: 14px;
               margin-bottom: 10px;
+              line-height: 16px;
             }
           }
         }
@@ -1030,25 +1008,7 @@ header {
   @media (min-width: 300px) and (max-width: 540px) {
     .swiper-slide {
       .bg {
-        height: 50vh;
-
-        .hero-content {
-          top: 60%;
-
-          .layer {
-            gap: 6px;
-
-            h1 {
-              font-size: 1.8 rem;
-            }
-
-            p {
-              width: 90%;
-              // font-size: 12px;
-              // margin-bottom: 10px;
-            }
-          }
-        }
+        height: 60vh;
       }
     }
 
@@ -1303,13 +1263,28 @@ header {
       }
     }
   }
+  @media (max-width: 768px) {
+    .rightContent {
+      padding-left: 0px;
+      p {
+        padding-right: 0;
+        margin-bottom: 0;
+      }
+      h2 {
+        margin-top: 10px;
+      }
+    }
+    .leftContent {
+      padding-right: 0px;
+    }
+  }
   @media (max-width: 640px) {
     p {
       font-size: 15px !important;
+      text-align: justify;
     }
     .rightContent {
       padding-left: 0px;
-      margin-top: 2rem;
       justify-content: start;
     }
     .getintouchimg {
@@ -1629,12 +1604,12 @@ header {
     }
   }
 
-  @media (min-width: 1200px) and (max-width: 1400px) {
-  }
-
   @media (max-width: 1024px) {
-    .section-title h2 {
-      font-size: 40px;
+    .section-title {
+      margin-bottom: 0 !important;
+      h2 {
+        font-size: 40px;
+      }
     }
 
     .centerBox {
@@ -1651,7 +1626,35 @@ header {
       }
     }
   }
+  @media (min-width: 769px) and (max-width: 992px) {
+    .blackBox {
+      width: 230px;
+      height: 250px;
+      .innerBox {
+        padding-block: 0px !important;
 
+        .front,
+        .back {
+          padding: 6pxgit;
+        }
+
+        .icondiv {
+          width: 50px;
+          height: 50px;
+          padding: 10px;
+        }
+
+        h3 {
+          font-size: 15px;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
   @media (max-width: 768px) {
     .centerBox {
       gap: 30px;
@@ -1667,13 +1670,8 @@ header {
         }
 
         .icondiv {
-          width: 90px;
-          height: 90px;
-
-          img {
-            width: 70px;
-            height: 70px;
-          }
+          width: 60px;
+          height: 60px;
         }
 
         h3 {
@@ -1698,7 +1696,7 @@ header {
       margin-bottom: 16px !important;
     }
   }
-  
+
   @media (max-width: 350px) {
     .section-title h2 {
       font-size: 30px;
@@ -1814,7 +1812,7 @@ header {
       font-size: 16px;
     }
   }
-  @media (min-width:300px) and (max-width: 540px){
+  @media (min-width: 300px) and (max-width: 540px) {
     padding-bottom: 1rem !important;
   }
 }
@@ -1833,18 +1831,18 @@ header {
         font-size: 40px;
       }
     }
-
-    .btn-outline-secondary {
-      border: 1px solid $beige-color;
-      // padding-inline:20px ;
-      color: $beige-color;
-    }
   }
 
+  .btn-outline-secondary {
+    border: 1px solid $beige-color;
+    color: $beige-color;
+    &:hover{
+
+    }
+  }
   .swiper-slide {
     display: flex;
     justify-content: center;
-    // margin-right: 10px;
     margin-top: 60px;
 
     .testimonial-Card {
@@ -1903,6 +1901,7 @@ header {
       font-size: 13px;
     }
   }
+
   @media (min-width: 450px) and (max-width: 540px) {
     .section-title h2:nth-child(2) {
       font-size: 30px;
@@ -1910,7 +1909,6 @@ header {
     .swiper-slide .testimonial-Card .inner {
       .content {
         margin-top: 1rem !important;
-        
       }
     }
   }
@@ -2178,12 +2176,40 @@ header {
       }
     }
   }
-  
+
+  @media (max-width: 992px) {
+    .footer-bottom {
+      margin-top: 10px;
+      gap: 0;
+      .powered-by {
+        font-size: 10px;
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+    .brand-section {
+      margin-bottom: 25px;
+      p {
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+    }
+    .footer-heading {
+      margin-bottom: 10px !important;
+    }
+    .footer-links li {
+      margin-bottom: 0px !important;
+    }
+  }
   @media (max-width: 640px) {
-   
+    .brand-section {
+      p {
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+    }
     .footer-bottom {
-      margin-top: 10px;
-      gap: 0;
       .powered-by {
         font-size: 10px;
         span {
@@ -2191,38 +2217,14 @@ header {
         }
       }
     }
-    .brand-section {
-      margin-bottom: 20px;
-    }
     .footer-heading {
       margin-bottom: 10px !important;
     }
-    .footer-links li {
-      margin-bottom: 0px !important;
-    }
-  }
-  @media (max-width: 450px) {
-   
-    .footer-bottom {
-      margin-top: 10px;
-      gap: 0;
-      .powered-by {
-        font-size: 10px;
-        span {
-          font-size: 10px;
-        }
+    .footer-links {
+      padding-bottom: 9px;
+      li {
+        margin-bottom: 0px !important;
       }
     }
-    .brand-section {
-      margin-bottom: 20px;
-    }
-    .footer-heading {
-      margin-bottom: 10px !important;
-    }
-    .footer-links li {
-      margin-bottom: 0px !important;
-    }
   }
-
 }
-

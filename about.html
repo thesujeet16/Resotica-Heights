@@ -24,8 +24,8 @@
 
 <body>
   <!-- header -->
-  <header class="position-absolute w-100">
-    <div class="container py-2 px-0">
+ <header class="position-absolute w-100">
+    <div class="container preheader px-md-0 py-2 px-0">
       <div class="header-top d-flex justify-content-between text-white">
         <div class="hcontact align-items-center d-flex gap-5">
           <span class="d-flex gap-2"><i class="ri-phone-line"></i> 999999999</span>
@@ -50,58 +50,49 @@
       </div>
     </div>
     <div class="line"></div>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container px-0">
-        <a class="navbar-brand" href="#">
-          <h2 class="">
-            Resotica
-            <div>Heights</div>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container px-lg-0 px-md-0 px-3 pb-sm-0">
+        <a class="navbar-brand" href="/index.html">
+          <h2>Resotica <div>Heights</div>
           </h2>
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="ri-menu-3-fill"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Projects
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/blogs.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contactus.html">Contact Us</a>
-            </li>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-outline-secondary">
-            Get In Touch
-          </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/vellura-farm.html">Vellura Farm</a></li>
+                  
+                </ul>
+              </li>
+              
+              <li class="nav-item"><a class="nav-link" href="/blogs.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
+            </ul>
+            <button type="button" class="btn btn-outline-secondary ms-lg-3 mt-3 mt-lg-0">
+              Get In Touch
+            </button>
+          </div>
         </div>
       </div>
     </nav>
+
+
   </header>
   <!-- header -->
 
@@ -642,12 +633,48 @@
   </section>
   <!-- team section -->
   <!-- footer -->
-  <div class="footer">
+ <div class="footer">
+    <div class="container px-lg-0 px-md-0 px-3 position-relative z-3">
+      <div class="row">
+        <div class="col-md-8 m-auto py-5">
+          <div class="section-title mb-4 text-center">
+            <h2 class="mb-0 lh-1 myfs-5 text-white">Get in Touch</h2>
+          </div>
+          <form id="contactForm">
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="First Name" required />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Last Name" required />
+              </div>
+            </div>
 
-    <footer class="footer-section pt-5 mt-0">
-      <div class="container footer-content m-auto px-0">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email" required />
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="Phone" required />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <textarea class="form-control" placeholder="Write your Messages......" required></textarea>
+            </div>
+            <div class="col-md-12 text-center pt-4">
+              <button type="button" class="btn btn-outline-secondary">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-section pt-5">
+      <div class="container px-lg-0 px-md-0 px-3 footer-content m-auto px-0">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="brand-section">
               <h2>
                 Resotica <br />
@@ -675,7 +702,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <h3 class="footer-heading">Quick Access</h3>
             <ul class="footer-links">
               <li><a href="#">Home</a></li>
@@ -684,7 +711,7 @@
               <li><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <h3 class="footer-heading">Quick Access</h3>
             <ul class="footer-links">
               <li><a href="#">Testimonial</a></li>
@@ -693,7 +720,7 @@
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <h3 class="footer-heading">Info</h3>
 
             <div class="info-item">
@@ -735,6 +762,7 @@
       </div>
     </footer>
   </div>
+
 
   <!-- footer -->
 

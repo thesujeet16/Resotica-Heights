@@ -901,10 +901,12 @@
     padding: 10px;
     height: 350px;
   }
-  .section-3 .blackBox .innerBox .front, .section-3 .blackBox .innerBox .back {
+  .section-3 .blackBox .innerBox .front,
+  .section-3 .blackBox .innerBox .back {
     padding: 10px !important;
   }
-  .section-3 .blackBox .innerBox .front h3, .section-3 .blackBox .innerBox .back h3 {
+  .section-3 .blackBox .innerBox .front h3,
+  .section-3 .blackBox .innerBox .back h3 {
     font-size: 18px !important;
   }
 }
@@ -1366,6 +1368,7 @@
 
 .video-section {
   position: relative;
+  height: 100vh;
   width: 100%;
 }
 
@@ -1450,9 +1453,6 @@
   .video-section {
     height: auto;
   }
-}
-
-@media (max-width: 768px) {
   .video-section .play-outline-circle {
     width: 120px;
     height: 120px;
@@ -1560,6 +1560,12 @@
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 3.102px 27.766px 0 rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-list-container .blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .blog-list-container .blog-card .blog-img {
@@ -1572,12 +1578,22 @@
   border-radius: 12px;
 }
 
-.blog-list-container .blog-card h3 {
+.blog-list-container .blog-card a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.blog-list-container .blog-card a h3 {
   font-weight: 700;
 }
 
+.blog-list-container .blog-card a h3:hover {
+  color: #ac813c;
+}
+
 .blog-list-container .blog-card p {
-  font-size: 12px;
+  font-size: 14px;
   color: #797070;
 }
 
@@ -1718,11 +1734,11 @@
 }
 
 .blog-categories ul {
-  overflow-x: auto;
+  overflow-x: scroll;
   white-space: nowrap;
   flex-wrap: nowrap !important;
   scrollbar-width: thin;
-  padding-bottom: 16px;
+  padding-bottom: 6px;
 }
 
 .blog-categories .nav-item {
@@ -2019,15 +2035,15 @@
   fill: #4267b2;
 }
 
-.right-section .social-divider svg:nth-child(2):hover {
+.right-section .social-divider svg:nth-child(1):hover {
   fill: #0866ff;
 }
 
-.right-section .social-divider svg:nth-child(3):hover {
+.right-section .social-divider svg:nth-child(2):hover {
   fill: #1da1f2;
 }
 
-.right-section .social-divider svg:nth-child(4):hover {
+.right-section .social-divider svg:nth-child(3):hover {
   fill: #e4405f;
 }
 
@@ -2474,6 +2490,12 @@
 
 .related-blogs .blog-card .para-link p {
   font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .blog-detail-container .features-list li::after {
+    top: 10px;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 640px) {
