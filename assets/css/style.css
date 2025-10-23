@@ -1430,7 +1430,7 @@ header .navbar-nav .nav-link.show {
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .section-3 .blackBox {
     width: 230px;
     height: 250px;

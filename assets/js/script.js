@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper(heroSwiperEl, {
       loop: true,
       speed: 1000,
-      // autoplay: { delay: 5000, disableOnInteraction: false },
+      autoplay: { delay: 5000, disableOnInteraction: false },
       on: {
         slideChange() {
           const index = this.realIndex;
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      // autoplay: { delay: 3000, disableOnInteraction: false },
+      autoplay: { delay: 3000, disableOnInteraction: false },
       breakpoints: {
         768: { slidesPerView: 1, spaceBetween: 30 },
         1024: { slidesPerView: 2, spaceBetween: 40 },
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      // autoplay: { delay: 3000, disableOnInteraction: false },
+      autoplay: { delay: 3000, disableOnInteraction: false },
       breakpoints: {
         768: { slidesPerView: 1, spaceBetween: 30 },
         1024: { slidesPerView: 2, spaceBetween: 40 },
