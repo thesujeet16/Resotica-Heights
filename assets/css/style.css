@@ -59,6 +59,17 @@ body {
   display: none;
 }
 
+.swiper-slide h1 {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.swiper-slide-active h1 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .btn:hover {
   background-color: transparent;
 }

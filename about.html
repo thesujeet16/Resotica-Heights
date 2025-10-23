@@ -126,7 +126,7 @@
         <!-- Left Content -->
         <div class="col-md-6">
           <h6 class="text-uppercase text-muted mb-3">Welcome</h6>
-          <h2 class="section-title mb-4">History Of Our Resotica</h2>
+          <h2 class="section-title text-start mb-4">History Of Our Resotica</h2>
           <p class="text-muted">
             Est deserunt sed enim reprehenderit pariatur id reprehenderit in
             cupidatat in culpa sunt tempor pariatur nostrud minim irure culpa do magna.
@@ -497,26 +497,30 @@
         </div>
 
         <div class="col-md-8 projectdiv">
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="project-card">
-                <img src="./assets/img/pages/projcard-1.png" class="img-fluid" alt="Project 1">
-              </div>
-            </div>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="project-card">
+        <img src="./assets/img/pages/projcard-1.png" class="img-fluid" alt="Project 1">
+        <div class="project-title">Luxury Villa Design</div>
+      </div>
+    </div>
 
-            <div class="col-md-4">
-              <div class="project-card">
-                <img src="./assets/img/pages/projcard-2.png" class="img-fluid" alt="Project 2">
-              </div>
-            </div>
+    <div class="col-md-4">
+      <div class="project-card">
+        <img src="./assets/img/pages/projcard-2.png" class="img-fluid" alt="Project 2">
+        <div class="project-title">Modern Apartment Complex</div>
+      </div>
+    </div>
 
-            <div class="col-md-4">
-              <div class="project-card">
-                <img src="./assets/img/pages/projcard-3.png" class="img-fluid" alt="Project 3">
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="col-md-4">
+      <div class="project-card">
+        <img src="./assets/img/pages/projcard-3.png" class="img-fluid" alt="Project 3">
+        <div class="project-title">Beachside Resort Project</div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
   </section>
 
@@ -805,7 +809,6 @@
     });
   </script>
   <script>
-    // Initialize Swiper
     const swiper = new Swiper('.teamSwiper', {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -834,11 +837,9 @@
       }
     });
 
-    // Arrow icon click handlers
     document.querySelectorAll('.arrow-icon').forEach(icon => {
       icon.addEventListener('click', function (e) {
         e.preventDefault();
-        // Add your navigation logic here
         console.log('Arrow clicked');
       });
     });

@@ -17,7 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
               if (num)
                 num.style.visibility = i === index ? "hidden" : "visible";
             });
+            
         },
+         slideChangeTransitionEnd: function () {
+      const activeSlide = this.slides[this.activeIndex];
+      const h1 = activeSlide.querySelector("h1");
+      if (h1) {
+        h1.style.transform = "translateY(0)";
+        h1.style.opacity = "1";
+      }
+    },
       },
     });
 
