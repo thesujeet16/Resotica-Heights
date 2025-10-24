@@ -1496,10 +1496,10 @@ header .navbar-nav .nav-link.show {
   .section-3 .section-title h2 {
     font-size: 30px;
   }
-  .section-3 .blackBox {
+  .section-3 #section-3 .blackBox {
     width: 325px;
     height: 325px;
-    margin-bottom: 16px !important;
+    margin-bottom: 35px !important;
   }
 }
 
@@ -1511,6 +1511,17 @@ header .navbar-nav .nav-link.show {
     width: 280px;
     height: 280px;
     margin-bottom: 16px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .section-title h2 {
+    font-size: 30px;
+  }
+  #section-3 .blackBox {
+    width: 325px;
+    height: 325px;
+    margin-bottom: 35px !important;
   }
 }
 

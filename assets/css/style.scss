@@ -1673,7 +1673,7 @@ header {
       gap: 30px;
     }
 
-    .blackBox {
+      .blackBox {
       .innerBox {
         padding-block: 0px !important;
 
@@ -1703,10 +1703,10 @@ header {
     .section-title h2 {
       font-size: 30px;
     }
-    .blackBox {
+    #section-3 .blackBox {
       width: 325px;
       height: 325px;
-      margin-bottom: 16px !important;
+      margin-bottom: 35px !important;
     }
   }
 
@@ -1721,7 +1721,16 @@ header {
     }
   }
 }
-
+ @media (max-width: 540px) {
+    .section-title h2 {
+      font-size: 30px;
+    }
+    #section-3 .blackBox {
+      width: 325px;
+      height: 325px;
+      margin-bottom: 35px !important;
+    }
+  }
 // -----------------------section-4-----------------------------//
 .section-4 {
   .section-title {
