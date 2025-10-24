@@ -1641,6 +1641,10 @@ header .navbar-nav .nav-link.show {
   color: #ac813c;
 }
 
+.section-5 .btn-outline-secondary:hover {
+  color: #fff;
+}
+
 .section-5 .swiper-slide {
   display: flex;
   justify-content: center;

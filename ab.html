@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Journey Timeline</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --off-white-second: #f8f8f8;
+      --brown-text: #5c4033;
+      --font-marcellus: 'Marcellus', serif;
+    }
+
+    body {
+      background: #fff;
+      padding: 40px 0;
+    }
+
+    .our-journey .journey {
+      position: relative;
+      width: 360px;
+      background: var(--off-white-second);
+      filter: drop-shadow(0 8px 22px rgba(70, 128, 255, 0.16));
+      border-radius: 14px;
+    }
+
+    .our-journey .journey::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: var(--off-white-second);
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .our-journey .journey h2 {
+      color: var(--brown-text);
+      font-family: var(--font-marcellus);
+    }
+
+    .our-journey .journey .jimg {
+      width: 100%;
+      border-radius: 14px 14px 0 0;
+      overflow: hidden;
+    }
+
+    .our-journey .journey .jimg img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .our-journey .journey-2 {
+      transform: translateY(35%);
+    }
+
+    .our-journey .journey-3 {
+      right: -62%;
+      top: 15px;
+    }
+
+    .our-journey .journey-3::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: var(--off-white-second);
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      right: auto;
+    }
+
+    .journey-main {
+      position: relative;
+    }
+
+    .journey-main .jrny-3 {
+      position: relative;
+      left: 20%;
+      top: 40px;
+    }
+
+    .journey-main .svg-line {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+
+    .journey-main .svg-line svg {
+      position: absolute;
+      height: auto;
+      width: 385px;
+      left: -20%;
+      top: 50%;
+    }
+
+    .journey-main .svg-line-2 {
+      top: 25%;
+      right: 3%;
+    }
+
+    .journey-main .svg-line-3 {
+      top: 50.5%;
+      right: 3%;
+    }
+
+    .journey-main .svg-line-4 {
+      top: 51%;
+      left: 10.5%;
+    }
+
+    .journey-main .svg-line-5 {
+      top: 81.5%;
+      left: 10.5%;
+    }
+
+    .myfs-7 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .myfs-1 {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    /* Tablet - 992px to 1024px */
+    @media (min-width: 992px) and (max-width: 1024px) {
+      .journey-main .svg-line svg {
+        left: -67%;
+        z-index: -1;
+      }
+
+      .journey-main .svg-line-2 {
+        z-index: -1;
+      }
+
+      .journey-main .svg-line-3 {
+        top: 49%;
+        width: 430px;
+        overflow: hidden;
+      }
+
+      .journey-main .svg-line-4 {
+        top: 49%;
+        left: 7%;
+      }
+
+      .journey-main .svg-line-5 {
+        top: 77%;
+        left: 7%;
+      }
+    }
+
+    /* Tablet - 768px to 1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .our-journey .journey {
+        width: 280px;
+      }
+
+      .journey-main .jrny-3 {
+        position: relative;
+        left: 20%;
+        top: 22px;
+      }
+
+      .our-journey .journey-3 {
+        top: -44px;
+        right: -63%;
+      }
+    }
+
+    /* Mobile - below 768px */
+    @media (max-width: 767px) {
+      .journey-main svg {
+        display: none;
+      }
+
+      .our-journey .journey {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto 40px;
+        transform: none !important;
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+      }
+
+      .our-journey .journey::after {
+        display: none;
+      }
+
+      .our-journey .journey-2 {
+        transform: none;
+      }
+
+      .our-journey .journey-3 {
+        right: auto;
+        top: auto;
+      }
+
+      .journey-main .jrny-3 {
+        left: 0;
+        top: 0;
+      }
+
+      /* Mobile connector lines */
+      .our-journey .journey:not(:last-child)::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -40px;
+        width: 2px;
+        height: 40px;
+        background: repeating-linear-gradient(
+          to bottom,
+          #000 0,
+          #000 4px,
+          transparent 4px,
+          transparent 8px
+        );
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+
+      .our-journey .journey .jimg img {
+        height: 180px;
+      }
+
+      .myfs-7 {
+        font-size: 1.25rem;
+      }
+
+      .myfs-1 {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="our-journey">
+      <div class="journey-main">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="journey p-3">
+              <div class="jimg">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop" alt="">
+              </div>
+              <div class="px-2">
+                <h2 class="myfs-7 py-3 mb-0">founded in 1968</h2>
+                <p class="myfs-1">Est deserunt sed enim reprehenderit pariatur id reprehenderit in cupidatat in culpa sunt tempor pariatur nostrud minim irure culpa do magna. Nisi aute Est deserunt sed enim reprehenderit pariatur id reprehenderit in cupidatat in culpa sunt te</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-none d-md-block">
+            <div class="svg-line">
+              <svg xmlns="http://www.w3.org/2000/svg" width="350" height="111" viewBox="0 0 350 111" fill="none">
+                <path d="M0 1H230" stroke="black" stroke-dasharray="8 8" />
+                <path d="M231 108H230.5V108.5H231V108ZM349 108L344 105.113V110.887L349 108ZM231 0H230.5V3.85714H231H231.5V0H231ZM231 11.5714H230.5V19.2857H231H231.5V11.5714H231ZM231 27H230.5V34.7143H231H231.5V27H231ZM231 42.4286H230.5V50.1429H231H231.5V42.4286H231ZM231 57.8571H230.5V65.5714H231H231.5V57.8571H231ZM231 73.2857H230.5V81H231H231.5V73.2857H231ZM231 88.7143H230.5V96.4286H231H231.5V88.7143H231ZM231 104.143H230.5V108H231H231.5V104.143H231ZM231 108V108.5H235.214V108V107.5H231V108ZM243.643 108V108.5H252.071V108V107.5H243.643V108ZM260.5 108V108.5H268.929V108V107.5H260.5V108ZM277.357 108V108.5H285.786V108V107.5H277.357V108ZM294.214 108V108.5H302.643V108V107.5H294.214V108ZM311.071 108V108.5H319.5V108V107.5H311.071V108ZM327.929 108V108.5H336.357V108V107.5H327.929V108Z" fill="black" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="journey journey-2 p-3">
+              <div class="jimg">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop" alt="">
+              </div>
+              <div class="px-2">
+                <h2 class="myfs-7 py-3 mb-0">founded in 1968</h2>
+                <p class="myfs-1">Est deserunt sed enim reprehenderit pariatur id reprehenderit in cupidatat in culpa sunt tempor pariatur nostrud minim irure culpa do magna. Nisi aute Est deserunt sed enim reprehenderit pariatur id reprehenderit in cupidatat in culpa sunt te</p>
+              </div>
+            </div>
+            <div class="svg-line-2 position-absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" width="119" height="315" viewBox="0 0 119 315" fill="none">
+                <path d="M118 315V1H0" stroke="black" stroke-dasharray="8 8" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-4 py-5">
+            <div class="svg-line-4 position-absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" width="119" height="369" viewBox="0 0 119 369" fill="none">
+                <path d="M1 369V0.999999H119" stroke="black" stroke-dasharray="8 8" />
+              </svg>
+            </div>
+            <div class="journey jrny-3 p-3">
+              <div class="jimg">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="">
+              </div>
+              <div class="px-2">
+                <h2 class="myfs-7 py-3 mb-0">founded in 1968</h2>
+                <p class="myfs-1">Est deserunt sed enim reprehenderit pariatur id reprehenderit in cupidatat in culpa sunt tempor pariatur nostrud minim irure culpa do magna. Nisi aute Est deserunt sed enim reprehenderit pariatur id reprehenderit in cupidatat in culpa sunt te</p>
+              </div>
+            </div>
+            <div class="svg-line-3 position-absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" width="634" height="6" viewBox="0 0 634 6" fill="none">
+                <path d="M0 3L5 5.88675V0.113249L0 3ZM11.8875 3V3.5H19.8125V3V2.5H11.8875V3ZM27.7375 3V3.5H35.6625V3V2.5H27.7375V3ZM43.5875 3V3.5H51.5125V3V2.5H43.5875V3ZM59.4375 3V3.5H67.3625V3V2.5H59.4375V3ZM75.2875 3V3.5H83.2125V3V2.5H75.2875V3ZM91.1375 3V3.5H99.0625V3V2.5H91.1375V3ZM106.988 3V3.5H114.913V3V2.5H106.988V3ZM122.838 3V3.5H130.763V3V2.5H122.838V3ZM138.688 3V3.5H146.613V3V2.5H138.688V3ZM154.538 3V3.5H162.463V3V2.5H154.538V3ZM170.388 3V3.5H178.313V3V2.5H170.388V3ZM186.238 3V3.5H194.163V3V2.5H186.238V3ZM202.088 3V3.5H210.013V3V2.5H202.088V3ZM217.938 3V3.5H225.863V3V2.5H217.938V3ZM233.788 3V3.5H241.713V3V2.5H233.788V3ZM249.638 3V3.5H257.563V3V2.5H249.638V3ZM265.488 3V3.5H273.413V3V2.5H265.488V3ZM281.338 3V3.5H289.263V3V2.5H281.338V3ZM297.188 3V3.5H305.112V3V2.5H297.188V3ZM313.037 3V3.5H320.962V3V2.5H313.037V3ZM328.887 3V3.5H336.812V3V2.5H328.887V3ZM344.737 3V3.5H352.662V3V2.5H344.737V3ZM360.587 3V3.5H368.512V3V2.5H360.587V3ZM376.437 3V3.5H384.362V3V2.5H376.437V3ZM392.287 3V3.5H400.212V3V2.5H392.287V3ZM408.137 3V3.5H416.062V3V2.5H408.137V3ZM423.987 3V3.5H431.912V3V2.5H423.987V3ZM439.837 3V3.5H447.762V3V2.5H439.837V3ZM455.687 3V3.5H463.612V3V2.5H455.687V3ZM471.537 3V3.5H479.462V3V2.5H471.537V3ZM487.387 3V3.5H495.312V3V2.5H487.387V3ZM503.237 3V3.5H511.162V3V2.5H503.237V3ZM519.087 3V3.5H527.012V3V2.5H519.087V3ZM534.937 3V3.5H542.862V3V2.5H534.937V3ZM550.787 3V3.5H558.712V3V2.5H550.787V3ZM566.637 3V3.5H574.562V3V2.5H566.637V3ZM582.487 3V3.5H590.412V3V2.5H582.487V3ZM598.337 3V3.5H606.262V3V2.5H598.337V3ZM614.187 3V3.5H622.112V3V2.5H614.187V3ZM630.037 3V3.5H634V3V2.5H630.037V3Z" fill="black" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-md-12 pb-5">
+            <div class="svg-line-5 position-absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" width="658" height="6" viewBox="0 0 658 6" fill="none">
+                <path d="M658 3L653 0.113249V5.88675L658 3ZM0 3V3.5H4.0122V3V2.5H0V3ZM12.0366 3V3.5H20.061V3V2.5H12.0366V3ZM28.0854 3V3.5H36.1098V3V2.5H28.0854V3ZM44.1341 3V3.5H52.1585V3V2.5H44.1341V3ZM60.1829 3V3.5H68.2073V3V2.5H60.1829V3ZM76.2317 3V3.5H84.2561V3V2.5H76.2317V3ZM92.2805 3V3.5H100.305V3V2.5H92.2805V3ZM108.329 3V3.5H116.354V3V2.5H108.329V3ZM124.378 3V3.5H132.402V3V2.5H124.378V3ZM140.427 3V3.5H148.451V3V2.5H140.427V3ZM156.476 3V3.5H164.5V3V2.5H156.476V3ZM172.524 3V3.5H180.549V3V2.5H172.524V3ZM188.573 3V3.5H196.598V3V2.5H188.573V3ZM204.622 3V3.5H212.646V3V2.5H204.622V3ZM220.671 3V3.5H228.695V3V2.5H220.671V3ZM236.719 3V3.5H244.744V3V2.5H236.719V3ZM252.768 3V3.5H260.793V3V2.5H252.768V3ZM268.817 3V3.5H276.841V3V2.5H268.817V3ZM284.866 3V3.5H292.89V3V2.5H284.866V3ZM300.915 3V3.5H308.939V3V2.5H300.915V3ZM316.963 3V3.5H324.988V3V2.5H316.963V3ZM333.012 3V3.5H341.036V3V2.5H333.012V3ZM349.061 3V3.5H357.085V3V2.5H349.061V3ZM365.11 3V3.5H373.134V3V2.5H365.11V3ZM381.158 3V3.5H389.183V3V2.5H381.158V3ZM397.207 3V3.5H405.232V3V2.5H397.207V3ZM413.256 3V3.5H421.28V3V2.5H413.256V3ZM429.305 3V3.5H437.329V3V2.5H429.305V3ZM445.353 3V3.5H453.378V3V2.5H445.353V3ZM461.402 3V3.5H469.427V3V2.5H461.402V3ZM477.451 3V3.5H485.475V3V2.5H477.451V3ZM493.5 3V3.5H501.524V3V2.5H493.5V3ZM509.548 3V3.5H517.573V3V2.5H509.548V3ZM525.597 3V3.5H533.622V3V2.5H525.597V3ZM541.646 3V3.5H549.671V3V2.5H541.646V3ZM557.695 3V3.5H565.719V3V2.5H557.695V3ZM573.744 3V3.5H581.768V3V2.5H573.744V3ZM589.793 3V3.5H597.817V3V2.5H589.793V3ZM605.841 3V3.5H613.866V3V2.5H605.841V3ZM621.89 3V3.5H629.915V3V2.5H621.89V3ZM637.939 3V3.5H645.964V3V2.5H637.939V3Z" fill="black" />
+              </svg>
+            </div>
+            <div class="journey journey-3 p-3">
+              <div class="jimg">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="">
+              </div>
+              <div class="px-2">
+                <h2 class="myfs-7 py-3 mb-0">founded in 1968</h2>
+                <p class="myfs-1">Est deserunt sed enim reprehenderit pariatur id reprehenderit in cupidatat in culpa sunt tempor pariatur nostrud minim irure culpa do magna. Nisi aute Est deserunt sed enim reprehenderit pariatur id reprehenderit in cupidatat in culpa sunt te</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

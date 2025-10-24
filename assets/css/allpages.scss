@@ -906,7 +906,6 @@ $font-sizes: (
     @media (max-width: 768px) {
       width: 325px !important;
       height: 325px !important;
-    
     }
   }
   @media (min-width: 768px) and (max-width: 1100px) {
@@ -1495,7 +1494,7 @@ $font-sizes: (
     top: 50%;
     text-align: center;
     font-family: $font-marcellus;
-    z-index: 11;
+    z-index: 1;
     transform: translateY(-50%);
     .pgtitle {
       text-align: center;
@@ -2832,8 +2831,8 @@ $font-sizes: (
     transform: translateY(35%);
   }
   .journey-3 {
-    right: -63%;
-    top: 23px;
+    right: -62%;
+    top: 15px;
     &::after {
       content: "";
       position: absolute;
@@ -2851,7 +2850,7 @@ $font-sizes: (
   position: relative;
   .jrny-3 {
     position: relative;
-    left: 20%;
+    left: 63%;
     top: 40px;
   }
   .svg-line {
@@ -2867,20 +2866,154 @@ $font-sizes: (
     }
   }
   .svg-line-2 {
-    top: 24%;
+    top: 25%;
     right: 3%;
   }
   .svg-line-3 {
-    top: 48.5%;
+    top: 50.5%;
     right: 3%;
   }
   .svg-line-4 {
-    top: 50%;
+    top: 51%;
     left: 10.5%;
   }
   .svg-line-5 {
-    top: 79%;
+    top: 81.5%;
     left: 10.5%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .journey-main .svg-line svg {
+    left: -23%;
+    z-index: -1;
+  }
+  .journey-main .svg-line-2 {
+    z-index: -1;
+  }
+
+  .journey-main .svg-line-3 {
+    top: 51%;
+    // width: 430px;
+    overflow: hidden;
+  }
+  .journey-main .svg-line-4 {
+    top: 49%;
+    left: 0%;
+  }
+  .journey-main .svg-line-5 {
+    top: 80%;
+    left: 0%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .journey-main .svg-line svg {
+    width: auto;
+  }
+  .journey-main .jrny-3 {
+    position: relative;
+    top: 48px;
+    left: 26%;
+  }
+  .our-journey .journey-3 {
+    top: -2px;
+    right: -60%;
+  }
+  .journey-main svg,
+  .svg-line-2,
+  .svg-line-3,
+  .svg-line-4 {
+    z-index: -1;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .journey-main .svg-line svg {
+    left: -67%;
+    z-index: -1;
+  }
+  .journey-main .svg-line-2 {
+    z-index: -1;
+  }
+
+  .journey-main .svg-line-3 {
+    top: 49%;
+    width: 430px;
+    overflow: hidden;
+  }
+  .journey-main .svg-line-4 {
+    top: 49%;
+    left: 7%;
+  }
+  .journey-main .svg-line-5 {
+    top: 77%;
+    left: 7%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .our-journey .journey {
+    width: 280px;
+  }
+  .journey-main .jrny-3 {
+    position: relative;
+    top: 22px;
+  }
+  .our-journey .journey-3 {
+    top: -44px;
+    right: -60%;
+  }
+  .journey-main svg,
+  .svg-line-2,
+  .svg-line-3,
+  .svg-line-4 {
+    z-index: -1;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .our-journey .journey::after {
+    display: none;
+  }
+  .journey-main svg,
+  .svg-line-2,
+  .svg-line-3,
+  .svg-line-4,
+  .svg-line-5 {
+    z-index: -1;
+  }
+  .our-journey .section-title h2 {
+    font-size: 35px;
+  }
+  .journey-main .svg-line-5 {
+    top: 79%;
+    svg {
+      width: 600px;
+    }
+  }
+  .journey-main .svg-line-3 {
+    right: 20%;
+    svg {
+      width: 500px;
+    }
+  }
+  .journey-main .svg-line-3 {
+    top: 49%;
+  }
+  .journey-main .jrny-3 {
+    position: relative;
+    left: 20%;
+    top: 22px;
+  }
+  .journey-main .svg-line-2 {
+    right: 20%;
+  }
+  .journey-main .svg-line-4 {
+    left: 25%;
+  }
+  .journey-main .svg-line-5 {
+    left: 25%;
+    svg {
+      width: 500px;
+    }
   }
 }
 
@@ -2904,63 +3037,65 @@ $font-sizes: (
       color: $white-color;
     }
   }
- .projectdiv {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background: rgba(172, 129, 60, 0.32);
-    border-radius: 97px 0 186px 0;
-    z-index: 1;
-  }
-
-  .project-card {
+  .projectdiv {
     position: relative;
-    z-index: 11;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.5s ease;
-      
-    }
-
-    &:hover img {
-      transform: scale(1.05);
-    }
-
-    .project-title {
+    &::after {
+      content: "";
       position: absolute;
-      bottom: -100%;
-      left: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.65);
-      color: #fff;
-      text-align: center;
-      padding: 12px 10px;
-      font-size: 16px;
-      font-weight: 500;
-      transition: bottom 0.4s ease;
-      z-index: 12;
-       
+      height: 150px;
+      background: rgba(172, 129, 60, 0.32);
+      border-radius: 97px 0 186px 0;
+      z-index: 1;
     }
 
-    &:hover .project-title {
-      bottom: 0;
+    .project-card {
+      position: relative;
+      z-index: 11;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+
+      .project-title {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.65);
+        color: #fff;
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 16px;
+        font-weight: 500;
+        transition: bottom 0.4s ease;
+        z-index: 12;
+      }
+
+      &:hover .project-title {
+        bottom: 0;
+      }
     }
   }
-}
-
+  @media (max-width: 1024px) {
+    .section-title h2 {
+      font-size: 30px;
+    }
+  }
 }
 
 .team-section {
@@ -3069,6 +3204,148 @@ $font-sizes: (
 
     .team-image {
       height: 320px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .section-title {
+      font-size: 30px;
+    }
+    .team-name {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-section-1 .section-title {
+    font-size: 25px;
+  }
+  .about-section-1 .top .top-cont {
+    margin-top: 0 !important;
+  }
+  .about-section-1 .bottom .bottom-cont {
+    margin-bottom: 0;
+  }
+  .about-section-1 {
+    .percent {
+      font-size: 20px;
+      margin-bottom: 0px;
+    }
+    .stat-text {
+      font-size: 1.2vw;
+      margin-bottom: 0;
+    }
+  }
+  .vm-card {
+    min-width: auto;
+    min-height: auto;
+  }
+  .common-hero .page-title .pgtitle {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .counter-container .count {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h3 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+  .video-section {
+    height: 100%;
+  }
+  .team-section {
+    .swiper {
+      padding-right: 20px;
+    }
+
+    .team-card .team-info .arrow-icon {
+      svg {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+  .team-section .team-card .team-image {
+    height: auto;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .about-section-1 .section-title {
+    font-size: 25px;
+  }
+  .about-section-1 .percent {
+    font-size: 18px;
+  }
+  .about-section-1 .stat-text {
+    font-size: 13px;
+  }
+  .our-journey {
+    padding-top: 20px !important;
+    .section-title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+  .counter-container,
+  .journey-main svg,
+  .svg-line-2,
+  .svg-line-3,
+  .svg-line-4,
+  .svg-line-5,
+  .our-journey .journey::after {
+    display: none;
+  }
+
+  .our-journey .journey {
+    width: 100%;
+  }
+  .our-journey .journey-2 {
+    transform: translateY(0px);
+  }
+  .journey-main .jrny-3,
+  .our-journey .journey-3 {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .latestProjects .projectdiv .project-card {
+    height: 350px;
+    border-radius: 50px;
+    margin-top: 10px;
+    img {
+      height: 100%;
+    }
+  }
+  .team-section .section-title {
+    font-size: 25px;
+  }
+  .team-section .team-card {
+    height: 450px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 540px) {
+  .about-section-1 {
+    svg {
+      display: none;
+    }
+    .top .top-cont {
+      margin-top: 15px;
+    }
+    .bottom .bottom-cont {
+      margin-bottom: 15px;
+    }
+    .percent {
+      margin-bottom: 0;
     }
   }
 }
