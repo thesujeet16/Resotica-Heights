@@ -864,6 +864,7 @@ header .navbar-nav .nav-link.show {
     font-size: 14px;
     margin-bottom: 10px;
     line-height: 16px;
+    text-align: justify;
   }
   .hero-section .swiper-slide .bg .btn-outline-secondary {
     padding-block: 8px;
