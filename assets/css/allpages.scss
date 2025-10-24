@@ -3331,6 +3331,26 @@ $font-sizes: (
   .team-section .team-card {
     height: 450px;
   }
+  .journey-main::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: repeating-linear-gradient(
+      to bottom,
+      #000,
+      #000 6px,
+      transparent 6px,
+      transparent 12px
+    );
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+   .journey-main::before {
+    height: calc(100% - 50px);
+  }
 }
 
 @media (min-width: 300px) and (max-width: 540px) {
@@ -3348,4 +3368,5 @@ $font-sizes: (
       margin-bottom: 0;
     }
   }
+   
 }
