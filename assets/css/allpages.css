@@ -2275,11 +2275,12 @@
 }
 
 .blog-detail-container .sidebar .sidebar-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2rem !important;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   color: #000;
   font-family: "Marcellus", serif;
+  color: #ac813c;
 }
 
 .blog-detail-container .sidebar .post-item {
@@ -2441,7 +2442,7 @@
 
 @media (max-width: 768px) {
   .blog-detail-container .post-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .blog-detail-container .hero-image {
     height: 250px;
@@ -2496,6 +2497,51 @@
 @media (max-width: 992px) {
   .blog-detail-container .features-list li::after {
     top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .blog-detail-container {
+    margin-block: 0 !important;
+    padding-block: 1rem !important;
+  }
+  .blog-detail-container .sidebar .post-item {
+    padding: 10px;
+  }
+  .features {
+    width: 100%;
+  }
+  .feature-img {
+    width: 100%;
+  }
+  .related-blogs .blog-card {
+    flex-direction: column !important;
+  }
+  .blog-detail-container .post-title, .blog-detail-container .sidebar .sidebar-title {
+    font-size: 1.5rem !important;
+  }
+  .section-title {
+    margin-bottom: 2rem !important;
+  }
+  .pdl {
+    padding-left: 0px !important;
+    padding-top: 16px !important;
+    margin-top: 0 !important;
+  }
+  .getintouchimg .overlay {
+    padding-top: 2rem !important;
+  }
+  .blog-detail-container .blog-image {
+    height: auto;
+  }
+  .blog-detail-container .getintouchimg {
+    height: auto !important;
+  }
+  .blog-detail-container .getintouchimg p {
+    font-size: 15px;
+  }
+  .blog-detail-container h3 {
+    font-size: 13px;
   }
 }
 
