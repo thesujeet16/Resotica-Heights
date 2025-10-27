@@ -1398,6 +1398,9 @@
   .footer-quote svg {
     width: 30px;
   }
+  .footer-section .footer-bottom {
+    flex-direction: column !important;
+  }
 }
 
 .video-section {
@@ -2595,6 +2598,13 @@
     font-size: 15px;
   }
   .blog-detail-container h3 {
+    font-size: 13px;
+  }
+  .blog-list-container .section-title h2 {
+    font-size: 25px;
+    margin-bottom: 2rem !important;
+  }
+  .blog-detail-container .breadcrumb .breadcrumb-item a {
     font-size: 13px;
   }
 }

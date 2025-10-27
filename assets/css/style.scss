@@ -665,7 +665,20 @@ header {
         box-shadow: none;
       }
     }
+    .offcanvas-body{
+      text-align: center;
+    }
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nav-link{
+      padding-inline: 0 !important;
+      font-size: 16px;
+    }
+    }
   }
+
 }
 
 // ---------------------------------Header-------------------------------//
